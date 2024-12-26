@@ -1,6 +1,6 @@
-local thrillerbark = {}
+local princess = {}
 ---@return table
-function thrillerbark.get()
+function princess.get()
 	return {
 		["base"] = "#0c030a",
 		["kuraigana"] = "#150a12",
@@ -38,4 +38,4 @@ function thrillerbark.get()
 		["u"] = "underline",
 	}
 end
-return thrillerbark
+return princess

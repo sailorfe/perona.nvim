@@ -1,11 +1,11 @@
-local gpp = require("perona.thrillerbark").get()
+local gpp = require("perona.princess").get()
 local perona = {}
 
 perona.normal = {
 	a = { bg = gpp.wine, fg = gpp.hollow },
-	b = { bg = gpp.nagashidaru, fg = gpp.text },
+	b = { bg = gpp.jam, fg = gpp.text },
 	c = { bg = gpp.nightmare, fg = gpp.text },
-	x = { bg = gpp.wine, fg = gpp.ghost },
+	x = { bg = gpp.nagashidaru, fg = gpp.ghost },
 }
 perona.inactive = {
 	c = { bg = gpp.coffin, fg = gpp.text },
