@@ -1,26 +1,28 @@
-local bark = {}
+local thrillerbark = {}
 ---@return table
-function bark.get()
+function thrillerbark.get()
 	return {
 		["base"] = "#0c030a",
+		["kuraigana"] = "#150a12",
+		["cocoa"] = "#1c111a",
 		["text"] = "#fec8d5",
 		["wine"] = "#a5123e",
-		["merlot"] = "#6e0c2a",
+		["nagashidaru"] = "#6e0c2a",
 		["mihawk"] = "#261722",
 		["dracule"] = "#372a34",
 		["coffin"] = "#160813",
 		["blood"] = "#ed1d2e",
-		["ruby"] = "#cc0011",
+		["ruby"] = "#ff4c5b",
 		["wonder"] = "#d573d9",
-		["garden"] = "#c733cc",
+		["garden"] = "#f893fb",
 		["sangria"] = "#ff5c74",
-		["fruit"] = "#fb3754",
+		["fruit"] = "#ff8093",
 		["kumashi"] = "#8896c8",
-		["sea"] = "#687dca",
+		["sea"] = "#a9b7ea",
 		["surprise"] = "#ff70b3",
-		["zombie"] = "#fd3592",
+		["zombie"] = "#ff94c6",
 		["jam"] = "#d5396b",
-		["berry"] = "#cc2459",
+		["berry"] = "#fa5c8e",
 		["ghost"] = "#deafba",
 		["hollow"] = "#fcd9e1",
 		["b"] = "bold",
@@ -35,4 +37,4 @@ function bark.get()
 		["u"] = "underline",
 	}
 end
-return bark
+return thrillerbark

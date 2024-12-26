@@ -1,11 +1,11 @@
-local gpp = require("perona.bark").get()
+local gpp = require("perona.thrillerbark").get()
 local perona = {}
 
 perona.normal = {
-	a = { bg = gpp.jam, fg = gpp.mihawk },
-	b = { bg = gpp.berry, fg = gpp.coffin },
-	c = { bg = gpp.wine, fg = gpp.text },
-	x = { bg = gpp.merlot, fg = gpp.ghost },
+	a = { bg = gpp.cocoa, fg = gpp.ghost },
+	b = { bg = gpp.kuraigana, fg = gpp.ghost },
+	c = { bg = gpp.nagashidaru, fg = gpp.text },
+	x = { bg = gpp.nagashidaru, fg = gpp.ghost },
 }
 perona.inactive = {
 	c = { bg = gpp.coffin, fg = gpp.text },
@@ -15,20 +15,20 @@ perona.insert = {
 	b = { bg = gpp.zombie, fg = gpp.mihawk },
 }
 perona.visual = {
-	a = { bg = gpp.sangria, fg = gpp.base },
-	b = { bg = gpp.fruit, fg = gpp.mihawk },
+	a = { bg = gpp.wonder, fg = gpp.base },
+	b = { bg = gpp.garden, fg = gpp.mihawk },
 }
 perona.replace = {
 	a = { bg = gpp.blood, fg = gpp.mihawk },
 	b = { bg = gpp.ruby, fg = gpp.ghost },
 }
 perona.terminal = {
-	a = { bg = gpp.wonder, fg = gpp.mihawk },
-	b = { bg = gpp.garden, fg = gpp.base },
+	a = { bg = gpp.sangria, fg = gpp.mihawk },
+	b = { bg = gpp.fruit, fg = gpp.base },
 }
 perona.command = {
-	a = { bg = gpp.sea, fg = gpp.base },
-	b = { bg = gpp.kumashi, fg = gpp.mihawk },
+	a = { bg = gpp.kumashi, fg = gpp.base },
+	b = { bg = gpp.sea, fg = gpp.mihawk },
 }
 
 return perona
