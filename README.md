@@ -4,8 +4,7 @@
 
 a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
 
-![horohorohorohorohoro](grim.png)
-
+<img src="grim.png" alt="negative hollow!" width="960">
 </div>
 
 ## palette
