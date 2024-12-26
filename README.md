@@ -2,6 +2,12 @@
 
 a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
 
+<div align="center">
+
+![horohorohorohorohoro](grim.png)
+
+</div>
+
 ## palette
 
 + base = `#0c030a` `#150a12` `#1c111a`
