@@ -3,12 +3,12 @@ local perona = {}
 
 perona.normal = {
 	a = { bg = gpp.wine, fg = gpp.hollow },
-	b = { bg = gpp.mihawk, fg = gpp.text },
+	b = { bg = gpp.nagashidaru, fg = gpp.text },
 	c = { bg = gpp.nightmare, fg = gpp.text },
 	x = { bg = gpp.wine, fg = gpp.ghost },
 }
 perona.inactive = {
-	c = { bg = gpp.kuraigana, fg = gpp.text },
+	c = { bg = gpp.coffin, fg = gpp.text },
 }
 perona.insert = {
 	a = { bg = gpp.surprise, fg = gpp.base },

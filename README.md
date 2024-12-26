@@ -10,7 +10,7 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 ## palette
 
 + base = `#0c030a` `#150a12` `#1c111a`
-+ accent = `#6e0c2a` `#a5123e` `#dc1853`
++ accent = `#68122c` `#9c1c42` `#b6204d`
 + text = `#fec8d5` `#a28189` `#644f54`
 + black = `#261722` `#372a34` `#160813`
 + red = `#ed1d2e` `#ff4c5b` `#cc0011`
