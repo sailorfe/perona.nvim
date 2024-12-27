@@ -1,3 +1,16 @@
+"
+" ▄▄▄·▄▄▄ .▄▄▄         ▐ ▄  ▄▄▄· 
+"▐█ ▄█▀▄.▀·▀▄ █·▪     •█▌▐█▐█ ▀█ 
+" ██▀·▐▀▀▪▄▐▀▀▄  ▄█▀▄ ▐█▐▐▌▄█▀▀█ 
+"▐█▪·•▐█▄▄▌▐█•█▌▐█▌.▐▌██▐█▌▐█ ▪▐▌
+".▀    ▀▀▀ .▀  ▀ ▀█▄▀▪▀▀ █▪ ▀  ▀ 
+"
+hi clear
+syntax reset
+set background=dark
+set t_Co=256
+let g:colors_name='perona'
+
 highlight Normal guifg=#FEC8D5 guibg=#0C030A guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#150A12 guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#A28189 guibg=NONE guisp=NONE blend=NONE gui=italic
@@ -38,7 +51,7 @@ highlight Identifier guifg=#8896C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight IncSearch guifg=#0C030A guibg=#FF5C74 guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#FF70B3 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#D573D9 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#150A12 guibg=#9C1C42 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#150A12 guibg=#932546 guisp=NONE blend=NONE gui=NONE
 highlight LineNrAbove guifg=#A28189 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link LineNrBelow LineNrAbove
 highlight MatchParen guifg=#160813 guibg=#FF8093 guisp=NONE blend=NONE gui=bold
@@ -63,7 +76,7 @@ highlight SpellCap guifg=#0C030A guibg=#FF5C74 guisp=NONE blend=NONE gui=underli
 highlight SpellLocal guifg=#0C030A guibg=#D573D9 guisp=NONE blend=NONE gui=underline
 highlight SpellRare guifg=#0C030A guibg=#8896C8 guisp=NONE blend=NONE gui=underline
 highlight Statement guifg=#D5396B guibg=NONE guisp=NONE blend=NONE gui=bold
-highlight StatusLine guifg=#F2C0CB guibg=#68122C guisp=NONE blend=NONE gui=bold
+highlight StatusLine guifg=#F2C0CB guibg=#62182F guisp=NONE blend=NONE gui=bold
 highlight StatusLineNC guifg=#A28189 guibg=#150A12 guisp=NONE blend=NONE gui=NONE
 highlight StorageClass guifg=#FF70B3 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight String guifg=#FF5C74 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -71,13 +84,11 @@ highlight Substitute guifg=#342731 guibg=#FF8093 guisp=NONE blend=NONE gui=NONE
 highlight TabLine guifg=#A28189 guibg=#1C111A guisp=NONE blend=NONE gui=NONE
 highlight TabLineFill guifg=NONE guibg=#1C111A guisp=NONE blend=NONE gui=NONE
 highlight Tag guifg=#FF5C74 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight TermCursorNC guifg=#FEC8D5 guibg=#68122C guisp=NONE blend=NONE gui=NONE
+highlight TermCursorNC guifg=#FEC8D5 guibg=#62182F guisp=NONE blend=NONE gui=NONE
 highlight Title guifg=#FEC8D5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Todo guifg=#FF5C74 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#ED1D2E guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#FCD9E1 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight WarningMsg guifg=#ED1D2E guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Winseparator guifg=#68122C guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Winseparator guifg=#62182F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight @variable guifg=#FEC8D5 guibg=NONE guisp=NONE blend=NONE gui=NONE
-set background=dark
-let g:colors_name='perona'
