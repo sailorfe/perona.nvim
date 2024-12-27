@@ -5,9 +5,9 @@ function ghost.get()
 		["base"]		= "#0c030a", --	base0
 		["kuraigana"]	= "#150a12", --	base1
 		["cocoa"]		= "#1c111a", --	base2
-		["nightmare"]	= "#68122c", --	accent0
-		["wine"]		= "#9c1c42", --	accent1
-		["nagashidaru"]	= "#b6204d", --	accent2
+		["nightmare"]	= "#62182f", --	accent0
+		["wine"]		= "#932546", --	accent1
+		["nagashidaru"]	= "#ab2b51", --	accent2
 		["text"]		= "#fec8d5", --	text0
 		["muted"]		= "#a28189", -- text1
 		["faint"]		= "#644f54", -- text2
