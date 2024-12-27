@@ -48,9 +48,9 @@ local hsl = lush.hsl
 local base0     = hsl(316, 60, 3)	-- #0c030a
 local base1     = hsl(316, 36, 6)	-- #150a12
 local base2     = hsl(316, 24, 9)	-- #1c111a
-local accent1	= hsl(342, 70, 24)	-- #68122c
+local accent0	= hsl(342, 70, 24)	-- #68122c
+local accent1	= hsl(342, 70, 60)	-- #e0527c
 local accent2	= hsl(342, 70, 36)	-- #9c1c42
-local accent3	= hsl(342, 70, 42)	-- #b6204d
 local text0     = hsl(346, 96, 89)	-- #fec8d5
 local text1     = hsl(346, 15, 57)	-- #a28189
 local text2     = hsl(346, 12, 35)	-- #644f54
@@ -110,7 +110,7 @@ local theme = lush(function(injected_functions)
     DiffText		{ fg = red1 }, -- Diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
     TermCursor     { Cursor }, -- Cursor in a focused terminal
-    TermCursorNC   { bg = accent1, fg = text0 }, -- Cursor in an unfocused terminal
+    TermCursorNC   { bg = accent0, fg = text0 }, -- Cursor in an unfocused terminal
     ErrorMsg		{ fg = red0 }, -- Error messages on the command line
     -- VertSplit      { }, -- Column separating vertically split windows
     -- Folded         { }, -- Line used for closed folds
@@ -151,7 +151,7 @@ local theme = lush(function(injected_functions)
     SpellCap		{ fg = base0, bg = yellow0, gui = "underline" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal		{ fg = base0, bg = green0, gui = "underline" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare		{ fg = base0, bg = blue0, gui = "underline" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    StatusLine		{ bg = accent1, fg = white1, gui = "bold" }, -- Status line of current window
+    StatusLine		{ bg = accent0, fg = white1, gui = "bold" }, -- Status line of current window
     StatusLineNC	{ bg = base1, fg = text1 }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine			{ fg = text1, bg = base2 }, -- Tab pages line, not active tab page label
     TabLineFill		{ bg = base2 }, -- Tab pages line, where there are no labels
@@ -161,7 +161,7 @@ local theme = lush(function(injected_functions)
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg		{ fg = red0 }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    Winseparator	{ fg = accent1 }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+    Winseparator	{ fg = accent0 }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     -- WildMenu       { }, -- Current match in 'wildmenu' completion
     -- WinBar         { }, -- Window bar of current window
     -- WinBarNC       { }, -- Window bar of not-current windows

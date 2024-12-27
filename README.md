@@ -3,19 +3,18 @@
 # perona.nvim
 a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
 
-<img src="grim.png" alt="negative hollow!" width="960">
+<img src="assets/grim.png" alt="negative hollow!" width="960">
 </div>
 
 + <a href="#palette">palette</a>
 + <a href="#installation">installation</a>
     + <a href="#lualine">lualine</a>
-+ <a href="#extras">extras</a>
 
 <a name="palette"></a>
 ## palette
 
 + base = `#0c030a` `#150a12` `#1c111a`
-+ accent = `#68122c` `#9c1c42` `#b6204d`
++ accent = `#68122c` `#e0527c` `#9c1c42`
 + text = `#fec8d5` `#a28189` `#644f54`
 + black = `#261722` `#372a34` `#160813`
 + red = `#ed1d2e` `#ff4c5b` `#cc0011`
@@ -52,28 +51,32 @@ add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` 
 <a name="lualine"></a>
 ### lualine
 
+<div align="center">
+<img src="assets/lualine-normal.png" alt="normal mode" width=960>
+<img src="assets/lualine-insert.png" alt="insert mode" width=960>
+<img src="assets/lualine-visual.png" alt="visual mode" width=960>
+<img src="assets/lualine-replace.png" alt="replace mode" width=960>
+</div>
+
 ```bash
 git clone https://codeberg.org/spica/perona.nvim.git
 cd perona.nvim
 cp -r lua/perona lua/lualine .config/nvim/lua
 ```
 
-then configure lualine to use `perona`. wih lazy, mine is:
+then configure lualine to use `perona`. with lazy:
 
 ```bash
 local perona = require'lualine.themes.perona'
 
 return {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
 	config = function()
 		require('lualine').setup {
-			options = { theme  = perona },
+			options = {
+                theme  = perona
+            },
 		}
 	end,
 }
 ```
-
-<a href="extras">extras</a>
-
-ported in classic vimscript, foot, and wezterm, to be added soon.
