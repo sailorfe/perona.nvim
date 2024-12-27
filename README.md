@@ -58,6 +58,8 @@ add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` 
 <img src="assets/lualine-replace.png" alt="replace mode" width=960>
 </div>
 
+clone this repo and copy `lua/lualine` and `lua/perona` to your `.config/lua` directory.
+
 ```bash
 git clone https://codeberg.org/spica/perona.nvim.git
 cd perona.nvim
