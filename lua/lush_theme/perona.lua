@@ -45,39 +45,39 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base0     = hsl(316, 60, 3)	-- #0c030a	base
-local base1     = hsl(316, 36, 6)	-- #150a12	kuraigana
-local base2     = hsl(316, 24, 9)	-- #1c111a	cocoa
-local accent1	= hsl(342, 70, 24)	-- #68122c	nightmare
-local accent2	= hsl(342, 70, 36)	-- #9c1c42	wine
-local accent3	= hsl(342, 70, 42)	-- #b6204d	nagashidaru
-local text0     = hsl(346, 96, 89)	-- #fec8d5	text
+local base0     = hsl(316, 60, 3)	-- #0c030a
+local base1     = hsl(316, 36, 6)	-- #150a12
+local base2     = hsl(316, 24, 9)	-- #1c111a
+local accent1	= hsl(342, 70, 24)	-- #68122c
+local accent2	= hsl(342, 70, 36)	-- #9c1c42
+local accent3	= hsl(342, 70, 42)	-- #b6204d
+local text0     = hsl(346, 96, 89)	-- #fec8d5
 local text1     = hsl(346, 15, 57)	-- #a28189
 local text2     = hsl(346, 12, 35)	-- #644f54
-local black0    = hsl(316, 24, 12)	-- #261722	mihawk
-local black1    = hsl(316, 14, 18)	-- #372a34	dracule
-local black2    = hsl(316, 47, 6)	-- #160813	coffin
-local red0      = hsl(355, 85, 52)	-- #ed1d2e	blood
+local black0    = hsl(316, 24, 12)	-- #261722
+local black1    = hsl(316, 14, 18)	-- #372a34
+local black2    = hsl(316, 47, 6)	-- #160813
+local red0      = hsl(355, 85, 52)	-- #ed1d2e
 local red1      = hsl(355, 100, 65)	-- #ff4c5b
-local red2		= hsl(355, 100, 40)	-- #cc0011	ruby
-local green0    = hsl(298, 57, 65)	-- #d573d9	wonder
+local red2		= hsl(355, 100, 40)	-- #cc0011
+local green0    = hsl(298, 57, 65)	-- #d573d9
 local green1    = hsl(298, 93, 78)	-- #f893fb
-local green2	= hsl(298, 60, 50)	-- #c733cc	garden
-local yellow0   = hsl(351, 100, 68)	-- #ff5c74	sangria
+local green2	= hsl(298, 60, 50)	-- #c733cc
+local yellow0   = hsl(351, 100, 68)	-- #ff5c74
 local yellow1   = hsl(351, 100, 75)	-- #ff8093
-local yellow2	= hsl(351, 96, 60)	-- #fb3754	fruit
-local blue0     = hsl(227, 37, 66)	-- #8896c8	kumashi
+local yellow2	= hsl(351, 96, 60)	-- #fb3754
+local blue0     = hsl(227, 37, 66)	-- #8896c8
 local blue1     = hsl(227, 61, 79)	-- #a9b7ea
-local blue2		= hsl(227, 48, 60)	-- #687dca	sea
-local magenta0  = hsl(332, 100, 72)	-- #ff70b3	surprise
-local magenta1  = hsl(332, 100, 79)	-- #ff94c6	zombie
+local blue2		= hsl(227, 48, 60)	-- #687dca
+local magenta0  = hsl(332, 100, 72)	-- #ff70b3
+local magenta1  = hsl(332, 100, 79)	-- #ff94c6
 local magenta2	= hsl(332, 98, 60)	-- #fd3592
-local cyan0     = hsl(341, 65, 53)	-- #d5396b	jam
-local cyan1     = hsl(341, 94, 67)	-- #fa5c8e	berry
+local cyan0     = hsl(341, 65, 53)	-- #d5396b
+local cyan1     = hsl(341, 94, 67)	-- #fa5c8e
 local cyan2		= hsl(341, 70, 48)	-- #cc2549
-local white0    = hsl(346, 42, 78)	-- #deafba	ghost
+local white0    = hsl(346, 42, 78)	-- #deafba
 local white1    = hsl(346, 65, 85)	-- #f2c0cb
-local white2    = hsl(346, 84, 92)	-- #fcd9e1	hollow
+local white2    = hsl(346, 84, 92)	-- #fcd9e1
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -118,7 +118,7 @@ local theme = lush(function(injected_functions)
     SignColumn		{ bg = base0 }, -- Column where |signs| are displayed
     IncSearch		{ bg = yellow0, fg = base0 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute		{ bg = yellow1, fg = black1 }, -- |:substitute| replacement text highlighting
-    LineNr			{ fg = black2, bg = accent2 }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr			{ fg = base1, bg = accent2 }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     LineNrAbove		{ fg = text1 }, -- Line number for when the 'relativenumber' option is set, above the cursor line
 	LineNrBelow		{ LineNrAbove }, -- Line number for when the 'relativenumber' option is set, below the cursor line
     CursorLineNr	{ fg = blue0, gui = "bold" }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
