@@ -48,19 +48,19 @@ local hsl = lush.hsl
 local base00 = hsl(316, 60, 4)
 local base01 = hsl(316, 48, 8)
 local base02 = hsl(316, 36, 12)
-local base03 = hsl(316, 12, 60)
-local base04 = hsl(316, 12, 36)
-local base05 = hsl(327, 24, 72)
-local base06 = hsl(327, 24, 84)
+local base03 = hsl(316, 12, 48)
+local base04 = hsl(316, 18, 36)
+local base05 = hsl(316, 100, 90)
+local base06 = hsl(316, 100, 96)
 local base07 = hsl(315, 24, 24)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(336, 50, 50)
+local base0B = hsl(336, 48, 48)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(336, 60, 60)
+local base0F = hsl(336, 60, 54)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -132,7 +132,7 @@ local theme = lush(function(injected_functions)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    StatusLine     { bg = base01, fg = base05 gui = "italic" },
+		StatusLine     { bg = base01, fg = base05, gui = "italic" },
     StatusLineNC   { bg = base00, fg = base04 },
     TabLine        { bg = base01, fg = base03 }, -- Tab pages line, not active tab page label
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
