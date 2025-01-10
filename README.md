@@ -18,16 +18,22 @@ you're viewing **perona 16**, simplified and poppier. [switch branches](https://
 <a name="palette"></a>
 ## palette
 
-|         |                     |
-| ------- | ------------------- |
-| black   | `#10040d` `#261722` |
-| red     | `#e11428` `#ef4354` |
-| green   | `#d574dc` `#dd8de2` |
-| yellow  | `#fc738e` `#fd91a7` |
-| blue    | `#6896ca` `#95b5da` |
-| magneta | `#c4315d` `#d0436e` |
-| cyan    | `#f15fa8` `#f47cb8` |
-| white   | `#896c72` `#fecdd7` |
+- base00: `#191017`
+- base01: `#251822`
+- base02: `#30212c`
+- base03: `#896c81`
+- base04: `#6c4b64`
+- base05: `#fdcce0`
+- base06: `#ffe0ed`
+- base07: `#4c2f44`
+- base08: `#d32246`
+- base09: `#b374be`
+- base0a: `#5cb1d6`
+- base0b: `#b54071`
+- base0c: `#d86e7a`
+- base0d: `#da95d6`
+- base0e: `#95bdda`
+- base0f: `#d65c8f`
 
 <a name="installation"></a>
 ## installation
