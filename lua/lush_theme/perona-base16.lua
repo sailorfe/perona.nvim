@@ -45,22 +45,22 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(336, 36, 6)
-local base01 = hsl(336, 30, 9)
-local base02 = hsl(336, 24, 12)
-local base03 = hsl(336, 12, 48)
-local base04 = hsl(336, 18, 36)
-local base05 = hsl(336, 100, 90)
-local base06 = hsl(336, 100, 94)
-local base07 = hsl(336, 24, 24)
+local base00 = hsl(316, 24, 8)
+local base01 = hsl(316, 24, 12)
+local base02 = hsl(316, 24, 16)
+local base03 = hsl(316, 8, 48)
+local base04 = hsl(316, 12, 36)
+local base05 = hsl(328, 72, 90)
+local base06 = hsl(328, 60, 96)
+local base07 = hsl(336, 18, 20)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(336, 48, 48)
+local base0B = hsl(336, 60, 60)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(336, 60, 60)
+local base0F = hsl(331, 90, 72)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -132,9 +132,9 @@ local theme = lush(function(injected_functions)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine     { bg = base01, fg = base05, gui = "italic" },
-    StatusLineNC   { bg = base00, fg = base04 },
-    TabLine        { bg = base01, fg = base03 }, -- Tab pages line, not active tab page label
+		StatusLine     { bg = base0B, fg = base05, gui = "italic" },
+    StatusLineNC   { bg = base01, fg = base04 },
+    TabLine        { bg = base02, fg = base03 }, -- Tab pages line, not active tab page label
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
     TabLineSel     { bg = base01, fg = base0B }, -- Tab pages line, active tab page label
     Title          { fg = base0D }, -- Titles for output from ":set all", ":autocmd" etc.
