@@ -45,22 +45,22 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(316, 24, 8)
-local base01 = hsl(316, 21, 12)
-local base02 = hsl(316, 18, 16)
-local base03 = hsl(316, 12, 48)
-local base04 = hsl(316, 18, 36)
+local base00 = hsl(336, 36, 6)
+local base01 = hsl(336, 30, 9)
+local base02 = hsl(336, 24, 12)
+local base03 = hsl(336, 12, 48)
+local base04 = hsl(336, 18, 36)
 local base05 = hsl(336, 100, 90)
 local base06 = hsl(336, 100, 94)
-local base07 = hsl(316, 24, 24)
+local base07 = hsl(336, 24, 24)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(335, 48, 48)
+local base0B = hsl(336, 48, 48)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(335, 60, 60)
+local base0F = hsl(336, 60, 60)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
