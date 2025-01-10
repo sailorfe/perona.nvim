@@ -45,22 +45,22 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(316, 60, 4)
-local base01 = hsl(316, 48, 8)
-local base02 = hsl(316, 36, 12)
-local base03 = hsl(316, 12, 36)
-local base04 = hsl(316, 18, 30)
+local base00 = hsl(316, 24, 8)
+local base01 = hsl(316, 21, 12)
+local base02 = hsl(316, 18, 16)
+local base03 = hsl(316, 12, 48)
+local base04 = hsl(316, 18, 36)
 local base05 = hsl(336, 100, 90)
 local base06 = hsl(336, 100, 94)
-local base07 = hsl(315, 24, 24)
+local base07 = hsl(316, 24, 24)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(330, 48, 48)
+local base0B = hsl(335, 48, 48)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(340, 60, 60)
+local base0F = hsl(335, 60, 60)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -88,12 +88,12 @@ local theme = lush(function(injected_functions)
     CursorLine     { bg = base02 },
     Directory      { fg = base0D },
     DiffAdd        { bg = base0B, fg = base01 },
-    DiffChange     { bg = base03, fg = base01 },
+    DiffChange     { bg = base07, fg = base06 },
     DiffDelete     { bg = base08, fg = base01 },
     DiffText       { bg = base0D, fg = base01 },
     EndOfBuffer    { fg = base03 },
     TermCursor     { Cursor },
-    TermCursorNC   { bg = base03, fg = base00 },
+    TermCursorNC   { bg = base03, fg = base05 },
     ErrorMsg       { fg = base08 },
     VertSplit      { fg = base0B },
     Folded         { bg = base01, fg = base03 },
@@ -105,7 +105,7 @@ local theme = lush(function(injected_functions)
     CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
-    MatchParen     { bg = base03 },
+    MatchParen     { bg = base07 },
     ModeMsg        { fg = base0B },
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -118,12 +118,12 @@ local theme = lush(function(injected_functions)
     -- NormalNC       { }, -- normal text in non-current windows
     Pmenu          { bg = base01, fg = base05 }, -- Popup menu: Normal item.
     PmenuSel       { bg = base05, fg = base01 }, -- Popup menu: Selected item.
-    -- PmenuKind      { }, -- Popup menu: Normal item "kind"
-    -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
-    -- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
-    -- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-    -- PmenuSbar      { }, -- Popup menu: Scrollbar.
-    -- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
+    PmenuKind      { Pmenu }, -- Popup menu: Normal item "kind"
+    PmenuKindSel   { PmenuSel }, -- Popup menu: Selected item "kind"
+    PmenuExtra     { Pmenu }, -- Popup menu: Normal item "extra text"
+    PmenuExtraSel  { PmenuSel }, -- Popup menu: Selected item "extra text"
+    PmenuSbar      { fg = base02 }, -- Popup menu: Scrollbar.
+    PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
     Question       { fg = base0E } , -- |hit-enter| prompt and yes/no questions
     QuickFixLine   { fg= base0E }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search         { bg = base0C, fg = base06 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
