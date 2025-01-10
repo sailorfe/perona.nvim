@@ -56,11 +56,11 @@ local base07 = hsl(315, 16, 24)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(335, 50, 50)
+local base0B = hsl(330, 50, 50)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(335, 60, 60)
+local base0F = hsl(340, 60, 60)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -155,7 +155,7 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment        { fg = base03 }, -- Any comment
+    Comment        { fg = base03, gui = "italic" }, -- Any comment
 
     Constant       { fg = base09 }, -- (*) Any constant
     String         { fg = base0B }, --   A string constant: "this is a string"
@@ -291,7 +291,7 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    -- sym"@variable"          { }, -- Identifier
+    sym"@variable"          { fg = base05 }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
