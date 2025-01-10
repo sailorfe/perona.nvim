@@ -45,22 +45,22 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(315, 16, 6)
-local base01 = hsl(315, 16, 9)
-local base02 = hsl(315, 16, 12)
-local base03 = hsl(315, 8, 48)
-local base04 = hsl(315, 12, 36)
-local base05 = hsl(327, 20, 72)
-local base06 = hsl(327, 36, 84)
-local base07 = hsl(315, 16, 24)
+local base00 = hsl(316, 60, 4)
+local base01 = hsl(316, 48, 8)
+local base02 = hsl(316, 36, 12)
+local base03 = hsl(316, 12, 60)
+local base04 = hsl(316, 12, 36)
+local base05 = hsl(327, 24, 72)
+local base06 = hsl(327, 24, 84)
+local base07 = hsl(315, 24, 24)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
-local base0B = hsl(330, 50, 50)
+local base0B = hsl(336, 50, 50)
 local base0C = hsl(353, 58, 64)
 local base0D = hsl(303, 48, 72)
 local base0E = hsl(205, 48, 72)
-local base0F = hsl(340, 60, 60)
+local base0F = hsl(336, 60, 60)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -132,7 +132,7 @@ local theme = lush(function(injected_functions)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    StatusLine     { bg = base01, fg = base05 },
+    StatusLine     { bg = base01, fg = base05 gui = "italic" },
     StatusLineNC   { bg = base00, fg = base04 },
     TabLine        { bg = base01, fg = base03 }, -- Tab pages line, not active tab page label
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
