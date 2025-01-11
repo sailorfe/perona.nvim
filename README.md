@@ -14,7 +14,7 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 
 <img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
 
-<img src="assets/658-crop.jpeg" align="right" width="240px" alt="chapter 658">
+<img src="assets/658-crop.jpeg" align="right" width="480px" alt="chapter 658">
 
 <a name="palette"></a>
 ## palette
