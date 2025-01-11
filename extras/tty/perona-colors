@@ -1,7 +1,7 @@
 # -*- tty colors
 if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P0191017" #black
-	echo -en "\e]P1a11735" #darkred
+	echo -en "\e]P1b31a3b" #darkred
 	echo -en "\e]P2b374be" #darkgreen
 	echo -en "\e]P3e65667" #brown
 	echo -en "\e]P45cb1d6" #darkblue
