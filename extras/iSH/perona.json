@@ -10,7 +10,7 @@
 			"#5cb1d6",
 			"#b54073",
 			"#e2509b",
-			"#b78a9c",
+			"#84717f",
 			"#4c2f44",
 			"#d32246",
 			"#da95d6",
@@ -18,10 +18,10 @@
 			"#95bdda",
 			"#d65c8d",
 			"#f877b5",
-			"#f8d3e7"
+			"#c9a6b9"
 		],
-		"cursorColor": "#f8d3e7",
-		"foregroundColor": "#f8d3e7"
+		"cursorColor": "#c9a6b9",
+		"foregroundColor": "#c9a6b9"
 	},
 	"version": 1
 }

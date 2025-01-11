@@ -30,9 +30,9 @@ for vim interface and syntax
 | `#331f2d` | `#5cb1d6` |
 | `#84717f` | `#d65c8d` |
 | `#675161` | `#eb8490` |
-| `#f8d3e7` | `#da95d6` |
-| `#fbeff5` | `#95bdda` |
-| `#3c2a31` | `#f877b5` |
+| `#c9a6b9` | `#da95d6` |
+| `#e0ccd8` | `#95bdda` |
+| `#3f2739` | `#f877b5` |
 
 ### ansi
 
