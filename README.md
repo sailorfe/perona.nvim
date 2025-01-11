@@ -17,6 +17,8 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 
 ### base16
 
+for vim interface and syntax
+
 | shades    | accents   |
 | --------- | --------- |
 | `#191017` | `#d32246` |
@@ -29,6 +31,8 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 | `#3c2a31` | `#f877b5` |
 
 ### ansi
+
+for terminal compatibility
 
 | ansi      | bright    |
 | --------- | --------- |
