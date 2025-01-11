@@ -24,8 +24,7 @@
 --       (This is a lua quirk, as it has somewhat poor support for namespacing.)
 --
 --       Basically, name your file,
---
---       "super_theme/lua/lush_theme/super_theme_dark.lua",
+-- "super_theme/lua/lush_theme/super_theme_dark.lua",
 --
 --       not,
 --
@@ -48,11 +47,11 @@ local hsl = lush.hsl
 local base00 = hsl(316, 24, 8)
 local base01 = hsl(316, 24, 12)
 local base02 = hsl(316, 24, 16)
-local base03 = hsl(316, 8, 48)
+local base03 = hsl(316, 12, 48)
 local base04 = hsl(316, 12, 36)
 local base05 = hsl(328, 72, 90)
 local base06 = hsl(328, 60, 96)
-local base07 = hsl(336, 18, 20)
+local base07 = hsl(316, 24, 20)
 local base0A = hsl(291, 36, 60)
 local base09 = hsl(198, 60, 60)
 local base08 = hsl(348, 72, 48)
@@ -77,7 +76,7 @@ local theme = lush(function(injected_functions)
     -- to reorder items as you go.
     --
     -- See :h highlight-groups
-    --
+    --		
     ColorColumn    { bg = base01 },
     Conceal        { bg = base00, fg = base0D },
     Cursor         { bg = base05, fg = base00 },
@@ -91,7 +90,7 @@ local theme = lush(function(injected_functions)
     DiffChange     { bg = base07, fg = base06 },
     DiffDelete     { bg = base08, fg = base01 },
     DiffText       { bg = base0D, fg = base01 },
-    EndOfBuffer    { fg = base03 },
+    EndOfBuffer    { fg = base0D },
     TermCursor     { Cursor },
     TermCursorNC   { bg = base03, fg = base05 },
     ErrorMsg       { fg = base08 },
@@ -126,7 +125,7 @@ local theme = lush(function(injected_functions)
     PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
     Question       { fg = base0E } , -- |hit-enter| prompt and yes/no questions
     QuickFixLine   { fg= base0E }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search         { bg = base0C, fg = base06 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    Search         { bg = base0C, fg = base02 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     -- SpecialKey     { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad       { fg = base08, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap       { fg = base0C, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -138,7 +137,7 @@ local theme = lush(function(injected_functions)
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
     TabLineSel     { bg = base01, fg = base0B }, -- Tab pages line, active tab page label
     Title          { fg = base0D }, -- Titles for output from ":set all", ":autocmd" etc.
-    Visual         { bg = base02, fg = base06 },
+    Visual         { bg = base07, fg = base06 },
     VisualNOS      { fg = base08 }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg     { fg = base08 }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
