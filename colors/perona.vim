@@ -1,14 +1,12 @@
 "
-"█ ▄▄  ▄███▄   █▄▄▄▄ ████▄    ▄   ██
-"█   █ █▀   ▀  █  ▄▀ █   █     █  █ █
-"█▀▀▀  ██▄▄    █▀▀▌  █   █ ██   █ █▄▄█
-"█     █▄   ▄▀ █  █  ▀████ █ █  █ █  █
-" █    ▀███▀     █         █  █ █    █
-"  ▀            ▀          █   ██   █
-"                                  ▀
+" ▄▀▀▄▀▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄ ▀▄  ▄▀▀█▄
+"█   █   █ ▐  ▄▀   ▐ █   █   █ █      █ █  █ █ █ ▐ ▄▀ ▀▄
+"▐  █▀▀▀▀    █▄▄▄▄▄  ▐  █▀▀█▀  █      █ ▐  █  ▀█   █▄▄▄█
+"   █        █    ▌   ▄▀    █  ▀▄    ▄▀   █   █   ▄▀   █
+" ▄▀        ▄▀▄▄▄▄   █     █     ▀▀▀▀   ▄▀   █   █   ▄▀
+"█          █    ▐   ▐     ▐            █    ▐   ▐   ▐
+"▐          ▐                           ▐
 "
-set background=dark
-let g:colors_name="perona"
 highlight Normal guifg=#F8D3E7 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Boolean guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Character guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -77,7 +75,10 @@ highlight! link CursorLineSign SignColumn
 highlight Special guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialChar guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialComment guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight SpellBad guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=underline
+highlight SpellBad guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellCap guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellRare guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight StatusLine guifg=#F8D3E7 guibg=#261722 guisp=NONE blend=NONE gui=italic
 highlight StatusLineNC guifg=#675161 guibg=#191017 guisp=NONE blend=NONE gui=NONE
@@ -102,4 +103,5 @@ highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WarningMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WildMenu guifg=#D32246 guibg=#FBEFF5 guisp=NONE blend=NONE gui=NONE
 highlight @variable guifg=#F8D3E7 guibg=NONE guisp=NONE blend=NONE gui=NONE
-
+set background=dark
+let g:colors_name="perona"
