@@ -1,0 +1,29 @@
+{
+	"name": "perona",
+	"shared": {
+		"backgroundColor": "#191017",
+		"colorPaletteOverrides": [
+			"#261722",
+			"#d32246",
+			"#b374be",
+			"#d86e7a",
+			"#6cb1d6",
+			"#b54071",
+			"#d65c8f",
+			"#b78a9c",
+			"#4c2f44",
+			"#e34f6d",
+			"#da95d6",
+			"#e18e98",
+			"#95bdda",
+			"#ca6891",
+			"#e28db0",
+			"#fdcce0"
+		],
+		"cursorColor": "#fdcce0",
+		"foregroundColor": "#fdcce0"
+	},
+	"version": 1
+}
+
+
