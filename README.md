@@ -26,7 +26,7 @@ for vim interface and syntax
 | shades    | accents   |
 | --------- | --------- |
 | `#191017` | `#d32246` |
-| `#261822` | `#b374be` |
+| `#261722` | `#b374be` |
 | `#331f2d` | `#5cb1d6` |
 | `#84717f` | `#d65c8d` |
 | `#675161` | `#eb8490` |
@@ -40,13 +40,14 @@ for terminal compatibility
 
 | ansi      | bright    |
 | --------- | --------- |
-| `#261822` | `#331f2d` |
+| `#261722` | `#331f2d` |
 | `#b31a3b` | `#d32246` |
 | `#b374be` | `#da95d5` |
 | `#e65667` | `#eb8490` |
 | `#5cb1d6` | `#95bdda` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
+| `#84717f` | `#c9a6b9` |
 
 <a name="installation"></a>
 ## installation
