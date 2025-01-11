@@ -2,11 +2,9 @@
 
 # perona.nvim
 
-a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/) in 24- and 16-bit flavors for portability.
+a base16 colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
 
-you're viewing **perona 16**, simplified and poppier. [switch branches](https://codeberg.org/spica/perona.nvim/src/branch/24-bit) to see perona 24.
-
-<img src="assets/grim-16.png" alt="16-bit" width="960">
+<img src="assets/grim.png" alt="perona" width="960">
 
 </div>
 
@@ -27,30 +25,30 @@ you're viewing **perona 16**, simplified and poppier. [switch branches](https://
 - base07: `#3c2a31`
 - base08: `#d32246`
 - base09: `#b374be`
-- base0a: `#5cb1d6`
-- base0b: `#b54071`
-- base0c: `#d86e7a`
-- base0d: `#da95d6`
-- base0e: `#95bdda`
-- base0f: `#d65c8f`
+- base0A: `#5cb1d6`
+- base0B: `#b54071`
+- base0C: `#d86e7a`
+- base0D: `#da95d6`
+- base0E: `#95bdda`
+- base0F: `#d65c8f`
 
 <a name="installation"></a>
 ## installation
 
 ### easy option: vimscript
 
-copy `colors/perona16.vim` to `.config/nvim/colors`.
+copy `colors/perona.vim` to `.config/nvim/colors`.
 
 `init.lua`:
 
 ```lua
-vim.cmd("colorscheme perona16")
+vim.cmd("colorscheme perona")
 ```
 
 `init.vim` or `.vimrc`:
 
 ```vimscript
-colorscheme perona16
+colorscheme perona
 ```
 
 ### customizable option: lush
@@ -66,14 +64,14 @@ then configure lush.nvim for your package manager. if you use lazy:
 ```lua
 return {
     "rktjmp/lushnvim",
-    { dir = '/absolute/path/to/perona16.nvim', lazy = true },
+    { dir = '/absolute/path/to/perona.nvim', lazy = true },
     config = function()
         require 'lush'.setup()
     end,
 }
 ```
 
-add `vim.cmd("colorscheme perona16")` to your `init.lua`, or `colorscheme perona16` to `init.vim`.
+add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` to `init.vim`.
 
 <a name="extras"></a>
 ## extras
