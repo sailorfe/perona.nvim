@@ -12,12 +12,10 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 + <a href="#installation">installation</a>
 + <a href="extras">extras</a>
 
-<img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
-
-<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
-
 <a name="palette"></a>
 ## palette
+
+<img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
 
 ### base16
 
@@ -33,6 +31,8 @@ for vim interface and syntax
 | `#c9a6b9` | `#da95d6` |
 | `#e0ccd8` | `#95bdda` |
 | `#3f2739` | `#f877b5` |
+
+<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
 
 ### ansi
 
