@@ -15,22 +15,30 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 <a name="palette"></a>
 ## palette
 
-- base00: `#191017`
-- base01: `#261822`
-- base02: `#331f2d`
-- base03: `#84717f`
-- base04: `#675161`
-- base05: `#f8d3e7`
-- base06: `#fbeff5`
-- base07: `#3c2a31`
-- base08: `#d32246`
-- base09: `#b374be`
-- base0A: `#5cb1d6`
-- base0B: `#b54071`
-- base0C: `#d86e7a`
-- base0D: `#da95d6`
-- base0E: `#95bdda`
-- base0F: `#d65c8f`
+### base16
+
+| shades    | accents   |
+| --------- | --------- |
+| `#191017` | `#d32246` |
+| `#261822` | `#b374be` |
+| `#331f2d` | `#5cb1d6` |
+| `#84717f` | `#d65c8d` |
+| `#675161` | `#eb8490` |
+| `#f8d3e7` | `#da95d6` |
+| `#fbeff5` | `#95bdda` |
+| `#3c2a31` | `#f877b5` |
+
+### ansi
+
+| ansi      | bright    |
+| --------- | --------- |
+| `#261822` | `#331f2d` |
+| `#b31a3b` | `#d32246` |
+| `#b374be` | `#da95d5` |
+| `#e65667` | `#eb8490` |
+| `#5cb1d6` | `#95bdda` |
+| `#b54073` | `#d65c8d` |
+| `#e2509b` | `#f877b5` |
 
 <a name="installation"></a>
 ## installation
@@ -56,7 +64,6 @@ because i honestly don't know lua well enough, a lua-compatible, non-lush export
 
 ```bash
 git clone https://codeberg.org/spica/perona.nvim.git
-git checkout 16-bit
 ```
 
 then configure lush.nvim for your package manager. if you use lazy:
@@ -77,4 +84,3 @@ add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` 
 ## extras
 
 ports for [foot](https://codeberg.org/dnkl/foot) and [iSH](https://github.com/ish-app/ish) can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
-

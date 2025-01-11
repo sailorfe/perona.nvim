@@ -1,11 +1,11 @@
 "
-" ▄▀▀▄▀▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄ ▀▄  ▄▀▀█▄
-"█   █   █ ▐  ▄▀   ▐ █   █   █ █      █ █  █ █ █ ▐ ▄▀ ▀▄
-"▐  █▀▀▀▀    █▄▄▄▄▄  ▐  █▀▀█▀  █      █ ▐  █  ▀█   █▄▄▄█
-"   █        █    ▌   ▄▀    █  ▀▄    ▄▀   █   █   ▄▀   █
-" ▄▀        ▄▀▄▄▄▄   █     █     ▀▀▀▀   ▄▀   █   █   ▄▀
-"█          █    ▐   ▐     ▐            █    ▐   ▐   ▐
-"▐          ▐                           ▐
+"█ ▄▄  ▄███▄   █▄▄▄▄ ████▄    ▄   ██   
+"█   █ █▀   ▀  █  ▄▀ █   █     █  █ █  
+"█▀▀▀  ██▄▄    █▀▀▌  █   █ ██   █ █▄▄█ 
+"█     █▄   ▄▀ █  █  ▀████ █ █  █ █  █ 
+" █    ▀███▀     █         █  █ █    █ 
+"  ▀            ▀          █   ██   █  
+"                                  ▀   
 "
 highlight Normal guifg=#F8D3E7 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Boolean guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -27,7 +27,7 @@ highlight Delimiter guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticError guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticHint guifg=#84717F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticInfo guifg=#F8D3E7 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight DiagnosticOk guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticOk guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticWarn guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiffAdd guifg=#261722 guibg=#D65C8D guisp=NONE blend=NONE gui=NONE
 highlight DiffChange guifg=#FBEFF5 guibg=#3C2A31 guisp=NONE blend=NONE gui=NONE
@@ -39,7 +39,7 @@ highlight Error guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ErrorMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Exception guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Float guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight FoldColumn guifg=#D86E7A guibg=#261722 guisp=NONE blend=NONE gui=NONE
+highlight FoldColumn guifg=#EB8490 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineFold FoldColumn
 highlight Folded guifg=#84717F guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link SignColumn Folded
@@ -70,13 +70,13 @@ highlight PreProc guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Question guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight QuickFixLine guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Repeat guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Search guifg=#FBEFF5 guibg=#D86E7A guisp=NONE blend=NONE gui=NONE
+highlight Search guifg=#FBEFF5 guibg=#EB8490 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineSign SignColumn
-highlight Special guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Special guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialChar guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialComment guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpellBad guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=undercurl
-highlight SpellCap guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
