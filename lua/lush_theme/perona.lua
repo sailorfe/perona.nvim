@@ -193,7 +193,7 @@ local theme = lush(function(injected_functions)
     SpecialComment { fg = base0E}, --   Special things inside a comment (e.g. '\n')
     Debug          { fg = base08 }, --   Debugging statements
 
-    Underlined     { fg = base0C,  gui = "underline" }, -- Text that stands out, HTML links
+    Underlined     { fg = base08,  gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
     Error          { fg = base08 }, -- Any erroneous construct
     Todo           { bg = base01, fg = base0A }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX

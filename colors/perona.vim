@@ -94,7 +94,7 @@ highlight Title guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Todo guifg=#B374BE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Underlined guifg=#D86E7A guibg=NONE guisp=NONE blend=NONE gui=underline
+highlight Underlined guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight VertSplit guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
 highlight Visual guifg=#FBEFF5 guibg=#331F2D guisp=NONE blend=NONE gui=NONE
