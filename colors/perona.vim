@@ -102,6 +102,5 @@ highlight Visual guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WarningMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WildMenu guifg=#D32246 guibg=#E5C8D7 guisp=NONE blend=NONE gui=NONE
-highlight @variable guifg=#DBB3C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 set background=dark
 let g:colors_name="perona"
