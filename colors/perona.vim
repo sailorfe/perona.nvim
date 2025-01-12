@@ -8,14 +8,14 @@
 "	                                   ▀   
 "
 highlight Normal guifg=#DBB3C8 guibg=#191017 guisp=NONE blend=NONE gui=NONE
-highlight Boolean guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Boolean guifg=#5F98B4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Character guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight Conceal guifg=#DA95D6 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Conditional guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Constant guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight CurSearch guifg=#261722 guibg=#5CB1D6 guisp=NONE blend=NONE gui=NONE
+highlight Constant guifg=#5F98B4 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight CurSearch guifg=#261722 guibg=#5F98B4 guisp=NONE blend=NONE gui=NONE
 highlight Cursor guifg=#191017 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorColumn Cursor
 highlight! link TermCursor Cursor
@@ -28,7 +28,7 @@ highlight DiagnosticError guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NON
 highlight DiagnosticHint guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticInfo guifg=#DBB3C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticOk guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight DiagnosticWarn guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticWarn guifg=#5F98B4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiffAdd guifg=#261722 guibg=#D65C8D guisp=NONE blend=NONE gui=NONE
 highlight DiffChange guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight DiffDelete guifg=#261722 guibg=#D32246 guisp=NONE blend=NONE gui=NONE
@@ -38,14 +38,14 @@ highlight EndOfBuffer guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Error guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ErrorMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Exception guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Float guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Float guifg=#5F98B4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight FoldColumn guifg=#EB8490 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineFold FoldColumn
 highlight Folded guifg=#896C81 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link SignColumn Folded
 highlight Function guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight IncSearch guifg=#261722 guibg=#5CB1D6 guisp=NONE blend=NONE gui=NONE
+highlight IncSearch guifg=#261722 guibg=#5F98B4 guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -55,7 +55,7 @@ highlight MatchParen guifg=NONE guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link MoreMsg ModeMsg
 highlight NonText guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Number guifg=#5CB1D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Number guifg=#5F98B4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Operator guifg=#DBB3C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Pmenu guifg=#DBB3C8 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtra Pmenu

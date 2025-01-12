@@ -4,7 +4,7 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P1b31a3b" #darkred
 	echo -en "\e]P2b374be" #darkgreen
 	echo -en "\e]P3e65667" #brown
-	echo -en "\e]P45cb1d6" #darkblue
+	echo -en "\e]P45f98b4" #darkblue
 	echo -en "\e]P5b54073" #darkmagenta
 	echo -en "\e]P6e2509b" #darkcyan
 	echo -en "\e]P7ab87a2" #lightgrey
