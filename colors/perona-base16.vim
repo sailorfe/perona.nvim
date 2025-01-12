@@ -7,7 +7,7 @@
 "   ▀            ▀  BASE16  █   ██   █  
 "	                                   ▀   
 "
-"highlight Normal guifg=#DBB3C8 guibg=#191017 guisp=NONE blend=NONE gui=NONE
+highlight Normal guifg=#DBB3C8 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Boolean guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Character guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#261722 guisp=NONE blend=NONE gui=NONE
