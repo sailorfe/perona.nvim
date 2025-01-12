@@ -27,7 +27,7 @@ for vim interface and syntax
 | `#261722` | `#5cb1d6` |
 | `#331f2d` | `#d32246` |
 | `#846c81` | `#d65c8d` |
-| `#785e71` | `#eb8490` |
+| `#ab87a2` | `#eb8490` |
 | `#dbb3c8` | `#da95d6` |
 | `#e5c8d7` | `#95bdda` |
 | `#3f2739` | `#f877b5` |
@@ -47,7 +47,7 @@ for terminal compatibility
 | `#5cb1d6` | `#95bdda` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
-| `#c9a6b9` | `#e0ccd8` |
+| `#ab87a2` | `#dbb3c8` |
 
 <a name="installation"></a>
 ## installation
