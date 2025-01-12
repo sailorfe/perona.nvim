@@ -49,7 +49,7 @@ highlight IncSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#331F2D guibg=#D65C8D guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#331F2D guibg=#BC3878 guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -80,8 +80,8 @@ highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight StatusLine guifg=#AB87A2 guibg=#261722 guisp=NONE blend=NONE gui=italic
-highlight StatusLineNC guifg=#896C81 guibg=#191017 guisp=NONE blend=NONE gui=NONE
+highlight StatusLine guifg=#DBB3C8 guibg=#8D2A5A guisp=NONE blend=NONE gui=italic
+highlight StatusLineNC guifg=#896C81 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight StorageClass guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight String guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Structure guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -96,7 +96,7 @@ highlight Todo guifg=#6AA2BE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight VertSplit guifg=#B54073 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight VertSplit guifg=#8D2A5A guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
 highlight Visual guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -104,4 +104,3 @@ highlight WarningMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WildMenu guifg=#B3193B guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
 set background=dark
 let g:colors_name="perona"
-

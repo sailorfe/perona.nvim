@@ -2,7 +2,7 @@
 
 # perona.nvim
 
-a base16 colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
+a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/) in standard and base16 flavors.
 
 <img src="assets/grim.png" alt="perona" width="960">
 
@@ -16,10 +16,6 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 ## palette
 
 <img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
-
-### ansi
-
-for terminal compatibility
 
 | ansi      | bright    |
 | --------- | --------- |
@@ -54,18 +50,18 @@ for vim highlights
 
 ### easy option: vimscript
 
-copy `colors/perona.vim` to `.config/nvim/colors`.
+copy your preferred flavor from `colors` to `.config/nvim/colors`.
 
 `init.lua`:
 
 ```lua
-vim.cmd("colorscheme perona")
+vim.cmd("colorscheme perona") -- or vim.cmd("colorscheme perona-base16")
 ```
 
 `init.vim` or `.vimrc`:
 
 ```vimscript
-colorscheme perona
+colorscheme perona " or colorscheme perona-base16
 ```
 
 ### customizable option: lush

@@ -44,26 +44,30 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(316, 24, 8)	-- #191017
-local base01 = hsl(316, 24, 12)	-- #261722
-local base02 = hsl(316, 24, 16)	-- #331f2d
-local base03 = hsl(316, 12, 48)	-- #846c81
-local base04 = hsl(316, 18, 60)	-- #ab87a2
-local base05 = hsl(328, 36, 78)	-- #dbb3c8
-local base06 = hsl(328, 36, 84)	-- #e5c8d7
-local base07 = hsl(316, 24, 20)	-- #3f2739
-local light_red			= hsl(348, 72, 48)	-- #d32246
-local green					= hsl(291, 36, 60)	-- #b374be
-local blue					= hsl(200, 39, 58)	-- #6ba3be
-local light_magenta	= hsl(336, 60, 60)	-- #d65c8d
-local light_yellow	= hsl(353, 72, 72)	-- #eb8490
-local light_green		= hsl(303, 48, 72)	-- #da95d6
-local light_blue		= hsl(207, 37, 76)	-- #acc5d9
-local light_cyan		= hsl(331, 90, 72)	-- #f877b5
-local red						= hsl(347, 75, 40)	-- #b31a3b
-local magenta				= hsl(334, 48, 48)	-- #b54073
-local yellow				= hsl(353, 74, 62)	-- #e65667
-local cyan					= hsl(329, 72, 60)	-- #e2509b
+local base00	= hsl(316, 24, 8)		-- #191017
+local base01	= hsl(316, 24, 12)	-- #261722
+local base02	= hsl(316, 24, 16)	-- #331f2d
+local base03	= hsl(316, 12, 48)	-- #846c81
+local base04	= hsl(316, 18, 60)	-- #ab87a2
+local base05	= hsl(328, 36, 78)	-- #dbb3c8
+local base06	= hsl(328, 36, 84)	-- #e5c8d7
+local base07	= hsl(316, 24, 20)	-- #3f2739
+local base08	= hsl(348, 72, 48)	-- #d32246
+local base09	= hsl(291, 36, 60)	-- #b374be
+local base0A	= hsl(200, 39, 58)	-- #6ba3be
+local base0B	= hsl(336, 60, 60)	-- #d65c8d
+local base0C	= hsl(353, 72, 72)	-- #eb8490
+local base0D	= hsl(303, 48, 72)	-- #da95d6
+local base0E	= hsl(207, 37, 76)	-- #acc5d9
+local base0F	= hsl(331, 90, 72)	-- #f877b5
+local base0G	= hsl(331, 54, 24)
+local base0H	= hsl(331, 54, 36)
+local base0I	= hsl(331, 54, 48)
+local base0J	= hsl(331, 54, 54)
+local red			= hsl(347, 75, 40)	-- #b31a3b
+local magenta	= hsl(334, 48, 48)	-- #b54073
+local yellow	= hsl(353, 74, 62)	-- #e65667
+local cyan		= hsl(329, 72, 60)	-- #e2509b
 
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
@@ -83,34 +87,34 @@ local theme = lush(function(injected_functions)
     -- See :h highlight-groups
     --		
     ColorColumn    { bg = base01 },
-    Conceal        { bg = base00, fg = light_green },
+    Conceal        { bg = base00, fg = base0D },
     Cursor         { bg = base05, fg = base00 },
-    CurSearch      { bg = green, fg = base01 },
+    CurSearch      { bg = base09, fg = base01 },
     -- lCursor        { },
     -- CursorIM       { },
     CursorColumn   { Cursor },
     CursorLine     { bg = base02 },
-    Directory      { fg = light_green },
-    DiffAdd        { bg = light_magenta, fg = base01 },
+    Directory      { fg = base0D },
+    DiffAdd        { bg = base0B, fg = base01 },
     DiffChange     { bg = base07, fg = base06 },
     DiffDelete     { bg = red, fg = base05 },
-    DiffText       { bg = light_green, fg = base01 },
-    EndOfBuffer    { fg = light_green },
+    DiffText       { bg = base0D, fg = base01 },
+    EndOfBuffer    { fg = base0D },
     TermCursor     { Cursor },
     TermCursorNC   { bg = base03, fg = base05 },
-    ErrorMsg       { fg = light_red },
-    VertSplit      { fg = magenta },
+    ErrorMsg       { fg = base08 },
+    VertSplit      { fg = base0H },
     Folded         { bg = base01, fg = base03 },
-    FoldColumn     { bg = base01, fg = light_yellow },
+    FoldColumn     { bg = base01, fg = base0C },
     SignColumn     { Folded },
-    IncSearch      { bg = green, fg = base01 },
-    Substitute     { bg = blue, fg = base01 },
-    LineNr         { bg = light_magenta, fg = base02},
-    CursorLineNr   { bg = base00, fg = light_blue, gui = "bold" },
+    IncSearch      { bg = base09, fg = base01 },
+    Substitute     { bg = base0A, fg = base01 },
+    LineNr         { bg = base0I, fg = base02},
+    CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
     MatchParen     { bg = base07 },
-    ModeMsg        { fg = light_magenta },
+    ModeMsg        { fg = base0B },
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg        { ModeMsg }, -- |more-prompt|
@@ -128,23 +132,23 @@ local theme = lush(function(injected_functions)
     PmenuExtraSel  { PmenuSel }, -- Popup menu: Selected item "extra text"
     PmenuSbar      { fg = base02 }, -- Popup menu: Scrollbar.
     PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
-    Question       { fg = light_blue } , -- |hit-enter| prompt and yes/no questions
-    QuickFixLine   { fg= light_blue }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search         { bg = light_yellow, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    Question       { fg = base0E } , -- |hit-enter| prompt and yes/no questions
+    QuickFixLine   { fg= base0E }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    Search         { bg = base0C, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     -- SpecialKey     { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
-    SpellBad       { fg = light_red, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-    SpellCap       { fg = light_yellow, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    SpellLocal     { fg = light_green, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    SpellRare      { fg = light_blue, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine     { bg = base01, fg = base04, gui = "italic" },
-    StatusLineNC   { bg = base00, fg = base03 },
+    SpellBad       { fg = base08, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+    SpellCap       { fg = base0C, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+    SpellLocal     { fg = base0D, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+    SpellRare      { fg = base0E, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
+		StatusLine     { bg = base0H, fg = base05, gui = "italic" },
+    StatusLineNC   { bg = base01, fg = base03 },
     TabLine        { bg = base02, fg = base03 }, -- Tab pages line, not active tab page label
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
-    TabLineSel     { bg = base01, fg = light_magenta }, -- Tab pages line, active tab page label
-    Title          { fg = light_green }, -- Titles for output from ":set all", ":autocmd" etc.
+    TabLineSel     { bg = base01, fg = base0B }, -- Tab pages line, active tab page label
+    Title          { fg = base0D }, -- Titles for output from ":set all", ":autocmd" etc.
     Visual         { bg = base07, fg = base06 },
-    VisualNOS      { fg = light_red }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg     { fg = light_red }, -- Warning messages
+    VisualNOS      { fg = base08 }, -- Visual mode selection when vim is "Not Owning the Selection".
+    WarningMsg     { fg = base08 }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator   { VertSplit }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     WildMenu       { bg = base05, fg = red}, -- Current match in 'wildmenu' completion
@@ -161,46 +165,46 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = base03, gui = "italic" }, -- Any comment
 
-    Constant       { fg = green }, -- (*) Any constant
-    String         { fg = light_magenta }, --   A string constant: "this is a string"
-    Character      { fg = light_red }, --   A character constant: 'c', '\n'
-    Number         { fg = green }, --   A number constant: 234, 0xff
-    Boolean        { fg = green }, --   A boolean constant: TRUE, false
-    Float          { fg = green }, --   A floating point constant: 2.3e10
+    Constant       { fg = base09 }, -- (*) Any constant
+    String         { fg = base0B }, --   A string constant: "this is a string"
+    Character      { fg = base08 }, --   A character constant: 'c', '\n'
+    Number         { fg = base09 }, --   A number constant: 234, 0xff
+    Boolean        { fg = base09 }, --   A boolean constant: TRUE, false
+    Float          { fg = base09 }, --   A floating point constant: 2.3e10
 
-    Identifier     { fg = light_red }, -- (*) Any variable name
-    Function       { fg = light_green }, --   Function name (also: methods for classes)
+    Identifier     { fg = base08 }, -- (*) Any variable name
+    Function       { fg = base0D }, --   Function name (also: methods for classes)
 
-    Statement      { fg = light_red }, -- (*) Any statement
-    Conditional    { fg = light_blue }, --   if, then, else, endif, switch, etc.
-    Repeat         { fg = blue }, --   for, do, while, etc.
-    Label          { fg = blue }, --   case, default, etc.
+    Statement      { fg = base08 }, -- (*) Any statement
+    Conditional    { fg = base0E }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg = base0A }, --   for, do, while, etc.
+    Label          { fg = base0A }, --   case, default, etc.
     Operator       { fg = base05 }, --   "sizeof", "+", "*", etc.
-    Keyword        { fg = light_blue }, --   any other keyword
-    Exception      { fg = light_red }, --   try, catch, throw
+    Keyword        { fg = base0E }, --   any other keyword
+    Exception      { fg = base08 }, --   try, catch, throw
 
-    PreProc        { fg = blue }, -- (*) Generic Preprocessor
-    Include        { fg = light_green }, --   Preprocessor #include
-    Define         { fg = light_blue }, --   Preprocessor #define
-    Macro          { fg = light_red }, --   Same as Define
-    PreCondit      { fg = light_blue}, --   Preprocessor #if, #else, #endif, etc.
+    PreProc        { fg = base0A }, -- (*) Generic Preprocessor
+    Include        { fg = base0D }, --   Preprocessor #include
+    Define         { fg = base0E }, --   Preprocessor #define
+    Macro          { fg = base08 }, --   Same as Define
+    PreCondit      { fg = base0E}, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = blue }, -- (*) int, long, char, etc.
-    StorageClass   { fg = blue }, --   static, register, volatile, etc.
-    Structure      { fg = light_blue }, --   struct, union, enum, etc.
-    Typedef        { fg = blue }, --   A typedef
+    Type           { fg = base0A }, -- (*) int, long, char, etc.
+    StorageClass   { fg = base0A }, --   static, register, volatile, etc.
+    Structure      { fg = base0E }, --   struct, union, enum, etc.
+    Typedef        { fg = base0A }, --   A typedef
 
-    Special        { fg = light_yellow }, -- (*) Any special symbol
-    SpecialChar    { fg = light_cyan }, --   Special character in a constant
-    Tag            { fg = blue }, --   You can use CTRL-] on this
-    Delimiter      { fg = light_cyan }, --   Character that needs attention
-    SpecialComment { fg = light_blue}, --   Special things inside a comment (e.g. '\n')
-    Debug          { fg = light_red }, --   Debugging statements
+    Special        { fg = base0C }, -- (*) Any special symbol
+    SpecialChar    { fg = base0F }, --   Special character in a constant
+    Tag            { fg = base0A }, --   You can use CTRL-] on this
+    Delimiter      { fg = base0F }, --   Character that needs attention
+    SpecialComment { fg = base0E}, --   Special things inside a comment (e.g. '\n')
+    Debug          { fg = base08 }, --   Debugging statements
 
-    Underlined     { fg = light_cyan,  gui = "underline" }, -- Text that stands out, HTML links
+    Underlined     { fg = base0F,  gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
-    Error          { fg = light_red }, -- Any erroneous construct
-    Todo           { bg = base01, fg = blue }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Error          { fg = base08 }, -- Any erroneous construct
+    Todo           { bg = base01, fg = base0A }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- These groups are for the native LSP client and diagnostic system. Some
     -- other LSP clients may use these groups, or use their own. Consult your
@@ -217,11 +221,11 @@ local theme = lush(function(injected_functions)
 
     -- See :h diagnostic-highlights, some groups may not be listed, submit a PR fix to lush-template!
     --
-    DiagnosticError            { fg = light_red } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticWarn             { fg = green } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticError            { fg = base08 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticWarn             { fg = base09 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     DiagnosticInfo             { fg = base05 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     DiagnosticHint             { fg = base03 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticOk               { fg = light_yellow } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticOk               { fg = base0C } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     -- DiagnosticVirtualTextError { } , -- Used for "Error" diagnostic virtual text.
     -- DiagnosticVirtualTextWarn  { } , -- Used for "Warn" diagnostic virtual text.
     -- DiagnosticVirtualTextInfo  { } , -- Used for "Info" diagnostic virtual text.
