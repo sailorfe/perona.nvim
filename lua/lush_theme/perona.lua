@@ -52,13 +52,13 @@ local base04 = hsl(316, 18, 60)	-- #ab87a2
 local base05 = hsl(328, 36, 78)	-- #dbb3c8
 local base06 = hsl(328, 36, 84)	-- #e5c8d7
 local base07 = hsl(316, 24, 20)	-- #3f2739
-local base0A = hsl(291, 36, 60)	-- #b374be
-local base09 = hsl(200, 36, 60)	-- #5f98b4
 local base08 = hsl(348, 72, 48)	-- #d32246
+local base09 = hsl(291, 36, 60)	-- #b374be
+local base0A = hsl(200, 39, 58)	-- #6ba3be
 local base0B = hsl(336, 60, 60)	-- #d65c8d
 local base0C = hsl(353, 72, 72)	-- #eb8490
 local base0D = hsl(303, 48, 72)	-- #da95d6
-local base0E = hsl(205, 48, 72)	-- #95bdda
+local base0E = hsl(207, 37, 76)	-- #acc5d9
 local base0F = hsl(331, 90, 72)	-- #f877b5
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may

@@ -17,23 +17,6 @@ a base16 colorscheme for neovim inspired by ghost princess perona from *one piec
 
 <img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
 
-### base16
-
-for vim interface and syntax
-
-| shades    | accents   |
-| --------- | --------- |
-| `#191017` | `#d32246` |
-| `#261722` | `#b374be`|
-| `#331f2d` | `#5f98b4` |
-| `#846c81` | `#d65c8d` |
-| `#ab87a2` | `#eb8490` |
-| `#dbb3c8` | `#da95d6` |
-| `#e5c8d7` | `#95bdda` |
-| `#3f2739` | `#f877b5` |
-
-<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
-
 ### ansi
 
 for terminal compatibility
@@ -44,10 +27,27 @@ for terminal compatibility
 | `#b31a3b` | `#d32246` |
 | `#b374be` | `#da95d5` |
 | `#e65667` | `#eb8490` |
-| `#5f98b4` | `#95bdda` |
+| `#6ba3be` | `#acc5d9` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
 | `#ab87a2` | `#dbb3c8` |
+
+<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
+
+### base16
+
+for vim highlights
+
+| shades    | accents   |
+| --------- | --------- |
+| `#191017` | `#d32246` |
+| `#261722` | `#b374be` |
+| `#331f2d` | `#6ba3be` |
+| `#846c81` | `#d65c8d` |
+| `#ab87a2` | `#eb8490` |
+| `#dbb3c8` | `#da95d6` |
+| `#e5c8d7` | `#acc5d9` |
+| `#3f2739` | `#f877b5` |
 
 <a name="installation"></a>
 ## installation
