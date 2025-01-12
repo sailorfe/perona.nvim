@@ -7,7 +7,7 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P45cb1d6" #darkblue
 	echo -en "\e]P5b54073" #darkmagenta
 	echo -en "\e]P6e2509b" #darkcyan
-	echo -en "\e]P784717f" #lightgrey
+	echo -en "\e]P7846c81" #lightgrey
 	echo -en "\e]P8331f2d" #darkgrey
 	echo -en "\e]P9d32246" #red
 	echo -en "\e]PAda95d6" #green
@@ -15,6 +15,6 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]PC95bdda" #blue
 	echo -en "\e]PDd65c8d" #magenta
 	echo -en "\e]PEf877b5" #cyan
-	echo -en "\e]PFc9a6b9" #white
+	echo -en "\e]PFdbb3c8" #white
 	clear #for background artifacting
 fi

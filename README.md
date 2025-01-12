@@ -23,13 +23,13 @@ for vim interface and syntax
 
 | shades    | accents   |
 | --------- | --------- |
-| `#191017` | `#d32246` |
-| `#261722` | `#b374be` |
-| `#331f2d` | `#5cb1d6` |
-| `#84717f` | `#d65c8d` |
-| `#675161` | `#eb8490` |
-| `#c9a6b9` | `#da95d6` |
-| `#e0ccd8` | `#95bdda` |
+| `#191017` | `#b374be` |
+| `#261722` | `#5cb1d6` |
+| `#331f2d` | `#d32246` |
+| `#846c81` | `#d65c8d` |
+| `#785e71` | `#eb8490` |
+| `#dbb3c8` | `#da95d6` |
+| `#e5c8d7` | `#95bdda` |
 | `#3f2739` | `#f877b5` |
 
 <img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">

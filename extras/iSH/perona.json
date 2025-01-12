@@ -3,25 +3,25 @@
 	"shared": {
 		"backgroundColor": "#191017",
 		"colorPaletteOverrides": [
-			"#331f2d",
+			"#261722",
 			"#b31a3b",
 			"#b374be",
 			"#e55667",
 			"#5cb1d6",
 			"#b54073",
 			"#e2509b",
-			"#c9a6b9",
-			"#4c2f44",
+			"#846c81",
+			"#331f2d",
 			"#d32246",
 			"#da95d6",
 			"#eb8490",
 			"#95bdda",
 			"#d65c8d",
 			"#f877b5",
-			"#e0ccd8"
+			"#dbb3c8"
 		],
-		"cursorColor": "#c9a6b9",
-		"foregroundColor": "#c9a6b9"
+		"cursorColor": "#dbb3c8",
+		"foregroundColor": "#dbb3c8"
 	},
 	"version": 1
 }

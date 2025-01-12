@@ -44,22 +44,22 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00 = hsl(316, 24, 8)
-local base01 = hsl(316, 24, 12)
-local base02 = hsl(316, 24, 16)
-local base03 = hsl(316, 12, 48)
-local base04 = hsl(316, 12, 36)
-local base05 = hsl(328, 24, 72)
-local base06 = hsl(328, 24, 84)
-local base07 = hsl(316, 24, 20)
-local base0A = hsl(291, 36, 60)
-local base09 = hsl(198, 60, 60)
-local base08 = hsl(348, 72, 48)
-local base0B = hsl(336, 60, 60)
-local base0C = hsl(353, 72, 72)
-local base0D = hsl(303, 48, 72)
-local base0E = hsl(205, 48, 72)
-local base0F = hsl(331, 90, 72)
+local base00 = hsl(316, 24, 8)	-- #191017
+local base01 = hsl(316, 24, 12)	-- #261722
+local base02 = hsl(316, 24, 16)	-- #331f2d
+local base03 = hsl(316, 12, 48)	-- #846c81
+local base04 = hsl(316, 12, 42)	-- #785e71
+local base05 = hsl(328, 36, 78)	-- #dbb3c8
+local base06 = hsl(328, 36, 84)	-- #e5c8d7
+local base07 = hsl(316, 24, 20)	-- #3f2739
+local base0A = hsl(291, 36, 60)	-- #b374be
+local base09 = hsl(198, 60, 60)	-- #5cb1d6
+local base08 = hsl(348, 72, 48)	-- #d32246
+local base0B = hsl(336, 60, 60)	-- #d65c8d
+local base0C = hsl(353, 72, 72)	-- #eb8490
+local base0D = hsl(303, 48, 72)	-- #da95d6
+local base0E = hsl(205, 48, 72)	-- #95bdda
+local base0F = hsl(331, 90, 72)	-- #f877b5
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
