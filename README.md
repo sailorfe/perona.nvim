@@ -47,7 +47,7 @@ for terminal compatibility
 | `#5cb1d6` | `#95bdda` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
-| `#84717f` | `#c9a6b9` |
+| `#c9a6b9` | `#e0ccd8` |
 
 <a name="installation"></a>
 ## installation
