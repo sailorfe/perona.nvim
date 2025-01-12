@@ -13,16 +13,16 @@ highlight Character guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight Conceal guifg=#DA95D6 guibg=#191017 guisp=NONE blend=NONE gui=NONE
-highlight Conditional guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Conditional guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Constant guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight CurSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Cursor guifg=#191017 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorColumn Cursor
 highlight! link TermCursor Cursor
 highlight CursorLine guifg=NONE guibg=#331F2D guisp=NONE blend=NONE gui=NONE
-highlight CursorLineNr guifg=#ABC4D8 guibg=#191017 guisp=NONE blend=NONE gui=bold
+highlight CursorLineNr guifg=#9DBAD2 guibg=#191017 guisp=NONE blend=NONE gui=bold
 highlight Debug guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Define guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Define guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Delimiter guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticError guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticHint guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -47,7 +47,7 @@ highlight Function guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight IncSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Keyword guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Keyword guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight LineNr guifg=#331F2D guibg=#BC3878 guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -65,26 +65,26 @@ highlight PmenuSel guifg=#261722 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtraSel PmenuSel
 highlight! link PmenuKindSel PmenuSel
 highlight PmenuThumb guifg=#3F2739 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight PreCondit guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight PreCondit guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight PreProc guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Question guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight QuickFixLine guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Question guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight QuickFixLine guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Repeat guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Search guifg=#261722 guibg=#EB8490 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineSign SignColumn
 highlight Special guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialChar guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight SpecialComment guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight SpecialComment guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpellBad guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
-highlight SpellRare guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellRare guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight StatusLine guifg=#DBB3C8 guibg=#8D2A5A guisp=NONE blend=NONE gui=italic
 highlight StatusLineNC guifg=#896C81 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight StorageClass guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight String guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Structure guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Structure guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Substitute guifg=#261722 guibg=#6AA2BE guisp=NONE blend=NONE gui=NONE
 highlight TabLine guifg=#896C81 guibg=#331F2D guisp=NONE blend=NONE gui=NONE
 highlight! link TabLineFill TabLine

@@ -16,7 +16,7 @@ function ghost.get()
 		["jam"]				= "#d65c8d",	-- base0B
 		["fruit"]			= "#eb8490",	-- base0C
 		["garden"]		= "#da95d5",	-- base0D
-		["kumashi"]		= "#acc5d9",	-- base0E
+		["kumashi"]		= "#9dbad2",	-- base0E
 		["zombie"]		= "#f877b5",	-- base0F
 	}
 end

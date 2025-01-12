@@ -58,7 +58,7 @@ local base0A = hsl(200, 39, 58)	-- #6ba3be
 local base0B = hsl(336, 60, 60)	-- #d65c8d
 local base0C = hsl(353, 72, 72)	-- #eb8490
 local base0D = hsl(303, 48, 72)	-- #da95d6
-local base0E = hsl(207, 37, 76)	-- #acc5d9
+local base0E = hsl(207, 37, 72)	-- #9dbad2
 local base0F = hsl(331, 90, 72)	-- #f877b5
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
@@ -94,7 +94,7 @@ local theme = lush(function(injected_functions)
     TermCursor     { Cursor },
     TermCursorNC   { bg = base03, fg = base05 },
     ErrorMsg       { fg = base08 },
-    VertSplit      { fg = base02 },
+    VertSplit      { fg = base01 },
     Folded         { bg = base01, fg = base03 },
     FoldColumn     { bg = base01, fg = base0C },
     SignColumn     { Folded },

@@ -23,7 +23,7 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 | `#b31a3b` | `#d32246` |
 | `#b374be` | `#da95d5` |
 | `#e65667` | `#eb8490` |
-| `#6ba3be` | `#acc5d9` |
+| `#6ba3be` | `#9dbad2` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
 | `#ab87a2` | `#dbb3c8` |
@@ -42,7 +42,7 @@ for vim highlights
 | `#846c81` | `#d65c8d` |
 | `#ab87a2` | `#eb8490` |
 | `#dbb3c8` | `#da95d6` |
-| `#e5c8d7` | `#acc5d9` |
+| `#e5c8d7` | `#9dbad2` |
 | `#3f2739` | `#f877b5` |
 
 <a name="installation"></a>

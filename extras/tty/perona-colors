@@ -12,7 +12,7 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P9d32246" #red
 	echo -en "\e]PAda95d6" #green
 	echo -en "\e]PBeb8490" #yellow
-	echo -en "\e]PCacc5d9" #blue
+	echo -en "\e]PC9dbad2" #blue
 	echo -en "\e]PDd65c8d" #magenta
 	echo -en "\e]PEf877b5" #cyan
 	echo -en "\e]PFdbb3c8" #white
