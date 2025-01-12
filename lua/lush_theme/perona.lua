@@ -131,8 +131,8 @@ local theme = lush(function(injected_functions)
     SpellCap       { fg = base0C, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal     { fg = base0D, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare      { fg = base0E, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine     { bg = base01, fg = base05, gui = "italic" },
-    StatusLineNC   { bg = base00, fg = base04 },
+		StatusLine     { bg = base01, fg = base04, gui = "italic" },
+    StatusLineNC   { bg = base00, fg = base03 },
     TabLine        { bg = base02, fg = base03 }, -- Tab pages line, not active tab page label
     TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
     TabLineSel     { bg = base01, fg = base0B }, -- Tab pages line, active tab page label

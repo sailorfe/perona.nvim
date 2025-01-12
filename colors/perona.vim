@@ -80,8 +80,8 @@ highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight StatusLine guifg=#DBB3C8 guibg=#261722 guisp=NONE blend=NONE gui=italic
-highlight StatusLineNC guifg=#AB87A2 guibg=#191017 guisp=NONE blend=NONE gui=NONE
+highlight StatusLine guifg=#AB87A2 guibg=#261722 guisp=NONE blend=NONE gui=italic
+highlight StatusLineNC guifg=#896C81 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight StorageClass guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight String guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Structure guifg=#95BDDA guibg=NONE guisp=NONE blend=NONE gui=NONE
