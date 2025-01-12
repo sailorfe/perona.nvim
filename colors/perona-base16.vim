@@ -20,7 +20,7 @@ highlight Cursor guifg=#191017 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorColumn Cursor
 highlight! link TermCursor Cursor
 highlight CursorLine guifg=NONE guibg=#331F2D guisp=NONE blend=NONE gui=NONE
-highlight CursorLineNr guifg=#ABC4D8 guibg=#191017 guisp=NONE blend=NONE gui=bold
+highlight CursorLineNr guifg=#331F2D guibg=#DBB3C8 guisp=NONE blend=NONE gui=bold
 highlight Debug guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Define guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Delimiter guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -49,7 +49,7 @@ highlight IncSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#ABC4D8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#331F2D guibg=#F877B5 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#D65C8D guibg=#331F2D guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -96,11 +96,11 @@ highlight Todo guifg=#6AA2BE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight VertSplit guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight VertSplit guifg=#331F2D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
 highlight Visual guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WarningMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WildMenu guifg=#D32246 guibg=#E5C8D7 guisp=NONE blend=NONE gui=NONE
 set background=dark
-let g:colors_name="perona"
+let g:colors_name="perona-base16"
