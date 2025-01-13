@@ -12,11 +12,11 @@ function ghost.get()
 		["cocoa"]			= "#3f2739",	-- base07
 		["ruby"]			= "#d32246",	-- base08
 		["wonder"]		= "#b374be",	-- base09
-		["zoro"]			= "#6ba3be",	-- base0A
+		["zoro"]			= "#6a8cbe",	-- base0A
 		["jam"]				= "#d65c8d",	-- base0B
 		["fruit"]			= "#eb8490",	-- base0C
 		["garden"]		= "#da95d5",	-- base0D
-		["kumashi"]		= "#9dbad2",	-- base0E
+		["kumashi"]		= "#9db2d2",	-- base0E
 		["zombie"]		= "#f877b5",	-- base0F
 	}
 end
