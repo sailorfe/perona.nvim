@@ -60,15 +60,10 @@ local base0C	= hsl(353, 72, 72)	-- #eb8490
 local base0D	= hsl(303, 48, 72)	-- #da95d6
 local base0E	= hsl(207, 37, 72)	-- #9dbad2
 local base0F	= hsl(331, 90, 72)	-- #f877b5
-local base0G	= hsl(331, 60, 24)	-- #5e1c3c
-local base0H	= hsl(331, 54, 36)	-- #8d2a5a
-local base0I	= hsl(331, 48, 48)	-- #bc3878
-local base0J	= hsl(331, 42, 54)	-- #c94a88
-local red			= hsl(347, 75, 40)	-- #b31a3b
-local magenta	= hsl(334, 48, 48)	-- #b54073
-local yellow	= hsl(353, 74, 62)	-- #e65667
-local cyan		= hsl(329, 72, 60)	-- #e2509b
-
+local base0G	= hsl(347, 75, 40)	-- #b31a3b
+local base0H	= hsl(334, 48, 48)	-- #b54073
+local base0I	= hsl(353, 74, 62)	-- #e65667
+local base0J	= hsl(329, 72, 60)	-- #e2509b
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -97,19 +92,19 @@ local theme = lush(function(injected_functions)
     Directory      { fg = base0D },
     DiffAdd        { bg = base0B, fg = base01 },
     DiffChange     { bg = base07, fg = base06 },
-    DiffDelete     { bg = red, fg = base05 },
+    DiffDelete     { bg = base0G, fg = base05 },
     DiffText       { bg = base0D, fg = base01 },
     EndOfBuffer    { fg = base0D },
     TermCursor     { Cursor },
     TermCursorNC   { bg = base03, fg = base05 },
     ErrorMsg       { fg = base08 },
-    VertSplit      { fg = base0H },
+    VertSplit      { fg = base0B },
     Folded         { bg = base01, fg = base03 },
     FoldColumn     { bg = base01, fg = base0C },
     SignColumn     { Folded },
     IncSearch      { bg = base09, fg = base01 },
     Substitute     { bg = base0A, fg = base01 },
-    LineNr         { bg = base0I, fg = base02},
+    LineNr         { bg = base0F, fg = base02},
     CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
@@ -134,7 +129,7 @@ local theme = lush(function(injected_functions)
     PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
     Question       { fg = base0E } , -- |hit-enter| prompt and yes/no questions
     QuickFixLine   { fg= base0E }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search         { bg = base0C, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    Search         { bg = base0I, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     -- SpecialKey     { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad       { fg = base08, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap       { fg = base0C, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -151,12 +146,12 @@ local theme = lush(function(injected_functions)
     WarningMsg     { fg = base08 }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator   { VertSplit }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
-    WildMenu       { bg = base05, fg = red}, -- Current match in 'wildmenu' completion
+    WildMenu       { bg = base05, fg = base0G}, -- Current match in 'wildmenu' completion
     -- WinBar         { }, -- Window bar of current window
     -- WinBarNC       { }, -- Window bar of not-current windows
 
     -- Common vim syntax groups used for all kinds of code and markup.
-    -- Commented-out groups should chain up to their preferred (*) group
+    -- Commented-out groups should chain up to their preferbase0G (*) group
     -- by default.
     --
     -- See :h group-name
@@ -195,7 +190,7 @@ local theme = lush(function(injected_functions)
     Typedef        { fg = base0A }, --   A typedef
 
     Special        { fg = base0C }, -- (*) Any special symbol
-    SpecialChar    { fg = base0F }, --   Special character in a constant
+    SpecialChar    { fg = base0I }, --   Special character in a constant
     Tag            { fg = base0A }, --   You can use CTRL-] on this
     Delimiter      { fg = base0F }, --   Character that needs attention
     SpecialComment { fg = base0E}, --   Special things inside a comment (e.g. '\n')

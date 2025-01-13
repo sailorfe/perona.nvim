@@ -49,7 +49,7 @@ highlight IncSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#331F2D guibg=#B54078 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#331F2D guibg=#F877B5 guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -70,10 +70,10 @@ highlight PreProc guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Question guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight QuickFixLine guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Repeat guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Search guifg=#261722 guibg=#EB8490 guisp=NONE blend=NONE gui=NONE
+highlight Search guifg=#261722 guibg=#E65667 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineSign SignColumn
 highlight Special guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight SpecialChar guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight SpecialChar guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpecialComment guifg=#9DBAD2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight SpellBad guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
@@ -96,7 +96,7 @@ highlight Todo guifg=#6AA2BE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#6AA2BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight VertSplit guifg=#8D2A5A guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight VertSplit guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
 highlight Visual guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
