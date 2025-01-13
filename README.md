@@ -88,4 +88,4 @@ add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` 
 <a name="extras"></a>
 ## extras
 
-ports for [foot](https://codeberg.org/dnkl/foot) and [iSH](https://github.com/ish-app/ish) can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
+ports for [foot](https://codeberg.org/dnkl/foot), [iSH](https://github.com/ish-app/ish), [spotify_player](https://github.com/aome510/spotify-player), and tty can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
