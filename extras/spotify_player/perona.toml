@@ -1,0 +1,32 @@
+# perona theme for spotify_player
+# https://codeberg.org/spica/peronan.nvim
+
+[[themes]]
+name = "perona"
+[themes.palette]
+background = "#191017"
+foreground = "#dbb3c8"
+black = "#261722"
+blue = "#9dbad2"
+cyan = "#f877b5"
+green = "#b374be"
+magenta = "#e2509b"
+red = "#d32246"
+white = "#dbb3c8"
+yellow = "#eb8490"
+
+[themes.component_style]
+selection = { bg = "#331f2d", modifiers = ["Bold"] }
+block_title = { fg = "Magenta" }
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow", modifiers = ["Italic"] }
+playback_metadata = { fg = "Blue" }
+playback_progress_bar = { bg = "Black", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+border = {}
+playback_status = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playlist_desc = { fg = "White" }
+
