@@ -4,7 +4,7 @@
 
 a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/) in standard and base16 flavors.
 
-<img src="assets/grim.png" alt="perona" width="960">
+<img src="assets/grim.png" alt="perona">
 
 </div>
 
