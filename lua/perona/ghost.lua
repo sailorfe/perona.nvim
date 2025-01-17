@@ -7,8 +7,8 @@ function ghost.get()
 		["mihawk"]		= "#331f2d",	-- base02
 		["grave"]			=	"#846c81",	-- base03
 		["negative"]	= "#ab87a2",	-- base04
-		["hollow"]		= "#dbb3c8",	-- base05
-		["lace"]			=	"#e5c8d7",	-- base06
+		["hollow"]		= "#e2acd3",	-- base05
+		["lace"]			=	"#eac3df",	-- base06
 		["cocoa"]			= "#3f2739",	-- base07
 		["ruby"]			= "#d32246",	-- base08
 		["wonder"]		= "#b374be",	-- base09
