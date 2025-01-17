@@ -1,56 +1,13 @@
---
--- Built with,
---
---        ,gggg,
---       d8" "8I                         ,dPYb,
---       88  ,dP                         IP'`Yb
---    8888888P"                          I8  8I
---       88                              I8  8'
---       88        gg      gg    ,g,     I8 dPgg,
---  ,aa,_88        I8      8I   ,8'8,    I8dP" "8I
--- dP" "88P        I8,    ,8I  ,8'  Yb   I8P    I8
--- Yb,_,d88b,,_   ,d8b,  ,d8b,,8'_   8) ,d8     I8,
---  "Y8P"  "Y888888P'"Y88P"`Y8P' "YY8P8P88P     `Y8
---
-
--- This is a starter colorscheme for use with Lush,
--- for usage guides, see :h lush or :LushRunTutorial
-
---
--- Note: Because this is a lua file, vim will append it to the runtime,
---       which means you can require(...) it in other lua code (this is useful),
---       but you should also take care not to conflict with other libraries.
---
---       (This is a lua quirk, as it has somewhat poor support for namespacing.)
---
---       Basically, name your file,
--- "super_theme/lua/lush_theme/super_theme_dark.lua",
---
---       not,
---
---       "super_theme/lua/dark.lua".
---
---       With that caveat out of the way...
---
-
--- Enable lush.ify on this file, run:
---
---  `:Lushify`
---
---  or
---
---  `:lua require('lush').ify()`
-
 local lush = require('lush')
 local hsl = lush.hsl
 
 local base00	= hsl(316, 24, 8)		-- #191017
 local base01	= hsl(316, 24, 12)	-- #261722
 local base02	= hsl(316, 24, 16)	-- #331f2d
-local base03	= hsl(316, 12, 48)	-- #846c81
+local base03	= hsl(316, 12, 48)	-- #896c81
 local base04	= hsl(316, 18, 60)	-- #ab87a2
-local base05	= hsl(328, 60, 78)	-- #e9a5c9
-local base06	= hsl(328, 60, 84)	-- #efbed8
+local base05	= hsl(316, 48, 78)	-- #e2acd3
+local base06	= hsl(316, 48, 84)	-- #eac3df
 local base07	= hsl(316, 24, 20)	-- #3f2739
 local base08	= hsl(348, 72, 48)	-- #d32246
 local base09	= hsl(291, 36, 60)	-- #b374be
