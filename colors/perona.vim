@@ -7,7 +7,7 @@
 "   ▀            ▀          █   ██   █  
 "	                                   ▀   
 "
-highlight Normal guifg=#DBB3C8 guibg=#191017 guisp=NONE blend=NONE gui=NONE
+highlight Normal guifg=#E9A5C9 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Boolean guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Character guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#261722 guisp=NONE blend=NONE gui=NONE
@@ -16,7 +16,7 @@ highlight Conceal guifg=#DA95D6 guibg=#191017 guisp=NONE blend=NONE gui=NONE
 highlight Conditional guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Constant guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight CurSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
-highlight Cursor guifg=#191017 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
+highlight Cursor guifg=#191017 guibg=#E9A5C9 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorColumn Cursor
 highlight! link TermCursor Cursor
 highlight CursorLine guifg=NONE guibg=#331F2D guisp=NONE blend=NONE gui=NONE
@@ -26,12 +26,12 @@ highlight Define guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Delimiter guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticError guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticHint guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight DiagnosticInfo guifg=#DBB3C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticInfo guifg=#E9A5C9 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticOk guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiagnosticWarn guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight DiffAdd guifg=#261722 guibg=#D65C8D guisp=NONE blend=NONE gui=NONE
-highlight DiffChange guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
-highlight DiffDelete guifg=#DBB3C8 guibg=#B3193B guisp=NONE blend=NONE gui=NONE
+highlight DiffChange guifg=#EFBED8 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
+highlight DiffDelete guifg=#E9A5C9 guibg=#B3193B guisp=NONE blend=NONE gui=NONE
 highlight DiffText guifg=#261722 guibg=#DA95D6 guisp=NONE blend=NONE gui=NONE
 highlight Directory guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight EndOfBuffer guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -49,19 +49,19 @@ highlight IncSearch guifg=#261722 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#331F2D guibg=#F877B5 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#331F2D guibg=#E2509B guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link MoreMsg ModeMsg
 highlight NonText guifg=#896C81 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Number guifg=#B374BE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Operator guifg=#DBB3C8 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight Pmenu guifg=#DBB3C8 guibg=#261722 guisp=NONE blend=NONE gui=NONE
+highlight Operator guifg=#E9A5C9 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Pmenu guifg=#E9A5C9 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtra Pmenu
 highlight! link PmenuKind Pmenu
 highlight PmenuSbar guifg=#331F2D guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight PmenuSel guifg=#261722 guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
+highlight PmenuSel guifg=#261722 guibg=#E9A5C9 guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtraSel PmenuSel
 highlight! link PmenuKindSel PmenuSel
 highlight PmenuThumb guifg=#3F2739 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -80,7 +80,7 @@ highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight Statement guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight StatusLine guifg=#DBB3C8 guibg=#331F2D guisp=NONE blend=NONE gui=italic
+highlight StatusLine guifg=#E9A5C9 guibg=#331F2D guisp=NONE blend=NONE gui=italic
 highlight StatusLineNC guifg=#896C81 guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight StorageClass guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight String guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -90,17 +90,18 @@ highlight TabLine guifg=#896C81 guibg=#331F2D guisp=NONE blend=NONE gui=NONE
 highlight! link TabLineFill TabLine
 highlight TabLineSel guifg=#D65C8D guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Tag guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight TermCursorNC guifg=#DBB3C8 guibg=#896C81 guisp=NONE blend=NONE gui=NONE
+highlight TermCursorNC guifg=#E9A5C9 guibg=#896C81 guisp=NONE blend=NONE gui=NONE
 highlight Title guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Todo guifg=#6A8CBE guibg=#261722 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight VertSplit guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight VertSplit guifg=#E2509B guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
-highlight Visual guifg=#E5C8D7 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
+highlight Visual guifg=#EFBED8 guibg=#3F2739 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight WarningMsg guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight WildMenu guifg=#B3193B guibg=#DBB3C8 guisp=NONE blend=NONE gui=NONE
+highlight WildMenu guifg=#B3193B guibg=#E9A5C9 guisp=NONE blend=NONE gui=NONE
+highlight @variable guifg=#E9A5C9 guibg=NONE guisp=NONE blend=NONE gui=NONE
 set background=dark
 let g:colors_name="perona"

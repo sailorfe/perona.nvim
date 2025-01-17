@@ -49,8 +49,8 @@ local base01 = hsl(316, 24, 12)	-- #261722
 local base02 = hsl(316, 24, 16)	-- #331f2d
 local base03 = hsl(316, 12, 48)	-- #846c81
 local base04 = hsl(316, 18, 60)	-- #ab87a2
-local base05 = hsl(328, 36, 78)	-- #dbb3c8
-local base06 = hsl(328, 36, 84)	-- #e5c8d7
+local base05 = hsl(328, 60, 78)	-- #e9a5c9
+local base06 = hsl(328, 60, 84)	-- #efbed8
 local base07 = hsl(316, 24, 20)	-- #3f2739
 local base08 = hsl(348, 72, 48)	-- #d32246
 local base09 = hsl(291, 36, 60)	-- #b374be
@@ -290,7 +290,7 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    -- sym"@variable"          { fg = base05 }, -- Identifier
+    sym"@variable"          { fg = base05 }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
