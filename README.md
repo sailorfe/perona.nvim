@@ -19,14 +19,14 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 | ansi      | bright    |
 | --------- | --------- |
-| `#261722` | `#675161` |
+| `#261726` | `#6a4d6a` |
 | `#b31a3b` | `#d32246` |
 | `#b374be` | `#da95d5` |
 | `#e65667` | `#eb8490` |
 | `#6a8cbe` | `#9db2d2` |
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
-| `#ab87a2` | `#e2acd3` |
+| `#ab87ab` | `#e2ace2` |
 
 <img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
 
@@ -36,32 +36,32 @@ for vim highlights
 
 | shades    | accents   |
 | --------- | --------- |
-| `#191017` | `#d32246` |
-| `#261722` | `#b374be` |
-| `#331f2d` | `#6a8cbe` |
-| `#846c81` | `#d65c8d` |
-| `#ab87a2` | `#eb8490` |
-| `#e2acd3` | `#da95d6` |
-| `#eac3df` | `#9db2d2` |
-| `#3f2739` | `#f877b5` |
+| `#191019` | `#d32246` |
+| `#261726` | `#b374be` |
+| `#331f33` | `#6a8cbe` |
+| `#896c89` | `#d65c8d` |
+| `#ab87ab` | `#eb8490` |
+| `#e2ace2` | `#da95d6` |
+| `#eac3ea` | `#9db2d2` |
+| `#3f273f` | `#f877b5` |
 
 <a name="installation"></a>
 ## installation
 
 ### easy option: vimscript
 
-copy your preferred flavor from `colors` to `.config/nvim/colors`.
+copy `colors/perona.vim` to `.config/nvim/colors`.
 
 `init.lua`:
 
 ```lua
-vim.cmd("colorscheme perona") -- or vim.cmd("colorscheme perona-base16")
+vim.cmd("colorscheme perona")
 ```
 
 `init.vim` or `.vimrc`:
 
 ```vimscript
-colorscheme perona " or colorscheme perona-base16
+colorscheme perona
 ```
 
 ### customizable option: lush

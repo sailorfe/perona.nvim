@@ -1,14 +1,14 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00	= hsl(316, 24, 8)		-- #191017
-local base01	= hsl(316, 24, 12)	-- #261722
-local base02	= hsl(316, 24, 16)	-- #331f2d
-local base03	= hsl(316, 12, 48)	-- #896c81
-local base04	= hsl(316, 18, 60)	-- #ab87a2
-local base05	= hsl(316, 48, 78)	-- #e2acd3
-local base06	= hsl(316, 48, 84)	-- #eac3df
-local base07	= hsl(316, 24, 20)	-- #3f2739
+local base00	= hsl(300, 24, 8)		-- #191019
+local base01	=	hsl(300, 24, 12)	-- #261726
+local base02	= hsl(300, 24, 16)	-- #331f33
+local base03	= hsl(300, 12, 48)	-- #896c89
+local base04	= hsl(300, 18, 60)	-- #ab87ab
+local base05	= hsl(300, 48, 78)	-- #e2ace2
+local base06	= hsl(300, 48, 84)	-- #eac3ea
+local base07	= hsl(300, 24, 20)	-- #3f273f
 local base08	= hsl(348, 72, 48)	-- #d32246
 local base09	= hsl(291, 36, 60)	-- #b374be
 local base0A	= hsl(216, 39, 58)	-- #6a8cbe
