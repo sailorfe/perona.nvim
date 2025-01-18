@@ -2,14 +2,14 @@ local ghost = {}
 ---@return table
 function ghost.get()
 	return {
-		["kuraigana"]	= "#191017",	-- base00
-		["dracule"]		= "#261722",	-- base01
-		["mihawk"]		= "#331f2d",	-- base02
-		["grave"]			=	"#846c81",	-- base03
-		["negative"]	= "#ab87a2",	-- base04
-		["hollow"]		= "#e2acd3",	-- base05
-		["lace"]			=	"#eac3df",	-- base06
-		["cocoa"]			= "#3f2739",	-- base07
+		["kuraigana"]	= "#191019",	-- base00
+		["dracule"]		= "#261726",	-- base01
+		["mihawk"]		= "#331f33",	-- base02
+		["grave"]			=	"#896c89",	-- base03
+		["negative"]	= "#ab87ab",	-- base04
+		["hollow"]		= "#e2ace2",	-- base05
+		["lace"]			=	"#eac3ea",	-- base06
+		["cocoa"]			= "#3f273f",	-- base07
 		["ruby"]			= "#d32246",	-- base08
 		["wonder"]		= "#b374be",	-- base09
 		["zoro"]			= "#6a8cbe",	-- base0A
