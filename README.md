@@ -17,6 +17,8 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 <img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
 
+<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
+
 | ansi      | bright    |
 | --------- | --------- |
 | `#261726` | `#6a4d6a` |
@@ -27,8 +29,6 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
 | `#ab87ab` | `#e2ace2` |
-
-<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
 
 ### base16
 
