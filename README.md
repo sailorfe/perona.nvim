@@ -50,22 +50,24 @@ for vim highlights
 <a name="installation"></a>
 ## installation
 
-for the base16 version, switch branches.
-
 ### easy option: vimscript
 
-copy `colors/perona.vim` to `.config/nvim/colors`.
+copy your preferred flavor to `.config/nvim/colors`.
 
 `init.lua`:
 
 ```lua
 vim.cmd("colorscheme perona")
+-- or
+vim.cmd("colorscheme base16-perona")
 ```
 
 `init.vim` or `.vimrc`:
 
 ```vimscript
 colorscheme perona
+" or
+colorscheme base16-0erona
 ```
 
 ### customizable option: lush
@@ -87,7 +89,7 @@ return {
 }
 ```
 
-add `vim.cmd("colorscheme perona")` to your `init.lua`, or `colorscheme perona` to `init.vim`.
+add `vim.cmd("colorscheme perona")` or `vim.cmd("colorscheme base16-perona")` to your `init.lua`.
 
 <a name="extras"></a>
 ## extras
