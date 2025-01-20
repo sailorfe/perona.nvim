@@ -5,14 +5,14 @@
 name = "perona"
 [themes.palette]
 background = "#191019"
-foreground = "#e2ace2"
+foreground = "#e2accc"
 black = "#261726"
 blue = "#6a8cbe"
 cyan = "#f877b5"
 green = "#b374be"
 magenta = "#d65c8d"
 red = "#d32246"
-white = "#e2ace2"
+white = "#e2accc"
 yellow = "#eb8490"
 
 [themes.component_style]
