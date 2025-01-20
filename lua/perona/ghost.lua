@@ -5,10 +5,10 @@ function ghost.get()
 		["kuraigana"]	= "#191019",	-- base00
 		["dracule"]		= "#261726",	-- base01
 		["mihawk"]		= "#331f33",	-- base02
-		["grave"]			=	"#896c89",	-- base03
-		["negative"]	= "#ab87ab",	-- base04
-		["hollow"]		= "#e2ace2",	-- base05
-		["lace"]			=	"#eac3ea",	-- base06
+		["grave"]			=	"#896c7d",	-- base03
+		["negative"]	= "#ab879d",	-- base04
+		["hollow"]		= "#e2accc",	-- base05
+		["lace"]			=	"#eac3da",	-- base06
 		["cocoa"]			= "#3f273f",	-- base07
 		["ruby"]			= "#d32246",	-- base08
 		["wonder"]		= "#b374be",	-- base09

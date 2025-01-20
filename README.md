@@ -6,6 +6,8 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 <img src="assets/grim.png" alt="perona">
 
+<img src="assets/grim-base16.png" alt="base16-perona">
+
 </div>
 
 + <a href="#palette">palette</a>
@@ -47,6 +49,8 @@ for vim highlights
 
 <a name="installation"></a>
 ## installation
+
+for the base16 version, switch branches.
 
 ### easy option: vimscript
 
