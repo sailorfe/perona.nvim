@@ -94,4 +94,4 @@ add `vim.cmd("colorscheme perona")` or `vim.cmd("colorscheme base16-perona")` to
 <a name="extras"></a>
 ## extras
 
-ports for [foot](https://codeberg.org/dnkl/foot), [iSH](https://github.com/ish-app/ish), [spotify_player](https://github.com/aome510/spotify-player), and tty can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
+ports for [foot](https://codeberg.org/dnkl/foot), [iSH](https://github.com/ish-app/ish), [spotify_player](https://github.com/aome510/spotify-player), [termux](https://github.com/termux/termux-app), and tty can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
