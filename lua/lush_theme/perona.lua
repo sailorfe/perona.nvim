@@ -61,7 +61,7 @@ local theme = lush(function(injected_functions)
     SignColumn     { Folded },
     IncSearch      { bg = base09, fg = base01 },
     Substitute     { bg = base0A, fg = base01 },
-    LineNr         { bg = base0J, fg = base02},
+    LineNr         { bg = base0F, fg = base02},
     CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
