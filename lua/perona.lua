@@ -44,7 +44,7 @@ perona.build = function()
 		Include = {fg = "#DA95D6"},
 		Keyword = {fg = "#9DB2D2"},
 		Label = {fg = "#6A8CBE"},
-		LineNr = {fg = "#331F33", bg = "#E2509B"},
+		LineNr = {fg = "#331F33", bg = "#F877B5"},
 		Macro = {fg = "#D32246"},
 		MatchParen = {bg = "#3F273F"},
 		ModeMsg = {fg = "#D65C8D"},
@@ -98,7 +98,7 @@ perona.build = function()
 		WarningMsg = {fg = "#D32246"},
 		WildMenu = {fg = "#B3193B", bg = "#E2ACCC"},
 		["@variable"] = {fg = "#E2ACCC"},
-}
+	}
 	return theme
 end
 return perona
