@@ -1,0 +1,18 @@
+return {
+	["kuraigana"]	= "#191019",
+	["dracule"]		= "#261726",
+	["mihawk"]		= "#331f33",
+	["grave"]			=	"#896c7d",
+	["negative"]	= "#ab879d",
+	["hollow"]		= "#e2accc",
+	["lace"]			=	"#eac3da",
+	["cocoa"]			= "#3f273f",
+	["ruby"]			= "#d32246",
+	["wonder"]		= "#b374be",
+	["kuma"]			= "#6a8cbe",
+	["jam"]				= "#d65c8d",
+	["fruit"]			= "#eb8490",
+	["garden"]		= "#da95d5",
+	["sea"]				= "#9db2d2",
+	["zombie"]		= "#f877b5",
+}
