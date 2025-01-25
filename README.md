@@ -29,6 +29,53 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 | `#e2509b` | `#f877b5` |
 | `#ab879d` | `#e2accc` |
 
+<a name="installation"></a>
+## installation
+
+### pure lua
+
+1. clone this repository somewhere on your system like `$HOME/src`: `git clone https://codeberg.org:spica/perona.nvim.git`.
+2. with lazy:
+
+```lua
+return {
+	dir = "/absolute/path/to/perona.nvim",
+	opts = {
+		-- transparent = false,
+		-- overrides = false,
+	},
+	init function()
+		vim.cmd.colorscheme("perona")
+	end,
+}
+```
+
+### vimscript
+
+1. clone this repository somewhere on your system like `$HOME/src` and check out the vim branch:
+
+```
+git clone https://codeberg.org:spica/perona.nvim.git
+cd perona.nvim
+git checkout vim
+```
+
+2. copy `perona.vim` to your vim or neovim `colors` directory:
+
+```
+cp colors/perona.vim ~/.config/nvim/colors
+# or maybe
+cp colors/perona.vim ~/.vim/colors
+# or
+cp colors/perona.vim ~/.config/vim/colors
+```
+
+3. set colorscheme:
+
+- `init.lua`: `vim.cmd.colorscheme("perona")`
+- `.vimrc`: `set colorscheme "perona"`
+- the command  `:colorscheme perona`
+
 <a name="extras"></a>
 ## extras
 
