@@ -9,7 +9,8 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 </div>
 
 - <a href="#palette">palette</a>
-- <a href="extras">extras</a>
+- <a href="#installation">installation</a>
+- <a href="#extras">extras</a>
 
 <a name="palette"></a>
 ## palette
