@@ -2,17 +2,14 @@
 
 # perona.nvim
 
-a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/) in standard and base16 flavors.
+a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <img src="assets/grim.png" alt="perona">
 
-<img src="assets/grim-base16.png" alt="base16-perona">
-
 </div>
 
-+ <a href="#palette">palette</a>
-+ <a href="#installation">installation</a>
-+ <a href="extras">extras</a>
+- <a href="#palette">palette</a>
+- <a href="extras">extras</a>
 
 <a name="palette"></a>
 ## palette
@@ -31,65 +28,6 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 | `#b54073` | `#d65c8d` |
 | `#e2509b` | `#f877b5` |
 | `#ab879d` | `#e2accc` |
-
-### base16
-
-for vim highlights
-
-| shades    | accents   |
-| --------- | --------- |
-| `#191019` | `#d32246` |
-| `#261726` | `#b374be` |
-| `#331f33` | `#6a8cbe` |
-| `#896c7d` | `#d65c8d` |
-| `#ab879d` | `#eb8490` |
-| `#e2accc` | `#da95d6` |
-| `#eac3da` | `#9db2d2` |
-| `#3f273f` | `#f877b5` |
-
-<a name="installation"></a>
-## installation
-
-### easy option: vimscript
-
-copy your preferred flavor to `.config/nvim/colors`.
-
-`init.lua`:
-
-```lua
-vim.cmd("colorscheme perona")
--- or
-vim.cmd("colorscheme base16-perona")
-```
-
-`init.vim` or `.vimrc`:
-
-```vimscript
-colorscheme perona
-" or
-colorscheme base16-0erona
-```
-
-### customizable option: lush
-because i honestly don't know lua well enough, a lua-compatible, non-lush export won't be on the table for a while, so this requires you to have lush installed. first, clone this repository:
-
-```bash
-git clone https://codeberg.org/spica/perona.nvim.git
-```
-
-then configure lush.nvim for your package manager. if you use lazy:
-
-```lua
-return {
-    "rktjmp/lushnvim",
-    { dir = '/absolute/path/to/perona.nvim', lazy = true },
-    config = function()
-        require 'lush'.setup()
-    end,
-}
-```
-
-add `vim.cmd("colorscheme perona")` or `vim.cmd("colorscheme base16-perona")` to your `init.lua`.
 
 <a name="extras"></a>
 ## extras
