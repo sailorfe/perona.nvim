@@ -99,6 +99,14 @@ perona.build = function()
 		WildMenu = {fg = "#B3193B", bg = "#E2ACCC"},
 		["@variable"] = {fg = "#E2ACCC"},
 	}
+	local opts = require("perona").opts
+	if opts.transparent then
+		theme["Normal"].bg = "none"
+		theme["StatusLine"].bg = "none"
+	end
+	if opts.overrides ~= false then
+		theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+	end
 	return theme
 end
 return perona
