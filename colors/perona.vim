@@ -49,7 +49,7 @@ highlight IncSearch guifg=#261726 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#331F33 guibg=#E2509B guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#331F33 guibg=#F877B5 guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#3F273F guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
