@@ -44,7 +44,7 @@ perona.build = function()
 		Include = {fg = "#DA95D6"},
 		Keyword = {fg = "#9DB2D2"},
 		Label = {fg = "#6A8CBE"},
-		LineNr = {fg = "#331F33", bg = "#F877B5"},
+		LineNr = {fg = "#331F33", bg = "#D65C8D"},
 		Macro = {fg = "#D32246"},
 		MatchParen = {bg = "#3F273F"},
 		ModeMsg = {fg = "#D65C8D"},
@@ -91,7 +91,7 @@ perona.build = function()
 		Type = {fg = "#6A8CBE"},
 		Typedef = {fg = "#6A8CBE"},
 		Underlined = {fg = "#F877B5", underline = true},
-		VertSplit = {fg = "#E2509B"},
+		VertSplit = {fg = "#D65C8D"},
 		Winseparator = {link = "VertSplit"},
 		Visual = {fg = "#EAC3DA", bg = "#3F273F"},
 		VisualNOS = {fg = "#D32246"},
@@ -101,11 +101,11 @@ perona.build = function()
 	}
 	local opts = require("perona").opts
 	if opts.transparent then
-		theme["Normal"].bg = "none"
-		theme["StatusLine"].bg = "none"
+					theme["Normal"].bg = "none"
+					theme["StatusLine"].bg = "none"
 	end
 	if opts.overrides ~= false then
-		theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+					theme = vim.tbl_deep_extend("force", theme, opts.overrides)
 	end
 	return theme
 end
