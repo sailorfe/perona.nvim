@@ -1,9 +1,9 @@
 {
 	"name": "perona",
 	"shared": {
-		"backgroundColor": "#191019",
+		"backgroundColor": "#1b0e16",
 		"colorPaletteOverrides": [
-			"#191019",
+			"#1b0e16",
 			"#b31a3b",
 			"#b374be",
 			"#e55667",

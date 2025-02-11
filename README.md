@@ -21,7 +21,7 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 | ansi      | bright    |
 | --------- | --------- |
-| `#191019` | `#47333f` |
+| `#1b0e16` | `#47333f` |
 | `#b31a3b` | `#d32246` |
 | `#b374be` | `#da95d5` |
 | `#e65667` | `#eb8490` |
