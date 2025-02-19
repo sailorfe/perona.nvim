@@ -40,7 +40,7 @@ highlight IncSearch guifg=#281520 guibg=#B374BE guisp=NONE blend=NONE gui=NONE
 highlight Include guifg=#DA95D6 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Keyword guifg=#9DB2D2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Label guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight LineNr guifg=#E2ACCC guibg=#B54073 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#422436 guibg=#B54073 guisp=NONE blend=NONE gui=NONE
 highlight Macro guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MatchParen guifg=NONE guibg=#422436 guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -87,7 +87,7 @@ highlight Todo guifg=#6A8CBE guibg=#281520 guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Typedef guifg=#6A8CBE guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Underlined guifg=#F877B5 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight VertSplit guifg=#D65C8D guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight VertSplit guifg=#B54073 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
 highlight Visual guifg=#EAC3DA guibg=#422436 guisp=NONE blend=NONE gui=NONE
 highlight VisualNOS guifg=#D32246 guibg=NONE guisp=NONE blend=NONE gui=NONE
