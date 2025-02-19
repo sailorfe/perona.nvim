@@ -44,7 +44,7 @@ perona.build = function()
 		Include = {fg = "#DA95D6"},
 		Keyword = {fg = "#9DB2D2"},
 		Label = {fg = "#6A8CBE"},
-		LineNr = {fg = "#351D2B", bg = "#D65C8D"},
+		LineNr = {fg = "#E2ACCC", bg = "#B54073"},
 		Macro = {fg = "#D32246"},
 		MatchParen = {bg = "#422436"},
 		ModeMsg = {fg = "#D65C8D"},

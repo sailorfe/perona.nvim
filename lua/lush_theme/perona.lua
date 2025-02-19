@@ -17,7 +17,7 @@ local base0C	= hsl(353, 72, 72)	-- #eb8490
 local base0D	= hsl(303, 48, 72)	-- #da95d6
 local base0E	= hsl(216, 37, 72)	-- #9db2d2
 local base0F	= hsl(331, 90, 72)	-- #f877b5
-local base0G	= hsl(347, 75, 40)	-- #b31a3b24
+local base0G	= hsl(347, 75, 40)	-- #b31a3b
 local base0H	= hsl(334, 48, 48)	-- #b54073
 local base0I	= hsl(353, 74, 62)	-- #e65667
 local base0J	= hsl(329, 72, 60)	-- #e2509b
@@ -61,7 +61,7 @@ local theme = lush(function(injected_functions)
     SignColumn     { Folded },
     IncSearch      { bg = base09, fg = base01 },
     Substitute     { bg = base0A, fg = base01 },
-    LineNr         { bg = base0B, fg = base02},
+    LineNr         { bg = base0H, fg = base05},
     CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
