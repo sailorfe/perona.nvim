@@ -1,26 +1,28 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local base00	= hsl(324, 30, 8)		-- #1b0e16
-local base01	=	hsl(324, 30, 12)	-- #281520
-local base02	= hsl(324, 30, 16)	-- #351d2b
-local base03	= hsl(324, 12, 48)	-- #896c7d
-local base04	= hsl(324, 18, 60)	-- #ab879d
-local base05	= hsl(324, 48, 78)	-- #e2accc
-local base06	= hsl(324, 48, 84)	-- #eac3da
-local base07	= hsl(324, 30, 20)	-- #422436
-local base08	= hsl(348, 72, 48)	-- #d32246
-local base09	= hsl(291, 36, 60)	-- #b374be
-local base0A	= hsl(216, 39, 58)	-- #6a8cbe
-local base0B	= hsl(336, 60, 60)	-- #d65c8d
-local base0C	= hsl(353, 72, 72)	-- #eb8490
-local base0D	= hsl(303, 48, 72)	-- #da95d6
-local base0E	= hsl(216, 37, 72)	-- #9db2d2
-local base0F	= hsl(331, 90, 72)	-- #f877b5
-local base0G	= hsl(347, 75, 40)	-- #b31a3b
-local base0H	= hsl(334, 48, 48)	-- #b54073
-local base0I	= hsl(353, 74, 62)	-- #e65667
-local base0J	= hsl(329, 72, 60)	-- #e2509b
+local dark00	= hsl(324, 30, 8)
+local dark01	= hsl(324, 30, 10)
+local base00	= hsl(324, 30, 12)
+local base01	=	hsl(324, 30, 18)
+local base02	= hsl(324, 30, 24)
+local base07	= hsl(324, 30, 30)
+local base03	= hsl(324, 24, 60)
+local base04	= hsl(324, 36, 72)
+local base05	= hsl(324, 72, 84)
+local base06	= hsl(324, 72, 90)
+local blood			= hsl(347, 75, 40)	-- #b31a3b
+local ruby			= hsl(348, 72, 48)	-- #d32246
+local wonder		= hsl(291, 36, 60)	-- #b374be
+local garden		= hsl(303, 48, 72)	-- #da95d6
+local sangria		= hsl(353, 74, 62)	-- #e65667
+local fruit			= hsl(353, 72, 72)	-- #eb8490
+local kuma			= hsl(216, 39, 58)	-- #6a8cbe
+local sea				= hsl(216, 37, 72)	-- #9db2d2
+local berry			= hsl(334, 48, 48)	-- #b54073
+local jam				= hsl(336, 60, 60)	-- #d65c8d
+local surprise	= hsl(329, 72, 60)	-- #e2509b
+local zombie		= hsl(331, 90, 72)	-- #f877b5
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -39,41 +41,41 @@ local theme = lush(function(injected_functions)
     -- See :h highlight-groups
     --		
     ColorColumn    { bg = base01 },
-    Conceal        { bg = base00, fg = base0D },
+    Conceal        { bg = base00, fg = garden },
     Cursor         { bg = base05, fg = base00 },
-    CurSearch      { bg = base09, fg = base01 },
+    CurSearch      { bg = wonder, fg = base01 },
     -- lCursor        { },
     -- CursorIM       { },
     CursorColumn   { Cursor },
     CursorLine     { bg = base02 },
-    Directory      { fg = base0D },
-    DiffAdd        { bg = base0B, fg = base01 },
+    Directory      { fg = garden },
+    DiffAdd        { bg = jam, fg = base01 },
     DiffChange     { bg = base07, fg = base06 },
-    DiffDelete     { bg = base0G, fg = base05 },
-    DiffText       { bg = base0D, fg = base01 },
-    EndOfBuffer    { fg = base0D },
+    DiffDelete     { bg = blood, fg = base05 },
+    DiffText       { bg = garden, fg = base01 },
+    EndOfBuffer    { fg = garden },
     TermCursor     { Cursor },
     TermCursorNC   { bg = base03, fg = base05 },
-    ErrorMsg       { fg = base08 },
-    VertSplit      { fg = base0H },
+    ErrorMsg       { fg = ruby },
+    VertSplit      { fg = base02 },
     Folded         { bg = base01, fg = base03 },
-    FoldColumn     { bg = base01, fg = base0C },
+    FoldColumn     { bg = base01, fg = fruit },
     SignColumn     { Folded },
-    IncSearch      { bg = base09, fg = base01 },
-    Substitute     { bg = base0A, fg = base01 },
-    LineNr         { bg = base0H, fg = base07},
-    CursorLineNr   { bg = base00, fg = base0E, gui = "bold" },
+    IncSearch      { bg = wonder, fg = base01 },
+    Substitute     { bg = kuma, fg = base01 },
+    LineNr         { bg = base00, fg = base02},
+    CursorLineNr   { bg = base00, fg = base04, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { SignColumn },
     MatchParen     { bg = base07 },
-    ModeMsg        { fg = base0B },
+    ModeMsg        { fg = jam },
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg        { ModeMsg }, -- |more-prompt|
     NonText        { fg = base03 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal         { bg = base00, fg = base05 },
-    -- NormalFloat    { }, -- Normal text in floating windows.
-    -- FloatBorder    { }, -- Border of floating windows.
+    NormalFloat    { bg = dark00 }, -- Normal text in floating windows.
+    FloatBorder    { bg = dark00 }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
     Pmenu          { bg = base01, fg = base05 }, -- Popup menu: Normal item.
@@ -84,31 +86,31 @@ local theme = lush(function(injected_functions)
     PmenuExtraSel  { PmenuSel }, -- Popup menu: Selected item "extra text"
     PmenuSbar      { fg = base02 }, -- Popup menu: Scrollbar.
     PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
-    Question       { fg = base0E } , -- |hit-enter| prompt and yes/no questions
-    QuickFixLine   { fg= base0E }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search         { bg = base0I, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    -- SpecialKey     { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
-    SpellBad       { fg = base08, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-    SpellCap       { fg = base0C, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    SpellLocal     { fg = base0D, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    SpellRare      { fg = base0E, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
+    Question       { fg = sea } , -- |hit-enter| prompt and yes/no questions
+    QuickFixLine   { fg= sea }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    Search         { bg = fruit, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    SpecialKey     { fg = base07 }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
+    SpellBad       { fg = ruby, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+    SpellCap       { fg = fruit, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+    SpellLocal     { fg = garden, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+    SpellRare      { fg = sea, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
 		StatusLine     { bg = base02, fg = base05, gui = "italic" },
     StatusLineNC   { bg = base01, fg = base03 },
-    TabLine        { bg = base02, fg = base03 }, -- Tab pages line, not active tab page label
-    TabLineFill    { TabLine }, -- Tab pages line, where there are no labels
-    TabLineSel     { bg = base01, fg = base0B }, -- Tab pages line, active tab page label
-    Title          { fg = base0D }, -- Titles for output from ":set all", ":autocmd" etc.
+    TabLine        { bg = base01, fg = base03 }, -- Tab pages line, not active tab page label
+    TabLineFill    { bg = dark01 }, -- Tab pages line, where there are no labels
+    TabLineSel     { bg = base00, fg = zombie, gui = "italic" }, -- Tab pages line, active tab page label
+    Title          { fg = garden }, -- Titles for output from ":set all", ":autocmd" etc.
     Visual         { bg = base07, fg = base06 },
-    VisualNOS      { fg = base08 }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg     { fg = base08 }, -- Warning messages
+    VisualNOS      { fg = ruby }, -- Visual mode selection when vim is "Not Owning the Selection".
+    WarningMsg     { fg = ruby }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator   { VertSplit }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
-    WildMenu       { bg = base05, fg = base0G}, -- Current match in 'wildmenu' completion
-    -- WinBar         { }, -- Window bar of current window
-    -- WinBarNC       { }, -- Window bar of not-current windows
+    WildMenu       { bg = base05, fg = blood}, -- Current match in 'wildmenu' completion
+    WinBar         { bg = dark00, fg = base03 }, -- Window bar of current window
+    WinBarNC       { bg = dark00, fg = base03}, -- Window bar of not-current windows
 
     -- Common vim syntax groups used for all kinds of code and markup.
-    -- Commented-out groups should chain up to their preferbase0G (*) group
+    -- Commented-out groups should chain up to their preferblood (*) group
     -- by default.
     --
     -- See :h group-name
@@ -117,46 +119,46 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = base03, gui = "italic" }, -- Any comment
 
-    Constant       { fg = base09 }, -- (*) Any constant
-    String         { fg = base0B }, --   A string constant: "this is a string"
-    Character      { fg = base08 }, --   A character constant: 'c', '\n'
-    Number         { fg = base09 }, --   A number constant: 234, 0xff
-    Boolean        { fg = base09 }, --   A boolean constant: TRUE, false
-    Float          { fg = base09 }, --   A floating point constant: 2.3e10
+    Constant       { fg = wonder }, -- (*) Any constant
+    String         { fg = jam }, --   A string constant: "this is a string"
+    Character      { fg = ruby }, --   A character constant: 'c', '\n'
+    Number         { fg = wonder }, --   A number constant: 234, 0xff
+    Boolean        { fg = wonder }, --   A boolean constant: TRUE, false
+    Float          { fg = wonder }, --   A floating point constant: 2.3e10
 
-    Identifier     { fg = base08 }, -- (*) Any variable name
-    Function       { fg = base0D }, --   Function name (also: methods for classes)
+    Identifier     { fg = ruby }, -- (*) Any variable name
+    Function       { fg = garden }, --   Function name (also: methods for classes)
 
-    Statement      { fg = base08 }, -- (*) Any statement
-    Conditional    { fg = base0E }, --   if, then, else, endif, switch, etc.
-    Repeat         { fg = base0A }, --   for, do, while, etc.
-    Label          { fg = base0A }, --   case, default, etc.
+    Statement      { fg = ruby }, -- (*) Any statement
+    Conditional    { fg = sea }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg = kuma }, --   for, do, while, etc.
+    Label          { fg = kuma }, --   case, default, etc.
     Operator       { fg = base05 }, --   "sizeof", "+", "*", etc.
-    Keyword        { fg = base0E }, --   any other keyword
-    Exception      { fg = base08 }, --   try, catch, throw
+    Keyword        { fg = sea }, --   any other keyword
+    Exception      { fg = ruby }, --   try, catch, throw
 
-    PreProc        { fg = base0A }, -- (*) Generic Preprocessor
-    Include        { fg = base0D }, --   Preprocessor #include
-    Define         { fg = base0E }, --   Preprocessor #define
-    Macro          { fg = base08 }, --   Same as Define
-    PreCondit      { fg = base0E}, --   Preprocessor #if, #else, #endif, etc.
+    PreProc        { fg = kuma }, -- (*) Generic Preprocessor
+    Include        { fg = garden }, --   Preprocessor #include
+    Define         { fg = sea }, --   Preprocessor #define
+    Macro          { fg = ruby }, --   Same as Define
+    PreCondit      { fg = sea}, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = base0A }, -- (*) int, long, char, etc.
-    StorageClass   { fg = base0A }, --   static, register, volatile, etc.
-    Structure      { fg = base0E }, --   struct, union, enum, etc.
-    Typedef        { fg = base0A }, --   A typedef
+    Type           { fg = kuma }, -- (*) int, long, char, etc.
+    StorageClass   { fg = kuma }, --   static, register, volatile, etc.
+    Structure      { fg = sea }, --   struct, union, enum, etc.
+    Typedef        { fg = kuma }, --   A typedef
 
-    Special        { fg = base0C }, -- (*) Any special symbol
-    SpecialChar    { fg = base0I }, --   Special character in a constant
-    Tag            { fg = base0A }, --   You can use CTRL-] on this
-    Delimiter      { fg = base0F }, --   Character that needs attention
-    SpecialComment { fg = base0E}, --   Special things inside a comment (e.g. '\n')
-    Debug          { fg = base08 }, --   Debugging statements
+    Special        { fg = fruit }, -- (*) Any special symbol
+    SpecialChar    { fg = sangria }, --   Special character in a constant
+    Tag            { fg = kuma }, --   You can use CTRL-] on this
+    Delimiter      { fg = zombie }, --   Character that needs attention
+    SpecialComment { fg = sea}, --   Special things inside a comment (e.g. '\n')
+    Debug          { fg = ruby }, --   Debugging statements
 
-    Underlined     { fg = base0F,  gui = "underline" }, -- Text that stands out, HTML links
+    Underlined     { fg = zombie,  gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
-    Error          { fg = base08 }, -- Any erroneous construct
-    Todo           { bg = base01, fg = base0A }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Error          { fg = ruby }, -- Any erroneous construct
+    Todo           { bg = base01, fg = kuma }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- These groups are for the native LSP client and diagnostic system. Some
     -- other LSP clients may use these groups, or use their own. Consult your
@@ -173,11 +175,11 @@ local theme = lush(function(injected_functions)
 
     -- See :h diagnostic-highlights, some groups may not be listed, submit a PR fix to lush-template!
     --
-    DiagnosticError            { fg = base08 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticWarn             { fg = base09 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticError            { fg = ruby } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticWarn             { fg = wonder } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     DiagnosticInfo             { fg = base05 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     DiagnosticHint             { fg = base03 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticOk               { fg = base0C } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticOk               { fg = fruit } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
     -- DiagnosticVirtualTextError { } , -- Used for "Error" diagnostic virtual text.
     -- DiagnosticVirtualTextWarn  { } , -- Used for "Warn" diagnostic virtual text.
     -- DiagnosticVirtualTextInfo  { } , -- Used for "Info" diagnostic virtual text.
