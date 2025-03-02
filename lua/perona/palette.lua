@@ -1,7 +1,7 @@
 return {
 	["kuraigana"]	= "#281520",
-	["dracule"]		= "#281520",
-	["mihawk"]		= "#3c2031",
+	["dracule"]		= "#3c2031",
+	["mihawk"]		= "#502b41",
 	["grave"]			=	"#b1819e",
 	["negative"]	= "#d19ebd",
 	["hollow"]		= "#f4b9dc",
