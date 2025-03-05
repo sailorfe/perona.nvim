@@ -4,19 +4,19 @@
 [[themes]]
 name = "perona"
 [themes.palette]
-background = "#1b0e16"
-foreground = "#e2accc"
-black = "#281520"
+background = "#281520"
+foreground = "#f4b9dc"
+black = "#3c2031"
 blue = "#6a8cbe"
 cyan = "#f877b5"
 green = "#b374be"
 magenta = "#d65c8d"
 red = "#d32246"
-white = "#e2accc"
+white = "#f4b9dc"
 yellow = "#eb8490"
 
 [themes.component_style]
-selection = { bg = "#351d2b", modifiers = ["Bold"] }
+selection = { bg = "#633651", modifiers = ["Bold"] }
 block_title = { fg = "Magenta" }
 playback_track = { fg = "Cyan", modifiers = ["Bold"] }
 playback_album = { fg = "Yellow", modifiers = ["Italic"] }

@@ -1,27 +1,27 @@
 {
 	"name": "perona",
 	"shared": {
-		"backgroundColor": "#1b0e16",
+		"backgroundColor": "#281520",
 		"colorPaletteOverrides": [
-			"#1b0e16",
+			"#3c2031",
 			"#b31a3b",
 			"#b374be",
 			"#e55667",
 			"#6a8cbe",
 			"#b54073",
 			"#e2509b",
-			"#ab879d",
-			"#47333f",
+			"#d19ebd",
+			"#633651",
 			"#d32246",
 			"#da95d6",
 			"#eb8490",
 			"#9db2d2",
 			"#d65c8d",
 			"#f877b5",
-			"#e2accc"
+			"#f4b9dc"
 		],
-		"cursorColor": "#e2accc",
-		"foregroundColor": "#e2accc"
+		"cursorColor": "#f4b9dc",
+		"foregroundColor": "#f4b9dc"
 	},
 	"version": 1
 }
