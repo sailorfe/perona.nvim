@@ -1,5 +1,9 @@
 highlight Normal guifg=#F4B9DC guibg=#281520 guisp=NONE blend=NONE gui=NONE
 highlight! link @boolean Boolean
+highlight Character guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight! link Boolean Character
+highlight! link Float Character
+highlight! link Number Character
 highlight! link @character Character
 highlight ColorColumn guifg=NONE guibg=#532742 guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=italic
@@ -10,10 +14,6 @@ highlight! link @text.literal Comment
 highlight Conceal guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @conditional Conditional
 highlight Constant guifg=#74BE9E guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight! link Boolean Constant
-highlight! link Character Constant
-highlight! link Float Constant
-highlight! link Number Constant
 highlight! link @constant Constant
 highlight CurSearch guifg=#532742 guibg=#B4CFF8 guisp=NONE blend=NONE gui=NONE
 highlight! link IncSearch CurSearch
@@ -61,7 +61,7 @@ highlight DiffText guifg=#281520 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE
 highlight Directory guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight EndOfBuffer guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Error guifg=#F8D3E9 guibg=#A90F30 guisp=NONE blend=NONE gui=NONE
-highlight ErrorMsg guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight ErrorMsg guifg=#DE3557 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight! link @exception Exception
 highlight! link @float Float
 highlight FloatTitle guifg=#F4B9DC guibg=NONE guisp=NONE blend=NONE gui=bold
@@ -70,10 +70,10 @@ highlight! link CursorLineFold FoldColumn
 highlight! link CursorLineSign FoldColumn
 highlight! link SignColumn FoldColumn
 highlight Folded guifg=#F4B9DC guibg=#24141E guisp=NONE blend=NONE gui=NONE
-highlight Function guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Function guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @function Function
 highlight! link @method Function
-highlight Identifier guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Identifier guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @field Identifier
 highlight! link @namespace Identifier
 highlight! link @parameter Identifier
@@ -126,7 +126,7 @@ highlight! link Tag Special
 highlight! link @constant.builtin Special
 highlight! link @constructor Special
 highlight! link @function.builtin Special
-highlight SpecialChar guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight SpecialChar guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @character.special SpecialChar
 highlight! link @string.escape SpecialChar
 highlight! link @string.special SpecialChar
@@ -158,7 +158,7 @@ highlight Title guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.title Title
 highlight Todo guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.todo Todo
-highlight Type guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Type guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link StorageClass Type
 highlight! link Structure Type
 highlight! link Typedef Type
