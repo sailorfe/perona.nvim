@@ -13,7 +13,7 @@ local negative	= hsl(324, 72, 84)
 local hollow		= hsl(324, 72, 90)
 local berry			= hsl(340, 48, 48)
 local jam				= hsl(340, 60, 60)
-local surprise	= hsl(330, 84, 68)
+local surprise	= hsl(330, 84, 72)
 local zombie		= hsl(330, 100, 80)
 local kuma			= hsl(216, 60, 72)
 local sea				= hsl(216, 84, 84)
@@ -31,16 +31,16 @@ local theme = lush(function(injected_functions)
     ColorColumn    { bg = mihawk },
     Conceal        { fg = gecko },
     Cursor         { bg = negative, fg = cocoa },
-    CurSearch      { bg = sea, fg = cocoa },
+    CurSearch      { bg = sea, fg = mihawk },
     lCursor        { Cursor },
     CursorIM       { Cursor },
     CursorColumn   { bg = dracule },
     CursorLine     { CursorColumn },
-    Directory      { fg = garden },
-    DiffAdd        { bg = marimo, fg = cocoa, gui = "bold" },
+    Directory      { fg = jam },
+    DiffAdd        { bg = garden, fg = cocoa, gui = "bold" },
     DiffChange     { bg = wine, fg = hollow, gui = "bold" },
-    DiffDelete     { fg = sangria, gui = "bold"},
-    DiffText       { bg = garden, fg = cocoa },
+    DiffDelete     { bg = cocoa, fg = ruby, gui = "bold"},
+    DiffText       { bg = kuma, fg = cocoa },
     EndOfBuffer    { fg = gecko },
     TermCursor     { bg = moria, fg = cocoa },
     TermCursorNC   { fg = moria },
@@ -50,15 +50,15 @@ local theme = lush(function(injected_functions)
     FoldColumn     { fg = wine },
     SignColumn     { FoldColumn },
     IncSearch      { CurSearch },
-    Substitute     { bg = kuma, fg = cocoa },
+    Substitute     { fg = kuma, bg = wine },
     LineNr         { bg = berry, fg = thriller },
     LineNrAbove    { LineNr },
     LineNrBelow    { LineNr },
     CursorLineNr   { bg = dracule, fg = kuma, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { FoldColumn },
-    MatchParen     { bg = surprise, fg = hollow, gui = "bold"},
-    ModeMsg        { fg = zombie },
+    MatchParen     { bg = kuma, fg = wine, gui = "bold"},
+    ModeMsg        { fg = surprise },
     MsgArea        { fg = moria },
     MsgSeparator   { bg = moria, fg = cocoa },
     MoreMsg        { fg = wine },
@@ -101,15 +101,15 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = gecko, gui = "italic" },
 
-    Constant       { fg = garden },
+    Constant       { fg = marimo },
     String         { fg = zombie },
     Character      { Constant },
     Number         { Constant },
     Boolean        { Constant },
     Float          { Constant },
 
-    Identifier     { fg = zombie },
-    Function       { fg = surprise },
+    Identifier     { fg = surprise },
+    Function       { fg = zombie },
 
     Statement      { fg = sea, gui = "bold" },
     Conditional    { Statement },
@@ -131,7 +131,7 @@ local theme = lush(function(injected_functions)
     Typedef        { Type },
 
     Special        { fg = kuma },
-    SpecialChar    { fg = marimo },
+    SpecialChar    { fg = wonder },
     Tag            { Special },
     Delimiter      { fg = surprise },
     SpecialComment { Special },
