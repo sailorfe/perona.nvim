@@ -21,14 +21,14 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 | ansi      | bright    |
 | --------- | --------- |
-| `#3c2031` | `#633651` |
-| `#b31a3b` | `#d32246` |
-| `#b374be` | `#da95d5` |
+| `#3e1d31` | `#683152` |
+| `#a90f30` | `#de3557` |
+| `#a75fb4` | `#de91da` |
 | `#e65667` | `#eb8490` |
-| `#6a8cbe` | `#9db2d2` |
-| `#b54073` | `#d65c8d` |
-| `#e2509b` | `#f877b5` |
-| `#d19ebd` | `#f4b9dc` |
+| `#8dafe2` | `#b4cff8` |
+| `#b54067` | `#d65c85` |
+| `#f269ad` | `#ff99cc` |
+| `#b1819e` | `#f4b9dc` |
 
 <a name="installation"></a>
 ## installation
