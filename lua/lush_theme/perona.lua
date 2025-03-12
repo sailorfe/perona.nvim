@@ -1,8 +1,8 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local thriller	= hsl(324, 30, 8)
-local bark			= hsl(324, 30, 10)
+local thriller	= hsl(324, 30, 10)
+local bark			= hsl(324, 30, 11)
 local cocoa			= hsl(324, 30, 12)
 local dracule		=	hsl(324, 36, 18)
 local mihawk		= hsl(324, 36, 24)
@@ -13,8 +13,8 @@ local negative	= hsl(324, 72, 84)
 local hollow		= hsl(324, 72, 90)
 local berry			= hsl(340, 48, 48)
 local jam				= hsl(340, 60, 60)
-local surprise	= hsl(330, 84, 72)
-local zombie		= hsl(330, 96, 80)
+local surprise	= hsl(330, 84, 68)
+local zombie		= hsl(330, 100, 80)
 local kuma			= hsl(216, 60, 72)
 local sea				= hsl(216, 84, 84)
 local wonder		= hsl(291, 36, 54)
@@ -39,7 +39,7 @@ local theme = lush(function(injected_functions)
     Directory      { fg = garden },
     DiffAdd        { bg = marimo, fg = cocoa, gui = "bold" },
     DiffChange     { bg = wine, fg = hollow, gui = "bold" },
-    DiffDelete     { fg = fruit, gui = "bold"},
+    DiffDelete     { fg = sangria, gui = "bold"},
     DiffText       { bg = garden, fg = cocoa },
     EndOfBuffer    { fg = gecko },
     TermCursor     { bg = moria, fg = cocoa },
@@ -51,13 +51,13 @@ local theme = lush(function(injected_functions)
     SignColumn     { FoldColumn },
     IncSearch      { CurSearch },
     Substitute     { bg = kuma, fg = cocoa },
-    LineNr         { bg = berry, fg = negative },
+    LineNr         { bg = berry, fg = thriller },
     LineNrAbove    { LineNr },
     LineNrBelow    { LineNr },
     CursorLineNr   { bg = mihawk, fg = sea, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { FoldColumn },
-    MatchParen     { bg = wonder, fg = hollow, gui = "bold"},
+    MatchParen     { bg = surprise, fg = hollow, gui = "bold"},
     ModeMsg        { fg = zombie },
     MsgArea        { fg = moria },
     MsgSeparator   { bg = moria, fg = cocoa },
@@ -80,10 +80,10 @@ local theme = lush(function(injected_functions)
     QuickFixLine   { Question },
     Search         { IncSearch },
     SpecialKey     { fg = moria },
-    SpellBad       { fg = sangria, gui = "undercurl"},
+    SpellBad       { fg = sangria, gui = "undercurl" },
     SpellCap       { fg = fruit, gui = "undercurl" },
     SpellLocal     { fg = marimo, gui = "undercurl" },
-    SpellRare      { fg = sea, gui= "undercurl"},
+    SpellRare      { fg = sea, gui= "undercurl" },
     StatusLine     { bg = mihawk },
     StatusLineNC   { bg = dracule },
     TabLine        { bg = bark, fg = gecko },
@@ -91,7 +91,7 @@ local theme = lush(function(injected_functions)
     TabLineSel     { bg = surprise, fg = cocoa, gui = "italic" },
     Title          { gui = "bold" },
     Visual         { bg = surprise, fg = cocoa },
-    VisualNOS      { bg = jam, fg = cocoa },
+    VisualNOS      { bg = berry, fg = cocoa },
     WarningMsg     { fg = fruit },
     Whitespace     { fg = wine },
     Winseparator   { VertSplit },
@@ -101,39 +101,39 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = gecko, gui = "italic" },
 
-    Constant       { fg = zombie },
-    String         { fg = jam },
+    Constant       { fg = wonder },
+    String         { fg = garden },
     Character      { Constant },
     Number         { Constant },
     Boolean        { Constant },
     Float          { Constant },
 
-    Identifier     { fg = sea },
-    Function       { fg = kuma },
+    Identifier     { fg = zombie },
+    Function       { fg = surprise },
 
-    Statement      { fg = surprise, gui = "bold" },
+    Statement      { fg = sea, gui = "bold" },
     Conditional    { Statement },
     Repeat         { Statement },
     Label          { Statement },
-    Operator       { Normal },
+    Operator       { fg = surprise },
     Keyword        { Statement },
     Exception      { Statement },
 
-    PreProc        { fg = jam },
+    PreProc        { fg = fruit },
     Include        { PreProc },
     Define         { PreProc },
     Macro          { PreProc },
     PreCondit      { PreProc },
 
-    Type           { fg = fruit },
+    Type           { fg = jam },
     StorageClass   { Type },
     Structure      { Type },
     Typedef        { Type },
 
-    Special        { fg = garden },
-    SpecialChar    { Special },
+    Special        { fg = kuma },
+    SpecialChar    { fg = marimo },
     Tag            { Special },
-    Delimiter      { fg = wonder },
+    Delimiter      { fg = surprise },
     SpecialComment { Special },
     Debug          { Special },
 

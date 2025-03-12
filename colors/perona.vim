@@ -1,5 +1,4 @@
 highlight Normal guifg=#F4B9DC guibg=#281520 guisp=NONE blend=NONE gui=NONE
-highlight! link Operator Normal
 highlight! link @boolean Boolean
 highlight! link @character Character
 highlight ColorColumn guifg=NONE guibg=#532742 guisp=NONE blend=NONE gui=NONE
@@ -10,7 +9,7 @@ highlight! link @comment Comment
 highlight! link @text.literal Comment
 highlight Conceal guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @conditional Conditional
-highlight Constant guifg=#FD9BCC guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Constant guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Boolean Constant
 highlight! link Character Constant
 highlight! link Float Constant
@@ -28,7 +27,7 @@ highlight CursorLineNr guifg=#B4CFF8 guibg=#532742 guisp=NONE blend=NONE gui=bol
 highlight! link @debug Debug
 highlight! link @constant.macro Define
 highlight! link @define Define
-highlight Delimiter guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Delimiter guifg=#F269AD guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @punctuation Delimiter
 highlight DiagnosticError guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingError DiagnosticError
@@ -38,7 +37,7 @@ highlight DiagnosticHint guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingHint DiagnosticHint
 highlight! link DiagnosticSignHint DiagnosticHint
 highlight! link DiagnosticVirtualTextHint DiagnosticHint
-highlight DiagnosticInfo guifg=#FD9BCC guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticInfo guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingInfo DiagnosticInfo
 highlight! link DiagnosticSignInfo DiagnosticInfo
 highlight! link DiagnosticVirtualTextInfo DiagnosticInfo
@@ -48,7 +47,7 @@ highlight! link DiagnosticSignOk DiagnosticOk
 highlight! link DiagnosticVirtualTextOk DiagnosticOk
 highlight DiagnosticUnderlineError guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineHint guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight DiagnosticUnderlineInfo guifg=#FD9BCC guibg=NONE guisp=NONE blend=NONE gui=underline
+highlight DiagnosticUnderlineInfo guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineOk guifg=#74BE9E guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineWarn guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticWarn guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -57,7 +56,7 @@ highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
 highlight DiffAdd guifg=#281520 guibg=#74BE9E guisp=NONE blend=NONE gui=bold
 highlight DiffChange guifg=#F8D3E9 guibg=#683152 guisp=NONE blend=NONE gui=bold
-highlight DiffDelete guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=bold
+highlight DiffDelete guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight DiffText guifg=#281520 guibg=#DE91DA guisp=NONE blend=NONE gui=NONE
 highlight Directory guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight EndOfBuffer guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -70,11 +69,11 @@ highlight FoldColumn guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineFold FoldColumn
 highlight! link CursorLineSign FoldColumn
 highlight! link SignColumn FoldColumn
-highlight Folded guifg=#F4B9DC guibg=#21121B guisp=NONE blend=NONE gui=NONE
-highlight Function guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Folded guifg=#F4B9DC guibg=#24141E guisp=NONE blend=NONE gui=NONE
+highlight Function guifg=#F269AD guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @function Function
 highlight! link @method Function
-highlight Identifier guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Identifier guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @field Identifier
 highlight! link @namespace Identifier
 highlight! link @parameter Identifier
@@ -86,47 +85,48 @@ highlight! link Search IncSearch
 highlight! link @include Include
 highlight! link @keyword Keyword
 highlight! link @label Label
-highlight LineNr guifg=#F4B9DC guibg=#B54067 guisp=NONE blend=NONE gui=NONE
+highlight LineNr guifg=#21121B guibg=#B54067 guisp=NONE blend=NONE gui=NONE
 highlight! link LineNrAbove LineNr
 highlight! link LineNrBelow LineNr
 highlight! link @function.macro Macro
 highlight! link @macro Macro
-highlight MatchParen guifg=#F8D3E9 guibg=#A75FB4 guisp=NONE blend=NONE gui=bold
-highlight ModeMsg guifg=#FD9BCC guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight MatchParen guifg=#F8D3E9 guibg=#F269AD guisp=NONE blend=NONE gui=bold
+highlight ModeMsg guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MoreMsg guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MsgArea guifg=#B1819E guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MsgSeparator guifg=#281520 guibg=#B1819E guisp=NONE blend=NONE gui=NONE
 highlight NonText guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight NormalFloat guifg=#B1819E guibg=#21121B guisp=NONE blend=NONE gui=NONE
+highlight NormalFloat guifg=#B1819E guibg=#24141E guisp=NONE blend=NONE gui=NONE
 highlight! link FloatBorder NormalFloat
 highlight NormalNC guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @number Number
+highlight Operator guifg=#F269AD guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @operator Operator
-highlight Pmenu guifg=#F4B9DC guibg=#21121B guisp=NONE blend=NONE gui=NONE
+highlight Pmenu guifg=#F4B9DC guibg=#24141E guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtra Pmenu
 highlight! link PmenuKind Pmenu
 highlight! link PmenuSbar Pmenu
-highlight PmenuSel guifg=#21121B guibg=#F4B9DC guisp=NONE blend=NONE gui=NONE
+highlight PmenuSel guifg=#24141E guibg=#F4B9DC guisp=NONE blend=NONE gui=NONE
 highlight! link PmenuExtraSel PmenuSel
 highlight! link PmenuKindSel PmenuSel
 highlight PmenuThumb guifg=#F8D3E9 guibg=#90647F guisp=NONE blend=NONE gui=NONE
-highlight PreProc guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight PreProc guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Define PreProc
 highlight! link Include PreProc
 highlight! link Macro PreProc
 highlight! link PreCondit PreProc
 highlight! link @preproc PreProc
-highlight Question guifg=#FD9BCC guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Question guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link QuickFixLine Question
 highlight! link @repeat Repeat
-highlight Special guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Special guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Debug Special
-highlight! link SpecialChar Special
 highlight! link SpecialComment Special
 highlight! link Tag Special
 highlight! link @constant.builtin Special
 highlight! link @constructor Special
 highlight! link @function.builtin Special
+highlight SpecialChar guifg=#74BE9E guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @character.special SpecialChar
 highlight! link @string.escape SpecialChar
 highlight! link @string.special SpecialChar
@@ -135,7 +135,7 @@ highlight SpellBad guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#74BE9E guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=undercurl
-highlight Statement guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=bold
+highlight Statement guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link Conditional Statement
 highlight! link Exception Statement
 highlight! link Keyword Statement
@@ -144,13 +144,13 @@ highlight! link Repeat Statement
 highlight StatusLine guifg=NONE guibg=#532742 guisp=NONE blend=NONE gui=NONE
 highlight StatusLineNC guifg=NONE guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight! link @storageclass StorageClass
-highlight String guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight String guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @string String
 highlight! link @structure Structure
 highlight Substitute guifg=#281520 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE
-highlight TabLine guifg=#90647F guibg=#21121B guisp=NONE blend=NONE gui=NONE
-highlight TabLineFill guifg=NONE guibg=#1B0E16 guisp=NONE blend=NONE gui=NONE
-highlight TabLineSel guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=italic
+highlight TabLine guifg=#90647F guibg=#24141E guisp=NONE blend=NONE gui=NONE
+highlight TabLineFill guifg=NONE guibg=#21121B guisp=NONE blend=NONE gui=NONE
+highlight TabLineSel guifg=#281520 guibg=#F269AD guisp=NONE blend=NONE gui=italic
 highlight! link @tag Tag
 highlight TermCursor guifg=#281520 guibg=#B1819E guisp=NONE blend=NONE gui=NONE
 highlight TermCursorNC guifg=#B1819E guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -158,7 +158,7 @@ highlight Title guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.title Title
 highlight Todo guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.todo Todo
-highlight Type guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Type guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link StorageClass Type
 highlight! link Structure Type
 highlight! link Typedef Type
@@ -169,15 +169,15 @@ highlight! link @text.underline Underlined
 highlight! link @text.uri Underlined
 highlight VertSplit guifg=#3E1D31 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Winseparator VertSplit
-highlight Visual guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=NONE
+highlight Visual guifg=#281520 guibg=#F269AD guisp=NONE blend=NONE gui=NONE
 highlight! link LspReferenceRead Visual
 highlight! link LspReferenceText Visual
 highlight! link LspReferenceWrite Visual
 highlight! link LspSignatureActiveParameter Visual
-highlight VisualNOS guifg=#281520 guibg=#D65C85 guisp=NONE blend=NONE gui=NONE
+highlight VisualNOS guifg=#281520 guibg=#B54067 guisp=NONE blend=NONE gui=NONE
 highlight WarningMsg guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Whitespace guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight WinBar guifg=NONE guibg=#1B0E16 guisp=NONE blend=NONE gui=bold
-highlight WinBarNC guifg=NONE guibg=#1B0E16 guisp=NONE blend=NONE gui=NONE
+highlight WinBar guifg=NONE guibg=#21121B guisp=NONE blend=NONE gui=bold
+highlight WinBarNC guifg=NONE guibg=#21121B guisp=NONE blend=NONE gui=NONE
 set background=dark
 let g:colors_name="perona"
