@@ -15,30 +15,30 @@ foreground = '#f4b9dc'
 
 # Normal colors
 [colors.normal]
-black = '#3c2031'
-red = '#b31a3b'
-green = '#b374be'
+black = '#3e1d31'
+red = '#a90f30'
+green = '#a75fb4'
 yellow = '#e65667'
-blue = '#6a8cbe'
-magenta = '#b54073'
-cyan = '#e2509b'
-white = '#d19ebd'
+blue = '#8dafe2'
+magenta = '#b54067'
+cyan = '#f269ad'
+white = '#b1819e'
 
 # Bright colors
 [colors.bright]
-black = '#633651'
-red = '#d32246'
-green = '#da95d5'
+black = '#683152'
+red = '#de3557'
+green = '#de91da'
 yellow = '#eb8490'
-blue = '#9db2d2'
-magenta = '#d65c8d'
-cyan = '#f877b5'
+blue = '#b4cff8'
+magenta = '#d65c85'
+cyan = '#ff99cc'
 white = '#f4b9dc'
 
 # Indexed Colors
 [[colors.indexed_colors]]
 index = 16
-color = '#70c2b1'
+color = '#74be9e'
 
 [[colors.indexed_colors]]
 index = 17

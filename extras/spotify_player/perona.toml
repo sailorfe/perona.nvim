@@ -6,17 +6,17 @@ name = "perona"
 [themes.palette]
 background = "#281520"
 foreground = "#f4b9dc"
-black = "#3c2031"
-blue = "#6a8cbe"
-cyan = "#f877b5"
-green = "#b374be"
-magenta = "#d65c8d"
-red = "#d32246"
+black = "#3e1d31"
+blue = "#b4cff8"
+cyan = "#ff99cc"
+green = "#de91da"
+magenta = "#d65c95"
+red = "#de3557"
 white = "#f4b9dc"
 yellow = "#eb8490"
 
 [themes.component_style]
-selection = { bg = "#633651", modifiers = ["Bold"] }
+selection = { bg = "#683152", modifiers = ["Bold"] }
 block_title = { fg = "Magenta" }
 playback_track = { fg = "Cyan", modifiers = ["Bold"] }
 playback_album = { fg = "Yellow", modifiers = ["Italic"] }
