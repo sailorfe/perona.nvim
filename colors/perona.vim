@@ -23,7 +23,7 @@ highlight! link WildMenu Cursor
 highlight! link lCursor Cursor
 highlight CursorColumn guifg=NONE guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLine CursorColumn
-highlight CursorLineNr guifg=#B4CFF8 guibg=#532742 guisp=NONE blend=NONE gui=bold
+highlight CursorLineNr guifg=#8DAFE2 guibg=#3E1D31 guisp=NONE blend=NONE gui=bold
 highlight! link @debug Debug
 highlight! link @constant.macro Define
 highlight! link @define Define

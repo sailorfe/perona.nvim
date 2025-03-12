@@ -54,7 +54,7 @@ local theme = lush(function(injected_functions)
     LineNr         { bg = berry, fg = thriller },
     LineNrAbove    { LineNr },
     LineNrBelow    { LineNr },
-    CursorLineNr   { bg = mihawk, fg = sea, gui = "bold" },
+    CursorLineNr   { bg = dracule, fg = kuma, gui = "bold" },
     CursorLineFold { FoldColumn },
     CursorLineSign { FoldColumn },
     MatchParen     { bg = surprise, fg = hollow, gui = "bold"},
