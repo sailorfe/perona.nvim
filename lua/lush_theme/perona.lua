@@ -1,272 +1,226 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local dark00	= hsl(324, 30, 8)
-local dark01	= hsl(324, 30, 10)
-local base00	= hsl(324, 30, 12)
-local base01	=	hsl(324, 30, 18)
-local base02	= hsl(324, 30, 24)
-local base07	= hsl(324, 30, 30)
-local base03	= hsl(324, 24, 60)
-local base04	= hsl(324, 36, 72)
-local base05	= hsl(324, 72, 84)
-local base06	= hsl(324, 72, 90)
-local blood			= hsl(347, 75, 40)	-- #b31a3b
-local ruby			= hsl(348, 72, 48)	-- #d32246
-local wonder		= hsl(291, 36, 60)	-- #b374be
-local garden		= hsl(303, 48, 72)	-- #da95d6
-local sangria		= hsl(353, 74, 62)	-- #e65667
-local fruit			= hsl(353, 72, 72)	-- #eb8490
-local kuma			= hsl(216, 39, 58)	-- #6a8cbe
-local sea				= hsl(216, 37, 72)	-- #9db2d2
-local berry			= hsl(334, 48, 48)	-- #b54073
-local jam				= hsl(336, 60, 60)	-- #d65c8d
-local surprise	= hsl(329, 72, 60)	-- #e2509b
-local zombie		= hsl(331, 90, 72)	-- #f877b5
+local thriller	= hsl(324, 30, 8)
+local bark			= hsl(324, 30, 10)
+local cocoa			= hsl(324, 30, 12)
+local dracule		=	hsl(324, 36, 18)
+local mihawk		= hsl(324, 36, 24)
+local wine			= hsl(324, 36, 30)
+local gecko			= hsl(324, 18, 48)
+local moria			= hsl(324, 24, 60)
+local negative	= hsl(324, 72, 84)
+local hollow		= hsl(324, 72, 90)
+local berry			= hsl(340, 48, 48)
+local jam				= hsl(340, 60, 60)
+local surprise	= hsl(330, 84, 72)
+local zombie		= hsl(330, 96, 80)
+local kuma			= hsl(216, 60, 72)
+local sea				= hsl(216, 84, 84)
+local wonder		= hsl(291, 36, 54)
+local garden		= hsl(303, 54, 72)
+local sangria		= hsl(353, 74, 62)
+local fruit			= hsl(353, 72, 72)
+local blood			= hsl(347, 84, 36)
+local ruby			= hsl(348, 72, 54)
+local marimo		= hsl(154, 36, 60)
 
--- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
--- support an annotation like the following. Consult your server documentation.
----@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
   return {
-    -- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight
-    -- groups, mostly used for styling UI elements.
-    -- Comment them out and add your own properties to override the defaults.
-    -- An empty definition `{}` will clear all styling, leaving elements looking
-    -- like the 'Normal' group.
-    -- To be able to link to a group, it must already be defined, so you may have
-    -- to reorder items as you go.
-    --
-    -- See :h highlight-groups
-    --		
-    ColorColumn    { bg = base01 },
-    Conceal        { bg = base00, fg = garden },
-    Cursor         { bg = base05, fg = base00 },
-    CurSearch      { bg = wonder, fg = base01 },
-    -- lCursor        { },
-    -- CursorIM       { },
-    CursorColumn   { Cursor },
-    CursorLine     { bg = base02 },
+    ColorColumn    { bg = mihawk },
+    Conceal        { fg = gecko },
+    Cursor         { bg = negative, fg = cocoa },
+    CurSearch      { bg = sea, fg = cocoa },
+    lCursor        { Cursor },
+    CursorIM       { Cursor },
+    CursorColumn   { bg = dracule },
+    CursorLine     { CursorColumn },
     Directory      { fg = garden },
-    DiffAdd        { bg = jam, fg = base01 },
-    DiffChange     { bg = base07, fg = base06 },
-    DiffDelete     { bg = blood, fg = base05 },
-    DiffText       { bg = garden, fg = base01 },
-    EndOfBuffer    { fg = garden },
-    TermCursor     { Cursor },
-    TermCursorNC   { bg = base03, fg = base05 },
+    DiffAdd        { bg = marimo, fg = cocoa, gui = "bold" },
+    DiffChange     { bg = wine, fg = hollow, gui = "bold" },
+    DiffDelete     { fg = fruit, gui = "bold"},
+    DiffText       { bg = garden, fg = cocoa },
+    EndOfBuffer    { fg = gecko },
+    TermCursor     { bg = moria, fg = cocoa },
+    TermCursorNC   { fg = moria },
     ErrorMsg       { fg = ruby },
-    VertSplit      { fg = base02 },
-    Folded         { bg = base01, fg = base03 },
-    FoldColumn     { bg = base01, fg = fruit },
-    SignColumn     { Folded },
-    IncSearch      { bg = wonder, fg = base01 },
-    Substitute     { bg = kuma, fg = base01 },
-    LineNr         { bg = base00, fg = base02},
-    CursorLineNr   { bg = base00, fg = base04, gui = "bold" },
+    VertSplit      { fg = dracule },
+    Folded         { bg = bark, fg = negative },
+    FoldColumn     { fg = wine },
+    SignColumn     { FoldColumn },
+    IncSearch      { CurSearch },
+    Substitute     { bg = kuma, fg = cocoa },
+    LineNr         { bg = berry, fg = negative },
+    LineNrAbove    { LineNr },
+    LineNrBelow    { LineNr },
+    CursorLineNr   { bg = mihawk, fg = sea, gui = "bold" },
     CursorLineFold { FoldColumn },
-    CursorLineSign { SignColumn },
-    MatchParen     { bg = base07 },
-    ModeMsg        { fg = jam },
-    -- MsgArea        { }, -- Area for messages and cmdline
-    -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg        { ModeMsg }, -- |more-prompt|
-    NonText        { fg = base03 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal         { bg = base00, fg = base05 },
-    NormalFloat    { bg = dark00 }, -- Normal text in floating windows.
-    FloatBorder    { bg = dark00 }, -- Border of floating windows.
-    -- FloatTitle     { }, -- Title of floating windows.
-    -- NormalNC       { }, -- normal text in non-current windows
-    Pmenu          { bg = base01, fg = base05 }, -- Popup menu: Normal item.
-    PmenuSel       { bg = base05, fg = base01 }, -- Popup menu: Selected item.
-    PmenuKind      { Pmenu }, -- Popup menu: Normal item "kind"
-    PmenuKindSel   { PmenuSel }, -- Popup menu: Selected item "kind"
-    PmenuExtra     { Pmenu }, -- Popup menu: Normal item "extra text"
-    PmenuExtraSel  { PmenuSel }, -- Popup menu: Selected item "extra text"
-    PmenuSbar      { fg = base02 }, -- Popup menu: Scrollbar.
-    PmenuThumb     { fg = base07 }, -- Popup menu: Thumb of the scrollbar.
-    Question       { fg = sea } , -- |hit-enter| prompt and yes/no questions
-    QuickFixLine   { fg= sea }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search         { bg = fruit, fg = base01 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    SpecialKey     { fg = base07 }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
-    SpellBad       { fg = ruby, gui = "undercurl" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-    SpellCap       { fg = fruit, gui = "undercurl" }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    SpellLocal     { fg = garden, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    SpellRare      { fg = sea, gui = "undercurl" }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		StatusLine     { bg = base02, fg = base05, gui = "italic" },
-    StatusLineNC   { bg = base01, fg = base03 },
-    TabLine        { bg = base01, fg = base03 }, -- Tab pages line, not active tab page label
-    TabLineFill    { bg = dark01 }, -- Tab pages line, where there are no labels
-    TabLineSel     { bg = base00, fg = zombie, gui = "italic" }, -- Tab pages line, active tab page label
-    Title          { fg = garden }, -- Titles for output from ":set all", ":autocmd" etc.
-    Visual         { bg = base07, fg = base06 },
-    VisualNOS      { fg = ruby }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg     { fg = ruby }, -- Warning messages
-    -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    Winseparator   { VertSplit }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
-    WildMenu       { bg = base05, fg = blood}, -- Current match in 'wildmenu' completion
-    WinBar         { bg = dark00, fg = base03 }, -- Window bar of current window
-    WinBarNC       { bg = dark00, fg = base03}, -- Window bar of not-current windows
+    CursorLineSign { FoldColumn },
+    MatchParen     { bg = wonder, fg = hollow, gui = "bold"},
+    ModeMsg        { fg = zombie },
+    MsgArea        { fg = moria },
+    MsgSeparator   { bg = moria, fg = cocoa },
+    MoreMsg        { fg = wine },
+    NonText        { fg = gecko },
+    Normal         { bg = cocoa, fg = negative },
+    NormalFloat    { bg = bark, fg = moria },
+    FloatBorder    { NormalFloat },
+    FloatTitle     { fg = negative, gui = "bold" },
+    NormalNC       { fg = gecko },
+    Pmenu          { bg = bark, fg = negative },
+    PmenuSel       { bg = negative, fg = bark },
+    PmenuKind      { Pmenu },
+    PmenuKindSel   { PmenuSel },
+    PmenuExtra     { Pmenu },
+    PmenuExtraSel  { PmenuSel},
+    PmenuSbar      { Pmenu },
+    PmenuThumb     { bg = gecko, fg = hollow },
+    Question       { fg = zombie },
+    QuickFixLine   { Question },
+    Search         { IncSearch },
+    SpecialKey     { fg = moria },
+    SpellBad       { fg = sangria, gui = "undercurl"},
+    SpellCap       { fg = fruit, gui = "undercurl" },
+    SpellLocal     { fg = marimo, gui = "undercurl" },
+    SpellRare      { fg = sea, gui= "undercurl"},
+    StatusLine     { bg = mihawk },
+    StatusLineNC   { bg = dracule },
+    TabLine        { bg = bark, fg = gecko },
+    TabLineFill    { bg = thriller },
+    TabLineSel     { bg = surprise, fg = cocoa, gui = "italic" },
+    Title          { gui = "bold" },
+    Visual         { bg = surprise, fg = cocoa },
+    VisualNOS      { bg = jam, fg = cocoa },
+    WarningMsg     { fg = fruit },
+    Whitespace     { fg = wine },
+    Winseparator   { VertSplit },
+    WildMenu       { Cursor },
+    WinBar         { bg = thriller, gui = "bold" },
+    WinBarNC       { bg = thriller },
 
-    -- Common vim syntax groups used for all kinds of code and markup.
-    -- Commented-out groups should chain up to their preferblood (*) group
-    -- by default.
-    --
-    -- See :h group-name
-    --
-    -- Uncomment and edit if you want more specific syntax highlighting.
+    Comment        { fg = gecko, gui = "italic" },
 
-    Comment        { fg = base03, gui = "italic" }, -- Any comment
+    Constant       { fg = zombie },
+    String         { fg = jam },
+    Character      { Constant },
+    Number         { Constant },
+    Boolean        { Constant },
+    Float          { Constant },
 
-    Constant       { fg = wonder }, -- (*) Any constant
-    String         { fg = jam }, --   A string constant: "this is a string"
-    Character      { fg = ruby }, --   A character constant: 'c', '\n'
-    Number         { fg = wonder }, --   A number constant: 234, 0xff
-    Boolean        { fg = wonder }, --   A boolean constant: TRUE, false
-    Float          { fg = wonder }, --   A floating point constant: 2.3e10
+    Identifier     { fg = sea },
+    Function       { fg = kuma },
 
-    Identifier     { fg = ruby }, -- (*) Any variable name
-    Function       { fg = garden }, --   Function name (also: methods for classes)
+    Statement      { fg = surprise, gui = "bold" },
+    Conditional    { Statement },
+    Repeat         { Statement },
+    Label          { Statement },
+    Operator       { Normal },
+    Keyword        { Statement },
+    Exception      { Statement },
 
-    Statement      { fg = ruby }, -- (*) Any statement
-    Conditional    { fg = sea }, --   if, then, else, endif, switch, etc.
-    Repeat         { fg = kuma }, --   for, do, while, etc.
-    Label          { fg = kuma }, --   case, default, etc.
-    Operator       { fg = base05 }, --   "sizeof", "+", "*", etc.
-    Keyword        { fg = sea }, --   any other keyword
-    Exception      { fg = ruby }, --   try, catch, throw
+    PreProc        { fg = jam },
+    Include        { PreProc },
+    Define         { PreProc },
+    Macro          { PreProc },
+    PreCondit      { PreProc },
 
-    PreProc        { fg = kuma }, -- (*) Generic Preprocessor
-    Include        { fg = garden }, --   Preprocessor #include
-    Define         { fg = sea }, --   Preprocessor #define
-    Macro          { fg = ruby }, --   Same as Define
-    PreCondit      { fg = sea}, --   Preprocessor #if, #else, #endif, etc.
+    Type           { fg = fruit },
+    StorageClass   { Type },
+    Structure      { Type },
+    Typedef        { Type },
 
-    Type           { fg = kuma }, -- (*) int, long, char, etc.
-    StorageClass   { fg = kuma }, --   static, register, volatile, etc.
-    Structure      { fg = sea }, --   struct, union, enum, etc.
-    Typedef        { fg = kuma }, --   A typedef
+    Special        { fg = garden },
+    SpecialChar    { Special },
+    Tag            { Special },
+    Delimiter      { fg = wonder },
+    SpecialComment { Special },
+    Debug          { Special },
 
-    Special        { fg = fruit }, -- (*) Any special symbol
-    SpecialChar    { fg = sangria }, --   Special character in a constant
-    Tag            { fg = kuma }, --   You can use CTRL-] on this
-    Delimiter      { fg = zombie }, --   Character that needs attention
-    SpecialComment { fg = sea}, --   Special things inside a comment (e.g. '\n')
-    Debug          { fg = ruby }, --   Debugging statements
+    Underlined     { gui = "underline" },
+    Ignore         { fg = moria },
+    Error          { bg = blood, fg = hollow },
+    Todo           { gui = "bold" },
 
-    Underlined     { fg = zombie,  gui = "underline" }, -- Text that stands out, HTML links
-    -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
-    Error          { fg = ruby }, -- Any erroneous construct
-    Todo           { bg = base01, fg = kuma }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    LspReferenceText            { Visual },
+    LspReferenceRead            { Visual },
+    LspReferenceWrite           { Visual },
+    LspCodeLens                 { Comment },
+    LspCodeLensSeparator        { Comment },
+    LspSignatureActiveParameter { Visual },
 
-    -- These groups are for the native LSP client and diagnostic system. Some
-    -- other LSP clients may use these groups, or use their own. Consult your
-    -- LSP client's documentation.
+    DiagnosticError            { fg = ruby },
+    DiagnosticWarn             { fg = fruit },
+    DiagnosticInfo             { fg = zombie },
+    DiagnosticHint             { fg = garden },
+    DiagnosticOk               { fg = marimo },
+    DiagnosticVirtualTextError { DiagnosticError },
+    DiagnosticVirtualTextWarn  { DiagnosticWarn},
+    DiagnosticVirtualTextInfo  { DiagnosticInfo },
+    DiagnosticVirtualTextHint  { DiagnosticHint },
+    DiagnosticVirtualTextOk    { DiagnosticOk },
+    DiagnosticUnderlineError   { DiagnosticError, gui = "underline" },
+    DiagnosticUnderlineWarn    { DiagnosticWarn, gui = "underline" },
+    DiagnosticUnderlineInfo    { DiagnosticInfo, gui = "underline" },
+    DiagnosticUnderlineHint    { DiagnosticHint, gui = "underline" },
+    DiagnosticUnderlineOk      { DiagnosticOk, gui = "underline" },
+    DiagnosticFloatingError    { DiagnosticError },
+    DiagnosticFloatingWarn     { DiagnosticWarn },
+    DiagnosticFloatingInfo     { DiagnosticInfo },
+    DiagnosticFloatingHint     { DiagnosticHint } ,
+    DiagnosticFloatingOk       { DiagnosticOk },
+    DiagnosticSignError        { DiagnosticError },
+    DiagnosticSignWarn         { DiagnosticWarn },
+    DiagnosticSignInfo         { DiagnosticInfo },
+    DiagnosticSignHint         { DiagnosticHint },
+    DiagnosticSignOk           { DiagnosticOk},
 
-    -- See :h lsp-highlight, some groups may not be listed, submit a PR fix to lush-template!
-    --
-    -- LspReferenceText            { } , -- Used for highlighting "text" references
-    -- LspReferenceRead            { } , -- Used for highlighting "read" references
-    -- LspReferenceWrite           { } , -- Used for highlighting "write" references
-    -- LspCodeLens                 { } , -- Used to color the virtual text of the codelens. See |nvim_buf_set_extmark()|.
-    -- LspCodeLensSeparator        { } , -- Used to color the seperator between two or more code lens.
-    -- LspSignatureActiveParameter { } , -- Used to highlight the active parameter in the signature help. See |vim.lsp.handlers.signature_help()|.
-
-    -- See :h diagnostic-highlights, some groups may not be listed, submit a PR fix to lush-template!
-    --
-    DiagnosticError            { fg = ruby } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticWarn             { fg = wonder } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticInfo             { fg = base05 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticHint             { fg = base03 } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    DiagnosticOk               { fg = fruit } , -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-    -- DiagnosticVirtualTextError { } , -- Used for "Error" diagnostic virtual text.
-    -- DiagnosticVirtualTextWarn  { } , -- Used for "Warn" diagnostic virtual text.
-    -- DiagnosticVirtualTextInfo  { } , -- Used for "Info" diagnostic virtual text.
-    -- DiagnosticVirtualTextHint  { } , -- Used for "Hint" diagnostic virtual text.
-    -- DiagnosticVirtualTextOk    { } , -- Used for "Ok" diagnostic virtual text.
-    -- DiagnosticUnderlineError   { } , -- Used to underline "Error" diagnostics.
-    -- DiagnosticUnderlineWarn    { } , -- Used to underline "Warn" diagnostics.
-    -- DiagnosticUnderlineInfo    { } , -- Used to underline "Info" diagnostics.
-    -- DiagnosticUnderlineHint    { } , -- Used to underline "Hint" diagnostics.
-    -- DiagnosticUnderlineOk      { } , -- Used to underline "Ok" diagnostics.
-    -- DiagnosticFloatingError    { } , -- Used to color "Error" diagnostic messages in diagnostics float. See |vim.diagnostic.open_float()|
-    -- DiagnosticFloatingWarn     { } , -- Used to color "Warn" diagnostic messages in diagnostics float.
-    -- DiagnosticFloatingInfo     { } , -- Used to color "Info" diagnostic messages in diagnostics float.
-    -- DiagnosticFloatingHint     { } , -- Used to color "Hint" diagnostic messages in diagnostics float.
-    -- DiagnosticFloatingOk       { } , -- Used to color "Ok" diagnostic messages in diagnostics float.
-    -- DiagnosticSignError        { } , -- Used for "Error" signs in sign column.
-    -- DiagnosticSignWarn         { } , -- Used for "Warn" signs in sign column.
-    -- DiagnosticSignInfo         { } , -- Used for "Info" signs in sign column.
-    -- DiagnosticSignHint         { } , -- Used for "Hint" signs in sign column.
-    -- DiagnosticSignOk           { } , -- Used for "Ok" signs in sign column.
-
-    -- Tree-Sitter syntax groups.
-    --
-    -- See :h treesitter-highlight-groups, some groups may not be listed,
-    -- submit a PR fix to lush-template!
-    --
-    -- Tree-Sitter groups are defined with an "@" symbol, which must be
-    -- specially handled to be valid lua code, we do this via the special
-    -- sym function. The following are all valid ways to call the sym function,
-    -- for more details see https://www.lua.org/pil/5.html
-    --
-    -- sym("@text.literal")
-    -- sym('@text.literal')
-    -- sym"@text.literal"
-    -- sym'@text.literal'
-    --
-    -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
-
-    -- sym"@text.literal"      { }, -- Comment
-    -- sym"@text.reference"    { }, -- Identifier
-    -- sym"@text.title"        { }, -- Title
-    -- sym"@text.uri"          { }, -- Underlined
-    -- sym"@text.underline"    { }, -- Underlined
-    -- sym"@text.todo"         { }, -- Todo
-    -- sym"@comment"           { }, -- Comment
-    -- sym"@punctuation"       { }, -- Delimiter
-    -- sym"@constant"          { }, -- Constant
-    -- sym"@constant.builtin"  { }, -- Special
-    -- sym"@constant.macro"    { }, -- Define
-    -- sym"@define"            { }, -- Define
-    -- sym"@macro"             { }, -- Macro
-    -- sym"@string"            { }, -- String
-    -- sym"@string.escape"     { }, -- SpecialChar
-    -- sym"@string.special"    { }, -- SpecialChar
-    -- sym"@character"         { }, -- Character
-    -- sym"@character.special" { }, -- SpecialChar
-    -- sym"@number"            { }, -- Number
-    -- sym"@boolean"           { }, -- Boolean
-    -- sym"@float"             { }, -- Float
-    -- sym"@function"          { }, -- Function
-    -- sym"@function.builtin"  { }, -- Special
-    -- sym"@function.macro"    { }, -- Macro
-    -- sym"@parameter"         { }, -- Identifier
-    -- sym"@method"            { }, -- Function
-    -- sym"@field"             { }, -- Identifier
-    -- sym"@property"          { }, -- Identifier
-    -- sym"@constructor"       { }, -- Special
-    -- sym"@conditional"       { }, -- Conditional
-    -- sym"@repeat"            { }, -- Repeat
-    -- sym"@label"             { }, -- Label
-    -- sym"@operator"          { }, -- Operator
-    -- sym"@keyword"           { }, -- Keyword
-    -- sym"@exception"         { }, -- Exception
-     sym"@variable"          { fg = base05 }, -- Identifier
-    -- sym"@type"              { }, -- Type
-    -- sym"@type.definition"   { }, -- Typedef
-    -- sym"@storageclass"      { }, -- StorageClass
-    -- sym"@structure"         { }, -- Structure
-    -- sym"@namespace"         { }, -- Identifier
-    -- sym"@include"           { }, -- Include
-    -- sym"@preproc"           { }, -- PreProc
-    -- sym"@debug"             { }, -- Debug
-    -- sym"@tag"               { }, -- Tag
+    sym"@text.literal"      { Comment },
+    sym"@text.reference"    { Identifier },
+    sym"@text.title"        { Title },
+    sym"@text.uri"          { Underlined },
+    sym"@text.underline"    { Underlined },
+    sym"@text.todo"         { Todo },
+    sym"@comment"           { Comment },
+    sym"@punctuation"       { Delimiter },
+    sym"@constant"          { Constant },
+    sym"@constant.builtin"  { Special },
+    sym"@constant.macro"    { Define },
+    sym"@define"            { Define },
+    sym"@macro"             { Macro },
+    sym"@string"            { String },
+    sym"@string.escape"     { SpecialChar },
+    sym"@string.special"    { SpecialChar },
+    sym"@character"         { Character },
+    sym"@character.special" { SpecialChar },
+    sym"@number"            { Number },
+    sym"@boolean"           { Boolean },
+    sym"@float"             { Float },
+    sym"@function"          { Function },
+    sym"@function.builtin"  { Special },
+    sym"@function.macro"    { Macro },
+    sym"@parameter"         { Identifier },
+    sym"@method"            { Function },
+    sym"@field"             { Identifier },
+    sym"@property"          { Identifier },
+    sym"@constructor"       { Special },
+    sym"@conditional"       { Conditional },
+    sym"@repeat"            { Repeat },
+    sym"@label"             { Label },
+    sym"@operator"          { Operator },
+    sym"@keyword"           { Keyword },
+    sym"@exception"         { Exception },
+    sym"@variable"          { Identifier },
+    sym"@type"              { Type },
+    sym"@type.definition"   { Typedef },
+    sym"@storageclass"      { StorageClass },
+    sym"@structure"         { Structure },
+    sym"@namespace"         { Identifier },
+    sym"@include"           { Include },
+    sym"@preproc"           { PreProc },
+    sym"@debug"             { Debug },
+    sym"@tag"               { Tag },
 }
 end)
 
--- Return our parsed theme for extension or use elsewhere.
 return theme
-
--- vi:nowrap
