@@ -9,7 +9,7 @@ highlight! link @comment Comment
 highlight! link @text.literal Comment
 highlight Conceal guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @conditional Conditional
-highlight Constant guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Constant guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Boolean Constant
 highlight! link Character Constant
 highlight! link Float Constant
@@ -144,7 +144,7 @@ highlight! link Repeat Statement
 highlight StatusLine guifg=NONE guibg=#532742 guisp=NONE blend=NONE gui=NONE
 highlight StatusLineNC guifg=NONE guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight! link @storageclass StorageClass
-highlight String guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight String guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @string String
 highlight! link @structure Structure
 highlight Substitute guifg=#281520 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE

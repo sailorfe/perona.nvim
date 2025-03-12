@@ -101,8 +101,8 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = gecko, gui = "italic" },
 
-    Constant       { fg = wonder },
-    String         { fg = garden },
+    Constant       { fg = garden },
+    String         { fg = zombie },
     Character      { Constant },
     Number         { Constant },
     Boolean        { Constant },
