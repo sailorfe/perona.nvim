@@ -1,12 +1,12 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local thriller	= hsl(324, 30, 10)
-local bark			= hsl(324, 30, 11)
-local cocoa			= hsl(324, 30, 12)
-local dracule		=	hsl(324, 36, 18)
-local mihawk		= hsl(324, 36, 24)
-local wine			= hsl(324, 36, 30)
+local thriller	= hsl(324, 48, 10)
+local bark			= hsl(324, 48, 11)
+local cocoa			= hsl(324, 48, 12)
+local dracule		=	hsl(324, 48, 18)
+local mihawk		= hsl(324, 48, 24)
+local wine			= hsl(324, 48, 30)
 local gecko			= hsl(324, 18, 48)
 local moria			= hsl(324, 24, 60)
 local negative	= hsl(324, 72, 84)
