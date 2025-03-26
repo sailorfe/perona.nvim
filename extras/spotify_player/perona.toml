@@ -1,5 +1,5 @@
 # perona theme for spotify_player
-# https://codeberg.org/spica/peronan.nvim
+# https://codeberg.org/spica/perona.nvim/src/branch/dev/extras/spotify_player
 
 [[themes]]
 name = "perona"

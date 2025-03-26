@@ -80,4 +80,11 @@ cp colors/perona.vim ~/.config/vim/colors
 <a name="extras"></a>
 ## extras
 
-ports for [foot](https://codeberg.org/dnkl/foot), [iSH](https://github.com/ish-app/ish), [spotify_player](https://github.com/aome510/spotify-player), [termux](https://github.com/termux/termux-app), and tty can be found under <a href="https://codeberg.org/spica/perona.nvim/src/branch/dev/extras">extras</a>.
+ports for the following can be found under [extras](https://codeberg.org/spica/perona.nvim/src/branch/main/extras):
+
+- alacritty
+- foot
+- iSH
+- spotify_player
+- termux
+- tty
