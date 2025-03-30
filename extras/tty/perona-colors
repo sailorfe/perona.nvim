@@ -8,7 +8,7 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P5b54067" #darkmagenta
 	echo -en "\e]P6f269ad" #darkcyan
 	echo -en "\e]P7b1819e" #lightgrey
-	echo -en "\e]P8683152" #darkgrey
+	echo -en "\e]P83e1d31" #darkgrey
 	echo -en "\e]P9de3557" #red
 	echo -en "\e]PAde91da" #green
 	echo -en "\e]PBeb8490" #yellow
