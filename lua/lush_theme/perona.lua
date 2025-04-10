@@ -226,12 +226,6 @@ local theme = lush(function(injected_functions)
 		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
 		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
 		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
-		RenderMarkdownH1Fg			{ RenderMarkdownH1Bg },
-		RenderMarkdownH2Fg			{ RenderMarkdownH2Bg },
-		RenderMarkdownH3Fg			{ RenderMarkdownH3Bg },
-		RenderMarkdownH4Fg			{ RenderMarkdownH4Bg },
-		RenderMarkdownH5Fg			{ RenderMarkdownH5Bg },
-		RenderMarkdownH6Fg			{ RenderMarkdownH6Bg },
 }
 end)
 
