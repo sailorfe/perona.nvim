@@ -220,6 +220,18 @@ local theme = lush(function(injected_functions)
     sym"@preproc"           { PreProc },
     sym"@debug"             { Debug },
     sym"@tag"               { Tag },
+		RenderMarkdownH1Bg			{ bg = surprise, fg = cocoa },
+		RenderMarkdownH2Bg			{ bg = dracule, fg = kuma },
+		RenderMarkdownH3Bg			{ bg = dracule, fg = fruit },
+		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
+		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
+		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
+		RenderMarkdownH1Fg			{ RenderMarkdownH1Bg },
+		RenderMarkdownH2Fg			{ RenderMarkdownH2Bg },
+		RenderMarkdownH3Fg			{ RenderMarkdownH3Bg },
+		RenderMarkdownH4Fg			{ RenderMarkdownH4Bg },
+		RenderMarkdownH5Fg			{ RenderMarkdownH5Bg },
+		RenderMarkdownH6Fg			{ RenderMarkdownH6Bg },
 }
 end)
 
