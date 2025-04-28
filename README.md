@@ -88,3 +88,9 @@ ports for the following can be found under [extras](https://codeberg.org/spica/p
 - spotify_player
 - termux
 - tty
+
+<a name="acknowledgments"</a>
+## acknowledgments
+
+- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for entire chunks of lua and weeb inspration
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure
