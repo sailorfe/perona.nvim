@@ -16,32 +16,27 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 <a name="palette"></a>
 ## palette
 
-<img src="assets/921-crop.jpeg" align="right" width="240px" alt="chapter 921">
-
-<img src="assets/658-crop.jpeg" align="right" width="360px" alt="chapter 658">
-
-| ansi      | bright    |
-| --------- | --------- |
-| `#3e1d31` | `#683152` |
-| `#a90f30` | `#de3557` |
-| `#a75fb4` | `#de91da` |
-| `#e65667` | `#eb8490` |
-| `#8dafe2` | `#b4cff8` |
-| `#b54067` | `#d65c85` |
-| `#f269ad` | `#ff99cc` |
-| `#b1819e` | `#f4b9dc` |
+| ansi                                  | bright                                |
+| ------------------------------------- | ------------------------------------- |
+| ![281520](assets/00.png) `#281520`    | ![683152](assets/00.png) `#683152`    |
+| ![a90f30](assets/01.png) `#a90f30`    | ![de3557](assets/00.png) `#de3557`    |
+| ![a75fb4](assets/02.png) `#a75fb4`    | ![de91da](assets/00.png) `#de91da`    |
+| ![e65667](assets/03.png) `#e65667`    | ![eb8490](assets/00.png) `#eb8490`    |
+| ![8dafe2](assets/04.png) `#8dafe2`    | ![b4cff8](assets/00.png) `#b4cff8`    |
+| ![b54067](assets/05.png) `#b54067`    | ![d65c85](assets/00.png) `#d65c85`    |
+| ![f269ad](assets/06.png) `#f269ad`    | ![ff99cc](assets/00.png) `#ff99cc`    |
+| ![b1819e](assets/07.png) `#b1819e`    | ![f4b9dc](assets/00.png) `#f4b9dc`    |
 
 <a name="installation"></a>
 ## installation
 
 ### pure lua
 
-1. clone this repository somewhere on your system like `$HOME/src`: `git clone https://codeberg.org:sailorfe/perona.nvim.git`.
-2. with lazy:
+with lazy:
 
 ```lua
 return {
-	dir = "/absolute/path/to/perona.nvim",
+	"sailorfe/perona.nvim",
 	opts = {
 		-- transparent = false,
 		-- overrides = false,
@@ -54,25 +49,14 @@ return {
 
 ### vimscript
 
-1. clone this repository somewhere on your system like `$HOME/src` and check out the vim branch:
+the easiest method is probably just to run curl from your n/vim `colors` directory:
 
-```
-git clone https://codeberg.org:sailorfe/perona.nvim.git
-cd perona.nvim
-git checkout vim
-```
+```sh
 
-2. copy `perona.vim` to your vim or neovim `colors` directory:
-
-```
-cp colors/perona.vim ~/.config/nvim/colors
-# or maybe
-cp colors/perona.vim ~/.vim/colors
-# or
-cp colors/perona.vim ~/.config/vim/colors
+curl -O https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
 ```
 
-3. set colorscheme:
+then set colorscheme with one of the folowing:
 
 - `init.lua`: `vim.cmd.colorscheme("perona")`
 - `.vimrc`: `set colorscheme "perona"`
@@ -93,5 +77,5 @@ ports for the following can be found under [extras](https://codeberg.org/sailorf
 <a name="acknowledgments"</a>
 ## acknowledgments
 
-- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for entire chunks of lua and weeb inspration
+- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for entire chunks of lua and weeb inspiration
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure
