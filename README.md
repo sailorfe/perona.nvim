@@ -18,14 +18,14 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 | ansi                                  | bright                                |
 | ------------------------------------- | ------------------------------------- |
-| ![281520](assets/00.png) `#281520`    | ![683152](assets/00.png) `#683152`    |
-| ![a90f30](assets/01.png) `#a90f30`    | ![de3557](assets/00.png) `#de3557`    |
-| ![a75fb4](assets/02.png) `#a75fb4`    | ![de91da](assets/00.png) `#de91da`    |
-| ![e65667](assets/03.png) `#e65667`    | ![eb8490](assets/00.png) `#eb8490`    |
-| ![8dafe2](assets/04.png) `#8dafe2`    | ![b4cff8](assets/00.png) `#b4cff8`    |
-| ![b54067](assets/05.png) `#b54067`    | ![d65c85](assets/00.png) `#d65c85`    |
-| ![f269ad](assets/06.png) `#f269ad`    | ![ff99cc](assets/00.png) `#ff99cc`    |
-| ![b1819e](assets/07.png) `#b1819e`    | ![f4b9dc](assets/00.png) `#f4b9dc`    |
+| ![281520](assets/00.png) `#281520`    | ![683152](assets/08.png) `#683152`    |
+| ![a90f30](assets/01.png) `#a90f30`    | ![de3557](assets/09.png) `#de3557`    |
+| ![a75fb4](assets/02.png) `#a75fb4`    | ![de91da](assets/10.png) `#de91da`    |
+| ![e65667](assets/03.png) `#e65667`    | ![eb8490](assets/11.png) `#eb8490`    |
+| ![8dafe2](assets/04.png) `#8dafe2`    | ![b4cff8](assets/12.png) `#b4cff8`    |
+| ![b54067](assets/05.png) `#b54067`    | ![d65c85](assets/13.png) `#d65c85`    |
+| ![f269ad](assets/06.png) `#f269ad`    | ![ff99cc](assets/14.png) `#ff99cc`    |
+| ![b1819e](assets/07.png) `#b1819e`    | ![f4b9dc](assets/15.png) `#f4b9dc`    |
 
 <a name="installation"></a>
 ## installation
