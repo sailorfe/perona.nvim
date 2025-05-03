@@ -36,7 +36,7 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece*. bui
 
 ### pure lua
 
-1. clone this repository somewhere on your system like `$HOME/src`: `git clone https://codeberg.org:spica/perona.nvim.git`.
+1. clone this repository somewhere on your system like `$HOME/src`: `git clone https://codeberg.org:sailorfe/perona.nvim.git`.
 2. with lazy:
 
 ```lua
@@ -57,7 +57,7 @@ return {
 1. clone this repository somewhere on your system like `$HOME/src` and check out the vim branch:
 
 ```
-git clone https://codeberg.org:spica/perona.nvim.git
+git clone https://codeberg.org:sailorfe/perona.nvim.git
 cd perona.nvim
 git checkout vim
 ```
@@ -81,7 +81,7 @@ cp colors/perona.vim ~/.config/vim/colors
 <a name="extras"></a>
 ## extras
 
-ports for the following can be found under [extras](https://codeberg.org/spica/perona.nvim/src/branch/main/extras):
+ports for the following can be found under [extras](https://codeberg.org/sailorfe/perona.nvim/src/branch/main/extras):
 
 - alacritty
 - foot
