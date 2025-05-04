@@ -1,6 +1,7 @@
 return {
 	["thriller"] = "#1b0e16",
 	["bark"] = "#21121b",
+	["" ] = '#24141E'
 	["cocoa"] = "#281520",
 	["dracule"] = "#3e1d31",
 	["mihawk"] = "#532742",
@@ -9,6 +10,7 @@ return {
 	["moria"] = "#b1819e",
 	["negative"] = "#f4b9dc",
 	["hollow"] = "#f8d3e9",
+	["jewel" ] = "#5b2033",
 	["berry"] = "#b54067",
 	["jam"] = "#d65c85",
 	["surprise"] = "#f269ad",
