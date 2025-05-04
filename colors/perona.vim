@@ -68,11 +68,13 @@ highlight FloatTitle guifg=#F4B9DC guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight FoldColumn guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link CursorLineFold FoldColumn
 highlight! link CursorLineSign FoldColumn
-highlight! link SignColumn FoldColumn
 highlight Folded guifg=#F4B9DC guibg=#24141E guisp=NONE blend=NONE gui=NONE
 highlight Function guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @function Function
 highlight! link @method Function
+highlight GitSignsAdd guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight GitSignsChange guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight GitSignsDelete guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @field Identifier
 highlight! link @namespace Identifier
@@ -119,18 +121,13 @@ highlight! link @preproc PreProc
 highlight Question guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link QuickFixLine Question
 highlight RenderMarkdownH1Bg guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH1Fg RenderMarkdownH1Bg
 highlight RenderMarkdownH2Bg guifg=#8DAFE2 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH2Fg RenderMarkdownH2Bg
 highlight RenderMarkdownH3Bg guifg=#EB8490 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH3Fg RenderMarkdownH3Bg
 highlight RenderMarkdownH4Bg guifg=#A90F30 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH4Fg RenderMarkdownH4Bg
 highlight RenderMarkdownH5Bg guifg=#74BE9E guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH5Fg RenderMarkdownH5Bg
 highlight RenderMarkdownH6Bg guifg=#A75FB4 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight! link RenderMarkdownH6Fg RenderMarkdownH6Bg
 highlight! link @repeat Repeat
+highlight SignColumn guifg=NONE guibg=#5B2033 guisp=NONE blend=NONE gui=NONE
 highlight Special guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Debug Special
 highlight! link SpecialComment Special
@@ -170,6 +167,8 @@ highlight Title guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.title Title
 highlight Todo guifg=NONE guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link @text.todo Todo
+highlight TroubleIndent guifg=#B54067 guibg=#24141E guisp=NONE blend=NONE gui=NONE
+highlight TroublePos guifg=#B54067 guibg=#24141E guisp=NONE blend=NONE gui=NONE
 highlight Type guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link StorageClass Type
 highlight! link Structure Type

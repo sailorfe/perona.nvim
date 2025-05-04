@@ -11,6 +11,7 @@ local gecko			= hsl(324, 18, 48)
 local moria			= hsl(324, 24, 60)
 local negative	= hsl(324, 72, 84)
 local hollow		= hsl(324, 72, 90)
+local jewel			= hsl(340, 48, 24)
 local berry			= hsl(340, 48, 48)
 local jam				= hsl(340, 60, 60)
 local surprise	= hsl(330, 84, 72)
@@ -48,7 +49,7 @@ local theme = lush(function(injected_functions)
     VertSplit      { fg = dracule },
     Folded         { bg = bark, fg = negative },
     FoldColumn     { fg = wine },
-    SignColumn     { FoldColumn },
+    SignColumn     { bg = jewel },
     IncSearch      { CurSearch },
     Substitute     { fg = kuma, bg = wine },
     LineNr         { bg = berry, fg = thriller },
@@ -220,12 +221,17 @@ local theme = lush(function(injected_functions)
     sym"@preproc"           { PreProc },
     sym"@debug"             { Debug },
     sym"@tag"               { Tag },
+		GitSignsAdd							{ fg = kuma },
+		GitSignsChange					{ fg = wonder },
+		GitSignsDelete					{ fg = ruby },
 		RenderMarkdownH1Bg			{ bg = surprise, fg = cocoa },
 		RenderMarkdownH2Bg			{ bg = dracule, fg = kuma },
 		RenderMarkdownH3Bg			{ bg = dracule, fg = fruit },
 		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
 		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
 		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
+		TroubleIndent						{ bg = bark, fg = berry },
+		TroublePos							{ bg = bark, fg = berry }
 }
 end)
 
