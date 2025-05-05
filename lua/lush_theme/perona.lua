@@ -11,7 +11,7 @@ local gecko			= hsl(324, 18, 48)
 local moria			= hsl(324, 24, 60)
 local negative	= hsl(324, 72, 84)
 local hollow		= hsl(324, 72, 90)
-local jewel			= hsl(340, 48, 24)
+local jewel			= hsl(340, 48, 36)
 local berry			= hsl(340, 48, 48)
 local jam				= hsl(340, 60, 60)
 local surprise	= hsl(330, 84, 72)
@@ -231,7 +231,16 @@ local theme = lush(function(injected_functions)
 		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
 		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
 		TroubleIndent						{ bg = bark, fg = berry },
-		TroublePos							{ bg = bark, fg = berry }
+		TroublePos							{ bg = bark, fg = berry },
+		MiniStatuslineModeNormal{ bg = jam, fg = cocoa },
+		MiniStatuslineModeInsert{ bg = zombie, fg = mihawk },
+		MiniStatuslineModeVisual{ bg = garden, fg = cocoa },
+		MiniStatuslineModeReplace{ bg = ruby, fg = mihawk },
+		MiniStatuslineModeCommand{ bg = sea, fg = mihawk },
+		MiniStatuslineModeTerminal{ bg = fruit, fg = cocoa },
+		MiniDiffSignAdd					{ fg = sea, gui = "italic" },
+		MiniDiffSignChange			{ fg = garden, gui = "italic" },
+		MiniDiffSignDelete			{ fg = blood }
 }
 end)
 

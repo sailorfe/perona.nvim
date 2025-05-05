@@ -93,6 +93,15 @@ highlight! link LineNrBelow LineNr
 highlight! link @function.macro Macro
 highlight! link @macro Macro
 highlight MatchParen guifg=#683152 guibg=#8DAFE2 guisp=NONE blend=NONE gui=bold
+highlight MiniDiffSignAdd guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniDiffSignChange guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniDiffSignDelete guifg=#A90F30 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeCommand guifg=#532742 guibg=#B4CFF8 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeInsert guifg=#532742 guibg=#FF99CC guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeNormal guifg=#281520 guibg=#D65C85 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeReplace guifg=#532742 guibg=#DE3557 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeTerminal guifg=#281520 guibg=#EB8490 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeVisual guifg=#281520 guibg=#DE91DA guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MoreMsg guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MsgArea guifg=#B1819E guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -127,7 +136,7 @@ highlight RenderMarkdownH4Bg guifg=#A90F30 guibg=#3E1D31 guisp=NONE blend=NONE g
 highlight RenderMarkdownH5Bg guifg=#74BE9E guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight RenderMarkdownH6Bg guifg=#A75FB4 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
 highlight! link @repeat Repeat
-highlight SignColumn guifg=NONE guibg=#5B2033 guisp=NONE blend=NONE gui=NONE
+highlight SignColumn guifg=NONE guibg=#88304D guisp=NONE blend=NONE gui=NONE
 highlight Special guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Debug Special
 highlight! link SpecialComment Special
