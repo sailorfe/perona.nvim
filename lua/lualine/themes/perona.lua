@@ -22,7 +22,6 @@ local colors = {
 	fruit = '#eb8490',
 	blood = '#a90f30',
 	ruby = '#de3557',
-	marimo = '#74be9e',
 }
 return {
   normal = {
@@ -34,8 +33,9 @@ return {
     z = { bg = colors.berry, fg = colors.cocoa },
   },
 	inactive = {
-		a = { bg = colors.dracule, fg = colors.gecko },
-		c = { bg = colors.cocoa, fg = colors.gecko }
+		a = { bg = colors.thriller, fg = colors.gecko },
+		c = { bg = colors.cocoa, fg = colors.gecko },
+		y = { bg = colors.thriller, fg = colors.gecko }
 	},
 	insert = {
 		a = { bg = colors.zombie, fg = colors.cocoa },
