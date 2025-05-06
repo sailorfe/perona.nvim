@@ -72,7 +72,7 @@ highlight Folded guifg=#F4B9DC guibg=#24141E guisp=NONE blend=NONE gui=NONE
 highlight Function guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @function Function
 highlight! link @method Function
-highlight GitSignsAdd guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight GitSignsAdd guifg=#74BE9E guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight GitSignsChange guifg=#A75FB4 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight GitSignsDelete guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -93,7 +93,7 @@ highlight! link LineNrBelow LineNr
 highlight! link @function.macro Macro
 highlight! link @macro Macro
 highlight MatchParen guifg=#683152 guibg=#8DAFE2 guisp=NONE blend=NONE gui=bold
-highlight MiniDiffSignAdd guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniDiffSignAdd guifg=#B3DBCA guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignChange guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignDelete guifg=#A90F30 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeCommand guifg=#532742 guibg=#B4CFF8 guisp=NONE blend=NONE gui=NONE

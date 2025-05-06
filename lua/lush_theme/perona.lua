@@ -25,6 +25,7 @@ local fruit			= hsl(353, 72, 72)
 local blood			= hsl(347, 84, 36)
 local ruby			= hsl(348, 72, 54)
 local marimo		= hsl(154, 36, 60)
+local santoryu	= hsl(154, 36, 78)
 
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
@@ -221,7 +222,7 @@ local theme = lush(function(injected_functions)
     sym"@preproc"           { PreProc },
     sym"@debug"             { Debug },
     sym"@tag"               { Tag },
-		GitSignsAdd							{ fg = kuma },
+		GitSignsAdd							{ fg = marimo },
 		GitSignsChange					{ fg = wonder },
 		GitSignsDelete					{ fg = ruby },
 		RenderMarkdownH1Bg			{ bg = surprise, fg = cocoa },
@@ -238,7 +239,7 @@ local theme = lush(function(injected_functions)
 		MiniStatuslineModeReplace{ bg = ruby, fg = mihawk },
 		MiniStatuslineModeCommand{ bg = sea, fg = mihawk },
 		MiniStatuslineModeTerminal{ bg = fruit, fg = cocoa },
-		MiniDiffSignAdd					{ fg = sea, gui = "italic" },
+		MiniDiffSignAdd					{ fg = santoryu, gui = "italic" },
 		MiniDiffSignChange			{ fg = garden, gui = "italic" },
 		MiniDiffSignDelete			{ fg = blood }
 }
