@@ -22,6 +22,6 @@ return {
 	["fruit"] = "#eb8490",
 	["blood"] = "#a90f30",
 	["ruby"] = "#de3557",
-	["marimo"] = "#74be9e",
-	["santoryu"] = "#b3dbca"
+	["marimo"] = "#51c291",
+	["santoryu"] = "#95dabc"
 }
