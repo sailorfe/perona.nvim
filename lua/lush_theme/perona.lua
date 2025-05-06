@@ -24,8 +24,8 @@ local sangria		= hsl(353, 74, 62)
 local fruit			= hsl(353, 72, 72)
 local blood			= hsl(347, 84, 36)
 local ruby			= hsl(348, 72, 54)
-local marimo		= hsl(154, 36, 60)
-local santoryu	= hsl(154, 36, 78)
+local marimo		= hsl(154, 48, 54)
+local santoryu	= hsl(154, 48, 72)
 
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
@@ -151,10 +151,10 @@ local theme = lush(function(injected_functions)
     LspCodeLensSeparator        { Comment },
     LspSignatureActiveParameter { Visual },
 
-    DiagnosticError            { fg = ruby },
-    DiagnosticWarn             { fg = fruit },
-    DiagnosticInfo             { fg = zombie },
-    DiagnosticHint             { fg = garden },
+    DiagnosticError            { fg = blood },
+    DiagnosticWarn             { fg = sangria },
+    DiagnosticInfo             { fg = surprise },
+    DiagnosticHint             { fg = kuma },
     DiagnosticOk               { fg = marimo },
     DiagnosticVirtualTextError { DiagnosticError },
     DiagnosticVirtualTextWarn  { DiagnosticWarn},
@@ -214,7 +214,6 @@ local theme = lush(function(injected_functions)
     sym"@exception"         { Exception },
     sym"@variable"          { Identifier },
     sym"@type"              { Type },
-    sym"@type.definition"   { Typedef },
     sym"@storageclass"      { StorageClass },
     sym"@structure"         { Structure },
     sym"@namespace"         { Identifier },
@@ -222,26 +221,34 @@ local theme = lush(function(injected_functions)
     sym"@preproc"           { PreProc },
     sym"@debug"             { Debug },
     sym"@tag"               { Tag },
+
 		GitSignsAdd							{ fg = marimo },
 		GitSignsChange					{ fg = wonder },
 		GitSignsDelete					{ fg = ruby },
-		RenderMarkdownH1Bg			{ bg = surprise, fg = cocoa },
-		RenderMarkdownH2Bg			{ bg = dracule, fg = kuma },
-		RenderMarkdownH3Bg			{ bg = dracule, fg = fruit },
-		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
-		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
-		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
-		TroubleIndent						{ bg = bark, fg = berry },
-		TroublePos							{ bg = bark, fg = berry },
+		MiniDiffSignAdd					{ fg = santoryu, gui = "italic" },
+		MiniDiffSignChange			{ fg = garden, gui = "italic" },
+		MiniDiffSignDelete			{ fg = ruby, gui = "italic" },
 		MiniStatuslineModeNormal{ bg = jam, fg = cocoa },
 		MiniStatuslineModeInsert{ bg = zombie, fg = mihawk },
 		MiniStatuslineModeVisual{ bg = garden, fg = cocoa },
 		MiniStatuslineModeReplace{ bg = ruby, fg = mihawk },
 		MiniStatuslineModeCommand{ bg = sea, fg = mihawk },
 		MiniStatuslineModeTerminal{ bg = fruit, fg = cocoa },
-		MiniDiffSignAdd					{ fg = santoryu, gui = "italic" },
-		MiniDiffSignChange			{ fg = garden, gui = "italic" },
-		MiniDiffSignDelete			{ fg = blood }
+		MiniTablineCurrent			{ TabLineSel },
+		MiniTablineVisible			{ fg = surprise, bg = wine },
+		MiniTablineHidden				{ TabLine },
+		MiniTablineModifiedCurrent { MiniTablineCurrent, gui = "bold_italic" },
+		MiniTablineModifiedVisible { MiniTablineVisible, gui = "bold" },
+		MiniTablineModifiedHidden { MiniTablineHidden, gui = "bold" },
+		MiniTablineFill					{ TabLineFill },
+		RenderMarkdownH1Bg			{ bg = dracule, fg = surprise },
+		RenderMarkdownH2Bg			{ bg = dracule, fg = kuma },
+		RenderMarkdownH3Bg			{ bg = dracule, fg = fruit },
+		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
+		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
+		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
+		TroubleIndent						{ bg = bark, fg = berry },
+		TroublePos							{ bg = bark, fg = berry }
 }
 end)
 
