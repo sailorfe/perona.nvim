@@ -1,6 +1,6 @@
 return {
 	["thriller"] = "#21121b",
-	["bark" ] = '#24141E'
+	["bark" ] = "#24141E",
 	["cocoa"] = "#281520",
 	["dracule"] = "#3e1d31",
 	["mihawk"] = "#532742",
@@ -23,4 +23,5 @@ return {
 	["blood"] = "#a90f30",
 	["ruby"] = "#de3557",
 	["marimo"] = "#74be9e",
+	["santoryu"] = "#b3dbca"
 }
