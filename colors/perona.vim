@@ -54,8 +54,8 @@ highlight DiagnosticWarn guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
-highlight DiffAdd guifg=#281520 guibg=#DE91DA guisp=NONE blend=NONE gui=bold
-highlight DiffChange guifg=#F8D3E9 guibg=#683152 guisp=NONE blend=NONE gui=bold
+highlight DiffAdd guifg=#281520 guibg=#95DABC guisp=NONE blend=NONE gui=bold
+highlight DiffChange guifg=#281520 guibg=#DE91DA guisp=NONE blend=NONE gui=bold
 highlight DiffDelete guifg=#DE3557 guibg=#281520 guisp=NONE blend=NONE gui=bold
 highlight DiffText guifg=#281520 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE
 highlight Directory guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -92,10 +92,14 @@ highlight! link LineNrAbove LineNr
 highlight! link LineNrBelow LineNr
 highlight! link @function.macro Macro
 highlight! link @macro Macro
-highlight MatchParen guifg=#683152 guibg=#8DAFE2 guisp=NONE blend=NONE gui=bold
+highlight MatchParen guifg=#8DAFE2 guibg=#683152 guisp=NONE blend=NONE gui=bold
 highlight MiniDiffSignAdd guifg=#95DABC guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignChange guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignDelete guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniStatuslineDevinfo guifg=#F4B9DC guibg=#B54067 guisp=NONE blend=NONE gui=NONE
+highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
+highlight MiniStatuslineFilename guifg=#B1819E guibg=#281520 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineInactive guifg=#90647F guibg=#21121B guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeCommand guifg=#532742 guibg=#B4CFF8 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeInsert guifg=#532742 guibg=#FF99CC guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeNormal guifg=#281520 guibg=#D65C85 guisp=NONE blend=NONE gui=NONE
@@ -106,9 +110,9 @@ highlight MiniTablineModifiedCurrent guifg=#281520 guibg=#F47CB8 guisp=NONE blen
 highlight MiniTablineModifiedHidden guifg=#90647F guibg=#24141E guisp=NONE blend=NONE gui=bold
 highlight MiniTablineModifiedVisible guifg=#F47CB8 guibg=#683152 guisp=NONE blend=NONE gui=bold
 highlight MiniTablineVisible guifg=#F47CB8 guibg=#683152 guisp=NONE blend=NONE gui=NONE
-highlight ModeMsg guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight ModeMsg guifg=#F4B9DC guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight MoreMsg guifg=#683152 guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight MsgArea guifg=#B1819E guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight MsgArea guifg=#F4B9DC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight MsgSeparator guifg=#281520 guibg=#B1819E guisp=NONE blend=NONE gui=NONE
 highlight NonText guifg=#90647F guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight NormalFloat guifg=#B1819E guibg=#24141E guisp=NONE blend=NONE gui=NONE
