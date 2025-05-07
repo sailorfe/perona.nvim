@@ -100,7 +100,7 @@ perona.build = function()
 		MiniDiffSignAdd = {fg = "#95DABC", italic = true},
 		MiniDiffSignChange = {fg = "#DE91DA", italic = true},
 		MiniDiffSignDelete = {fg = "#DE3557", italic = true},
-		MiniStatuslineDevinfo = {fg = "#F4B9DC", bg = "#B54067"},
+		MiniStatuslineDevinfo = {fg = "#F4B9DC", bg = "#88304D"},
 		MiniStatuslineFileinfo = {link = "MiniStatuslineDevinfo"},
 		MiniStatuslineFilename = {fg = "#B1819E", bg = "#281520"},
 		MiniStatuslineInactive = {fg = "#90647F", bg = "#21121B"},
