@@ -1,6 +1,6 @@
-perona = {}
+GPP = {}
 ---@return table
-perona.build = function()
+GPP.build = function()
 	local theme = {
 		Normal = {fg = "#F4B9DC", bg = "#281520"},
 		["@boolean"] = {link = "Boolean"},
@@ -220,4 +220,4 @@ perona.build = function()
 	end
 	return theme
 end
-return perona
+return GPP

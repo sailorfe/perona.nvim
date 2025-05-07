@@ -1,17 +1,17 @@
-<div align="center">
-
 # perona.nvim
 
-a colorscheme for neovim inspired by ghost princess perona from *one piece*. built with [lush](https://github.com/rktjmp/lush.nvim/).
+a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, lualine, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
+<div align="center">
 <img src="assets/grim.png" alt="perona">
-
 </div>
 
 - <a href="#palette">palette</a>
 - <a href="#installation">installation</a>
 - <a href="#extras">extras</a>
 - <a href="#acknowledgments">acknowledgments</a>
+
+this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim) from [codeberg](https://codeberg.org/sailorfe/perona.nvim).
 
 <a name="palette"></a>
 ## palette
@@ -52,8 +52,7 @@ return {
 the easiest method is probably just to run curl from your n/vim `colors` directory:
 
 ```sh
-
-curl -O https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
+curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
 ```
 
 then set colorscheme with one of the folowing:
@@ -74,7 +73,7 @@ ports for the following can be found under [extras](https://codeberg.org/sailorf
 - termux
 - tty
 
-<a name="acknowledgments"</a>
+<a name="acknowledgments"></a>
 ## acknowledgments
 
 - [evangelion.nvim](https://github.com/xero/evangelion.nvim) for entire chunks of lua and weeb inspiration

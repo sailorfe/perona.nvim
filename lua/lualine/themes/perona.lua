@@ -21,7 +21,7 @@ local colors = {
 	sangria = '#e65667',
 	fruit = '#eb8490',
 	blood = '#a90f30',
-	ruby = '#de3557',
+	ruby = '#de3557'
 }
 return {
   normal = {

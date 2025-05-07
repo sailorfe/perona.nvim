@@ -1,22 +1,24 @@
-local GPP = {}
-GPP.name = "perona"
+local perona = {}
+---
 --- @class HoroConfig colorscheme options
 local defaults = {
   transparent = false, -- set transparent bg hl
   overrides = false,
 }
-GPP.opts = defaults
+perona.opts = defaults
+
 --- @param opts HoroConfig colorscheme opts
-function GPP.setup(opts)
-  GPP.opts = vim.tbl_deep_extend("force", {}, GPP.opts or defaults, opts or {})
+function perona.setup(opts)
+	perona.opts = vim.tbl_deep_extend("force", {}, perona.opts or defaults, opts or {})
 end
+
 --- @param opts HoroConfig colorscheme opts
-function GPP.negativehollow(opts)
-	if opts then GPP.setup(opts) end
+function perona.negativehollow(opts)
+	if opts then perona.setup(opts) end
 	-- vim.cmd("set t_Co=256")
 	vim.cmd("hi clear")
 	vim.o.termguicolors = true
-	vim.g.colors_name = GPP.name
+	vim.g.colors_name = "perona"
 	vim.o.background = "dark"
 	vim.o.tgc = true
 
@@ -26,4 +28,4 @@ function GPP.negativehollow(opts)
 		vim.api.nvim_set_hl(0, group, attrs)
 	end
 end
-return GPP
+return perona
