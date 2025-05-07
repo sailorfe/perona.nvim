@@ -96,7 +96,7 @@ highlight MatchParen guifg=#8DAFE2 guibg=#683152 guisp=NONE blend=NONE gui=bold
 highlight MiniDiffSignAdd guifg=#95DABC guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignChange guifg=#DE91DA guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignDelete guifg=#DE3557 guibg=NONE guisp=NONE blend=NONE gui=italic
-highlight MiniStatuslineDevinfo guifg=#F4B9DC guibg=#B54067 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineDevinfo guifg=#F4B9DC guibg=#88304D guisp=NONE blend=NONE gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
 highlight MiniStatuslineFilename guifg=#B1819E guibg=#281520 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineInactive guifg=#90647F guibg=#21121B guisp=NONE blend=NONE gui=NONE
