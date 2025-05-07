@@ -234,7 +234,7 @@ local theme = lush(function(injected_functions)
 		MiniStatuslineModeReplace{ bg = ruby, fg = mihawk },
 		MiniStatuslineModeCommand{ bg = sea, fg = mihawk },
 		MiniStatuslineModeTerminal{ bg = fruit, fg = cocoa },
-		MiniStatuslineDevinfo		{ bg = berry, fg = negative },
+		MiniStatuslineDevinfo		{ bg = jewel, fg = negative },
 		MiniStatuslineFilename		{ bg = cocoa, fg = moria },
 		MiniStatuslineFileinfo	{ MiniStatuslineDevinfo },
 		MiniStatuslineInactive	{ bg = thriller, fg = gecko },
