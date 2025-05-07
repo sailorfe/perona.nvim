@@ -3,7 +3,8 @@
 a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, lualine, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <div align="center">
-<img src="assets/grim.png" alt="perona">
+<img src="assets/preview-1.png" alt="palette">
+<img src="assets/preview-2.png" alt="lazy">
 </div>
 
 - <a href="#palette">palette</a>
@@ -30,20 +31,20 @@ this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim)
 <a name="installation"></a>
 ## installation
 
-### pure lua
+### lua
 
 with lazy:
 
 ```lua
 return {
-	"sailorfe/perona.nvim",
-	opts = {
-		-- transparent = false,
-		-- overrides = false,
-	},
-	init function()
-		vim.cmd.colorscheme("perona")
-	end,
+    "sailorfe/perona.nvim",
+    opts = {
+        -- transparent = false,
+        -- overrides = false,
+    },
+    init function()
+        vim.cmd.colorscheme("perona")
+    end,
 }
 ```
 
@@ -71,7 +72,8 @@ ports for the following can be found under [extras](https://codeberg.org/sailorf
 - iSH
 - spotify_player
 - termux
-- tty
+
+along with stylesheets and tty bash colors. more to come!
 
 <a name="acknowledgments"></a>
 ## acknowledgments
