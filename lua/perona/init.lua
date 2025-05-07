@@ -1,5 +1,5 @@
 local perona = {}
----
+
 --- @class HoroConfig colorscheme options
 local defaults = {
   transparent = false, -- set transparent bg hl
