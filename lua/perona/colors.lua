@@ -17,7 +17,7 @@ return {
 	["fruit"] = "#eb8490",
 	["kuma"] = "#8dafe2",
 	["sea"] = "#b4cff8",
-	["jewel" ] = "#88304d",
+	["jewel" ] = "#712840",
 	["berry"] = "#b54067",
 	["jam"] = "#d65c85",
 	["surprise"] = "#f269ad",

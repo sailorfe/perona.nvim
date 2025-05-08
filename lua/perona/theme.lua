@@ -1,6 +1,6 @@
-perona = {}
+Perona = {}
 ---@return table
-perona.build = function()
+Perona.build = function()
 	local theme = {
 		Normal = {fg = "#F4B9DC", bg = "#281520"},
 		["@boolean"] = {link = "Boolean"},
@@ -100,7 +100,7 @@ perona.build = function()
 		MiniDiffSignAdd = {fg = "#95DABC", italic = true},
 		MiniDiffSignChange = {fg = "#DE91DA", italic = true},
 		MiniDiffSignDelete = {fg = "#DE3557", italic = true},
-		MiniStatuslineDevinfo = {fg = "#F4B9DC", bg = "#88304D"},
+		MiniStatuslineDevinfo = {fg = "#F4B9DC", bg = "#712840"},
 		MiniStatuslineFileinfo = {link = "MiniStatuslineDevinfo"},
 		MiniStatuslineFilename = {fg = "#B1819E", bg = "#281520"},
 		MiniStatuslineInactive = {fg = "#90647F", bg = "#21121B"},
@@ -148,7 +148,7 @@ perona.build = function()
 		RenderMarkdownH5Bg = {fg = "#51C291", bg = "#3E1D31"},
 		RenderMarkdownH6Bg = {fg = "#A75FB4", bg = "#3E1D31"},
 		["@repeat"] = {link = "Repeat"},
-		SignColumn = {bg = "#88304D"},
+		SignColumn = {bg = "#712840"},
 		Special = {fg = "#8DAFE2"},
 		Debug = {link = "Special"},
 		SpecialComment = {link = "Special"},
@@ -224,4 +224,4 @@ perona.build = function()
 	end
 	return theme
 end
-return perona
+return Perona
