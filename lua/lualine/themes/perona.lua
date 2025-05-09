@@ -9,7 +9,7 @@ local colors = {
 	moria = '#b1819e',
 	negative = '#f4b9dc',
 	hollow = '#f8d3e9',
-	jewel  = '#88304d',
+	jewel  = '#712840',
 	berry = '#b54067',
 	jam = '#d65c85',
 	surprise = '#f269ad',
@@ -21,12 +21,12 @@ local colors = {
 	sangria = '#e65667',
 	fruit = '#eb8490',
 	blood = '#a90f30',
-	ruby = '#de3557'
+	ruby = '#de3557',
 }
 return {
   normal = {
     a = { bg = colors.jam, fg = colors.cocoa },
-    b = { bg = colors.berry, fg = colors.negative },
+    b = { bg = colors.jewel, fg = colors.negative },
     c = { bg = colors.cocoa, fg = colors.moria },
     x = { bg = colors.dracule, fg = colors.cocoa },
     y = { bg = colors.jewel, fg = colors.negative },
