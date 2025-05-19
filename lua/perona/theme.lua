@@ -1,6 +1,6 @@
-Perona = {}
+perona = {}
 ---@return table
-Perona.build = function()
+perona.build = function()
 	local theme = {
 		Normal = {fg = "#F4B9DC", bg = "#281520"},
 		["@boolean"] = {link = "Boolean"},
@@ -107,8 +107,8 @@ Perona.build = function()
 		MiniStatuslineModeCommand = {fg = "#532742", bg = "#B4CFF8"},
 		MiniStatuslineModeInsert = {fg = "#532742", bg = "#FF99CC"},
 		MiniStatuslineModeNormal = {fg = "#281520", bg = "#D65C85"},
+		MiniStatuslineModeOther = {fg = "#281520", bg = "#95DABC"},
 		MiniStatuslineModeReplace = {fg = "#532742", bg = "#DE3557"},
-		MiniStatuslineModeTerminal = {fg = "#281520", bg = "#EB8490"},
 		MiniStatuslineModeVisual = {fg = "#281520", bg = "#DE91DA"},
 		MiniTablineModifiedCurrent = {fg = "#281520", bg = "#F47CB8", bold = true, italic = true},
 		MiniTablineModifiedHidden = {fg = "#90647F", bg = "#24141E", bold = true},
@@ -224,4 +224,4 @@ Perona.build = function()
 	end
 	return theme
 end
-return Perona
+return perona
