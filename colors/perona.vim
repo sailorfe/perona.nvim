@@ -103,8 +103,8 @@ highlight MiniStatuslineInactive guifg=#90647F guibg=#21121B guisp=NONE blend=NO
 highlight MiniStatuslineModeCommand guifg=#532742 guibg=#B4CFF8 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeInsert guifg=#532742 guibg=#FF99CC guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeNormal guifg=#281520 guibg=#D65C85 guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeOther guifg=#281520 guibg=#95DABC guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeReplace guifg=#532742 guibg=#DE3557 guisp=NONE blend=NONE gui=NONE
-highlight MiniStatuslineModeTerminal guifg=#281520 guibg=#EB8490 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeVisual guifg=#281520 guibg=#DE91DA guisp=NONE blend=NONE gui=NONE
 highlight MiniTablineModifiedCurrent guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=bold,italic
 highlight MiniTablineModifiedHidden guifg=#90647F guibg=#24141E guisp=NONE blend=NONE gui=bold
