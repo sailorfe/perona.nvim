@@ -3,8 +3,7 @@
 a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, lualine, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <div align="center">
-<img src="assets/preview-1.png" alt="palette">
-<img src="assets/preview-2.png" alt="lazy">
+<img src="assets/nvim-perona.png" alt="perona">
 </div>
 
 - <a href="#palette">palette</a>
