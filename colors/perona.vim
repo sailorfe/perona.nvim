@@ -49,8 +49,8 @@ highlight DiagnosticUnderlineError guifg=#A90F30 guibg=NONE guisp=NONE blend=NON
 highlight DiagnosticUnderlineHint guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineInfo guifg=#F47CB8 guibg=NONE guisp=NONE blend=NONE gui=underline
 highlight DiagnosticUnderlineOk guifg=#51C291 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight DiagnosticUnderlineWarn guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=underline
-highlight DiagnosticWarn guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight DiagnosticUnderlineWarn guifg=#D65C6A guibg=NONE guisp=NONE blend=NONE gui=underline
+highlight DiagnosticWarn guifg=#D65C6A guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
@@ -157,7 +157,7 @@ highlight! link @character.special SpecialChar
 highlight! link @string.escape SpecialChar
 highlight! link @string.special SpecialChar
 highlight SpecialKey guifg=#B1819E guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight SpellBad guifg=#E65667 guibg=NONE guisp=NONE blend=NONE gui=undercurl
+highlight SpellBad guifg=#D65C6A guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellCap guifg=#EB8490 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellLocal guifg=#51C291 guibg=NONE guisp=NONE blend=NONE gui=undercurl
 highlight SpellRare guifg=#B4CFF8 guibg=NONE guisp=NONE blend=NONE gui=undercurl
