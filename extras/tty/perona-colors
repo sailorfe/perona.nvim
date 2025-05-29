@@ -3,7 +3,7 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P01b0e16" #black
 	echo -en "\e]P1a90f30" #darkred
 	echo -en "\e]P2a75fb4" #darkgreen
-	echo -en "\e]P3e65667" #brown
+	echo -en "\e]P3d65c6a" #brown
 	echo -en "\e]P48dafe2" #darkblue
 	echo -en "\e]P5b54067" #darkmagenta
 	echo -en "\e]P6f269ad" #darkcyan

@@ -53,8 +53,8 @@ perona.build = function()
 		DiagnosticUnderlineHint = {fg = "#8DAFE2", underline = true},
 		DiagnosticUnderlineInfo = {fg = "#F47CB8", underline = true},
 		DiagnosticUnderlineOk = {fg = "#51C291", underline = true},
-		DiagnosticUnderlineWarn = {fg = "#E65667", underline = true},
-		DiagnosticWarn = {fg = "#E65667"},
+		DiagnosticUnderlineWarn = {fg = "#D65C6A", underline = true},
+		DiagnosticWarn = {fg = "#D65C6A"},
 		DiagnosticFloatingWarn = {link = "DiagnosticWarn"},
 		DiagnosticSignWarn = {link = "DiagnosticWarn"},
 		DiagnosticVirtualTextWarn = {link = "DiagnosticWarn"},
@@ -161,7 +161,7 @@ perona.build = function()
 		["@string.escape"] = {link = "SpecialChar"},
 		["@string.special"] = {link = "SpecialChar"},
 		SpecialKey = {fg = "#B1819E"},
-		SpellBad = {fg = "#E65667", undercurl = true},
+		SpellBad = {fg = "#D65C6A", undercurl = true},
 		SpellCap = {fg = "#EB8490", undercurl = true},
 		SpellLocal = {fg = "#51C291", undercurl = true},
 		SpellRare = {fg = "#B4CFF8", undercurl = true},
@@ -213,6 +213,7 @@ perona.build = function()
 		Whitespace = {fg = "#683152"},
 		WinBar = {bg = "#21121B", bold = true},
 		WinBarNC = {bg = "#21121B"},
+-- PATCH_CLOSE
 	}
 	local opts = require("perona").opts
 	if opts.transparent then
