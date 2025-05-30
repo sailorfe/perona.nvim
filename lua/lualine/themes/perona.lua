@@ -22,6 +22,8 @@ local colors = {
 	fruit = '#eb8490',
 	blood = '#a90f30',
 	ruby = '#de3557',
+	marimo =  '#51c291',
+  santoryu = '#95dabc'
 }
 return {
   normal = {
@@ -50,8 +52,8 @@ return {
 		b = { bg = colors.blood, fg = colors.negative }
 	},
 	terminal = {
-		a = { bg = colors.fruit, fg = colors.cocoa },
-		b = { bg = colors.sangria, fg = colors.negative }
+		a = { bg = colors.santoryu, fg = colors.cocoa },
+		b = { bg = colors.marimo, fg = colors.mihawk }
 	},
 	command = {
 		a = { bg = colors.sea, fg = colors.cocoa },
