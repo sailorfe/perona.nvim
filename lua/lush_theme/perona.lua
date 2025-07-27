@@ -245,12 +245,12 @@ local theme = lush(function(injected_functions)
 		MiniTablineModifiedVisible { MiniTablineVisible, gui = "bold" },
 		MiniTablineModifiedHidden { MiniTablineHidden, gui = "bold" },
 		MiniTablineFill					{ TabLineFill },
-		RenderMarkdownH1Bg			{ bg = dracule, fg = surprise },
-		RenderMarkdownH2Bg			{ bg = dracule, fg = kuma },
-		RenderMarkdownH3Bg			{ bg = dracule, fg = fruit },
-		RenderMarkdownH4Bg			{ bg = dracule, fg = blood },
-		RenderMarkdownH5Bg			{ bg = dracule, fg = marimo },
-		RenderMarkdownH6Bg			{ bg = dracule, fg = wonder },
+		RenderMarkdownH1Bg			{ bg = surprise, fg = cocoa },
+		RenderMarkdownH2Bg			{ bg = kuma, fg = cocoa },
+		RenderMarkdownH3Bg			{ bg = sangria, fg = cocoa },
+		RenderMarkdownH4Bg			{ bg = blood, fg = cocoa },
+		RenderMarkdownH5Bg			{ bg = marimo, fg = cocoa },
+		RenderMarkdownH6Bg			{ bg = wonder, fg = cocoa },
 		TroubleIndent						{ bg = bark, fg = berry },
 		TroublePos							{ bg = bark, fg = berry }
 }

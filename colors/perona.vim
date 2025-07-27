@@ -137,12 +137,12 @@ highlight! link PreCondit PreProc
 highlight! link @preproc PreProc
 highlight Question guifg=#FF99CC guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link QuickFixLine Question
-highlight RenderMarkdownH1Bg guifg=#F47CB8 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH2Bg guifg=#8DAFE2 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH3Bg guifg=#EB8490 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH4Bg guifg=#A90F30 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH5Bg guifg=#51C291 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
-highlight RenderMarkdownH6Bg guifg=#A75FB4 guibg=#3E1D31 guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH1Bg guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH2Bg guifg=#281520 guibg=#8DAFE2 guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH3Bg guifg=#281520 guibg=#D65C6A guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH4Bg guifg=#281520 guibg=#A90F30 guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH5Bg guifg=#281520 guibg=#51C291 guisp=NONE blend=NONE gui=NONE
+highlight RenderMarkdownH6Bg guifg=#281520 guibg=#A75FB4 guisp=NONE blend=NONE gui=NONE
 highlight! link @repeat Repeat
 highlight SignColumn guifg=NONE guibg=#712840 guisp=NONE blend=NONE gui=NONE
 highlight Special guifg=#8DAFE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
