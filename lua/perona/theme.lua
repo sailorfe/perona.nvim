@@ -141,12 +141,12 @@ perona.build = function()
 		["@preproc"] = {link = "PreProc"},
 		Question = {fg = "#FF99CC"},
 		QuickFixLine = {link = "Question"},
-		RenderMarkdownH1Bg = {fg = "#F47CB8", bg = "#3E1D31"},
-		RenderMarkdownH2Bg = {fg = "#8DAFE2", bg = "#3E1D31"},
-		RenderMarkdownH3Bg = {fg = "#EB8490", bg = "#3E1D31"},
-		RenderMarkdownH4Bg = {fg = "#A90F30", bg = "#3E1D31"},
-		RenderMarkdownH5Bg = {fg = "#51C291", bg = "#3E1D31"},
-		RenderMarkdownH6Bg = {fg = "#A75FB4", bg = "#3E1D31"},
+		RenderMarkdownH1Bg = {fg = "#281520", bg = "#F47CB8"},
+		RenderMarkdownH2Bg = {fg = "#281520", bg = "#8DAFE2"},
+		RenderMarkdownH3Bg = {fg = "#281520", bg = "#D65C6A"},
+		RenderMarkdownH4Bg = {fg = "#281520", bg = "#A90F30"},
+		RenderMarkdownH5Bg = {fg = "#281520", bg = "#51C291"},
+		RenderMarkdownH6Bg = {fg = "#281520", bg = "#A75FB4"},
 		["@repeat"] = {link = "Repeat"},
 		SignColumn = {bg = "#712840"},
 		Special = {fg = "#8DAFE2"},
@@ -213,7 +213,6 @@ perona.build = function()
 		Whitespace = {fg = "#683152"},
 		WinBar = {bg = "#21121B", bold = true},
 		WinBarNC = {bg = "#21121B"},
--- PATCH_CLOSE
 	}
 	local opts = require("perona").opts
 	if opts.transparent then
