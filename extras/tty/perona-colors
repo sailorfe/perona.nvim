@@ -1,18 +1,18 @@
 # -*- tty colors
 if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P01b0e16" #black
-	echo -en "\e]P1a90f30" #darkred
-	echo -en "\e]P2a75fb4" #darkgreen
-	echo -en "\e]P3d65c6a" #brown
-	echo -en "\e]P48dafe2" #darkblue
+	echo -en "\e]P1c4314e" #darkred
+	echo -en "\e]P2bb68ca" #darkgreen
+	echo -en "\e]P3d65c5c" #brown
+	echo -en "\e]P45c8dd6" #darkblue
 	echo -en "\e]P5b54067" #darkmagenta
 	echo -en "\e]P6f269ad" #darkcyan
 	echo -en "\e]P7b1819e" #lightgrey
 	echo -en "\e]P83e1d31" #darkgrey
-	echo -en "\e]P9de3557" #red
-	echo -en "\e]PAde91da" #green
-	echo -en "\e]PBeb8490" #yellow
-	echo -en "\e]PCb4cff8" #blue
+	echo -en "\e]P9e2506d" #red
+	echo -en "\e]PAe28dde" #green
+	echo -en "\e]PBeb8484" #yellow
+	echo -en "\e]PC8dafe2" #blue
 	echo -en "\e]PDd65c85" #magenta
 	echo -en "\e]PEff99cc" #cyan
 	echo -en "\e]PFf4b9dc" #white

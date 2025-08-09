@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Perona Alacritty Colors
 # Theme: Perona
-# Upstream: https://codeberg.org/spica/perona.nvim/src/branch/main/extras/alacritty/perona.toml
+# Upstream: https://codeberg.org/sailorfe/perona.nvim/src/branch/main/extras/alacritty/perona.toml
 # -----------------------------------------------------------------------------
 
 # Default colors
@@ -16,10 +16,10 @@ foreground = '#f4b9dc'
 # Normal colors
 [colors.normal]
 black = '#3e1d31'
-red = '#a90f30'
-green = '#a75fb4'
-yellow = '#d65c6a'
-blue = '#8dafe2'
+red = '#c4314e'
+green = '#bb68ca'
+yellow = '#d65c5c'
+blue = '#5c8dd6'
 magenta = '#b54067'
 cyan = '#f269ad'
 white = '#b1819e'
@@ -27,10 +27,10 @@ white = '#b1819e'
 # Bright colors
 [colors.bright]
 black = '#683152'
-red = '#de3557'
-green = '#de91da'
-yellow = '#eb8490'
-blue = '#b4cff8'
+red = '#e2506d'
+green = '#e28dde'
+yellow = '#eb8484'
+blue = '#8dafe2'
 magenta = '#d65c85'
 cyan = '#ff99cc'
 white = '#f4b9dc'
