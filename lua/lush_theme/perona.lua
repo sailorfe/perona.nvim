@@ -16,14 +16,14 @@ local berry			= hsl(340, 48, 48)
 local jam				= hsl(340, 60, 60)
 local surprise	= hsl(330, 84, 72)
 local zombie		= hsl(330, 100, 80)
-local kuma			= hsl(216, 60, 72)
-local sea				= hsl(216, 84, 84)
-local wonder		= hsl(291, 36, 54)
-local garden		= hsl(303, 54, 72)
-local sangria		= hsl(353, 60, 60)
-local fruit			= hsl(353, 72, 72)
-local blood			= hsl(347, 84, 36)
-local ruby			= hsl(348, 72, 54)
+local kuma			= hsl(216, 60, 60)
+local sea				= hsl(216, 60, 72)
+local wonder		= hsl(291, 48, 60)
+local garden		= hsl(303, 60, 72)
+local sangria		= hsl(360, 60, 60)
+local fruit			= hsl(360, 72, 72)
+local blood			= hsl(348, 60, 48)
+local ruby			= hsl(348, 72, 60)
 local marimo		= hsl(154, 48, 54)
 local santoryu	= hsl(154, 48, 72)
 
@@ -101,7 +101,7 @@ local theme = lush(function(injected_functions)
     WinBar         { bg = thriller, gui = "bold" },
     WinBarNC       { bg = thriller },
 
-    Comment        { fg = gecko, gui = "italic" },
+    Comment        { fg = gecko },
 
     Constant       { fg = marimo },
     String         { fg = zombie },
@@ -229,10 +229,10 @@ local theme = lush(function(injected_functions)
 		MiniDiffSignChange			{ fg = garden, gui = "italic" },
 		MiniDiffSignDelete			{ fg = ruby, gui = "italic" },
 		MiniStatuslineModeNormal{ bg = jam, fg = cocoa },
-		MiniStatuslineModeInsert{ bg = zombie, fg = mihawk },
+		MiniStatuslineModeInsert{ bg = zombie, fg = cocoa },
 		MiniStatuslineModeVisual{ bg = garden, fg = cocoa },
-		MiniStatuslineModeReplace{ bg = ruby, fg = mihawk },
-		MiniStatuslineModeCommand{ bg = sea, fg = mihawk },
+		MiniStatuslineModeReplace{ bg = ruby, fg = cocoa },
+		MiniStatuslineModeCommand{ bg = sea, fg = cocoa },
 		MiniStatuslineModeOther	{ bg = santoryu, fg = cocoa },
 		MiniStatuslineDevinfo		{ bg = jewel, fg = negative },
 		MiniStatuslineFilename		{ bg = cocoa, fg = moria },
@@ -251,8 +251,8 @@ local theme = lush(function(injected_functions)
 		RenderMarkdownH4Bg			{ bg = blood, fg = cocoa },
 		RenderMarkdownH5Bg			{ bg = marimo, fg = cocoa },
 		RenderMarkdownH6Bg			{ bg = wonder, fg = cocoa },
-		TroubleIndent						{ bg = bark, fg = berry },
-		TroublePos							{ bg = bark, fg = berry }
+		TroubleIndent						{ bg = bark, fg = jam },
+		TroublePos							{ bg = bark, fg = jam }
 }
 end)
 
