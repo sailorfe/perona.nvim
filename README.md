@@ -3,7 +3,7 @@
 a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, lualine, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <div align="center">
-<img src="assets/nvim-perona.png" alt="perona">
+<img src="grim.png" alt="perona">
 </div>
 
 - <a href="#palette">palette</a>
@@ -12,20 +12,6 @@ a colorscheme for neovim inspired by ghost princess perona from *one piece* with
 - <a href="#acknowledgments">acknowledgments</a>
 
 this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim) from [codeberg](https://codeberg.org/sailorfe/perona.nvim).
-
-<a name="palette"></a>
-## palette
-
-| ansi                                  | bright                                |
-| ------------------------------------- | ------------------------------------- |
-| ![281520](assets/00.png) `#281520`    | ![683152](assets/08.png) `#683152`    |
-| ![a90f30](assets/01.png) `#a90f30`    | ![de3557](assets/09.png) `#de3557`    |
-| ![a75fb4](assets/02.png) `#a75fb4`    | ![de91da](assets/10.png) `#de91da`    |
-| ![d65c6a](assets/03.png) `#d65c6a`    | ![eb8490](assets/11.png) `#eb8490`    |
-| ![8dafe2](assets/04.png) `#8dafe2`    | ![b4cff8](assets/12.png) `#b4cff8`    |
-| ![b54067](assets/05.png) `#b54067`    | ![d65c85](assets/13.png) `#d65c85`    |
-| ![f269ad](assets/06.png) `#f269ad`    | ![ff99cc](assets/14.png) `#ff99cc`    |
-| ![b1819e](assets/07.png) `#b1819e`    | ![f4b9dc](assets/15.png) `#f4b9dc`    |
 
 <a name="installation"></a>
 ## installation
