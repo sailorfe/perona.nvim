@@ -1,6 +1,6 @@
 highlight Normal guifg=#F4B9DC guibg=#281520 guisp=NONE blend=NONE gui=NONE
 highlight! link @boolean Boolean
-highlight Character guifg=#E28DDE guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight Character guifg=#D68DE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link Boolean Character
 highlight! link Float Character
 highlight! link Number Character
@@ -55,7 +55,7 @@ highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight! link DiagnosticVirtualTextWarn DiagnosticWarn
 highlight DiffAdd guifg=#281520 guibg=#95DABC guisp=NONE blend=NONE gui=bold
-highlight DiffChange guifg=#281520 guibg=#E28DDE guisp=NONE blend=NONE gui=bold
+highlight DiffChange guifg=#281520 guibg=#D68DE2 guisp=NONE blend=NONE gui=bold
 highlight DiffDelete guifg=#E2506D guibg=#281520 guisp=NONE blend=NONE gui=bold
 highlight DiffText guifg=#281520 guibg=#5C8DD6 guisp=NONE blend=NONE gui=NONE
 highlight Directory guifg=#D65C85 guibg=NONE guisp=NONE blend=NONE gui=NONE
@@ -94,7 +94,7 @@ highlight! link @function.macro Macro
 highlight! link @macro Macro
 highlight MatchParen guifg=#5C8DD6 guibg=#683152 guisp=NONE blend=NONE gui=bold
 highlight MiniDiffSignAdd guifg=#95DABC guibg=NONE guisp=NONE blend=NONE gui=italic
-highlight MiniDiffSignChange guifg=#E28DDE guibg=NONE guisp=NONE blend=NONE gui=italic
+highlight MiniDiffSignChange guifg=#D68DE2 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniDiffSignDelete guifg=#E2506D guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight MiniStatuslineDevinfo guifg=#F4B9DC guibg=#712840 guisp=NONE blend=NONE gui=NONE
 highlight! link MiniStatuslineFileinfo MiniStatuslineDevinfo
@@ -105,7 +105,7 @@ highlight MiniStatuslineModeInsert guifg=#281520 guibg=#FF99CC guisp=NONE blend=
 highlight MiniStatuslineModeNormal guifg=#281520 guibg=#D65C85 guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeOther guifg=#281520 guibg=#95DABC guisp=NONE blend=NONE gui=NONE
 highlight MiniStatuslineModeReplace guifg=#281520 guibg=#E2506D guisp=NONE blend=NONE gui=NONE
-highlight MiniStatuslineModeVisual guifg=#281520 guibg=#E28DDE guisp=NONE blend=NONE gui=NONE
+highlight MiniStatuslineModeVisual guifg=#281520 guibg=#D68DE2 guisp=NONE blend=NONE gui=NONE
 highlight MiniTablineModifiedCurrent guifg=#281520 guibg=#F47CB8 guisp=NONE blend=NONE gui=bold,italic
 highlight MiniTablineModifiedHidden guifg=#90647F guibg=#24141E guisp=NONE blend=NONE gui=bold
 highlight MiniTablineModifiedVisible guifg=#F47CB8 guibg=#683152 guisp=NONE blend=NONE gui=bold
@@ -152,7 +152,7 @@ highlight! link Tag Special
 highlight! link @constant.builtin Special
 highlight! link @constructor Special
 highlight! link @function.builtin Special
-highlight SpecialChar guifg=#E28DDE guibg=NONE guisp=NONE blend=NONE gui=NONE
+highlight SpecialChar guifg=#D68DE2 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight! link @character.special SpecialChar
 highlight! link @string.escape SpecialChar
 highlight! link @string.special SpecialChar
