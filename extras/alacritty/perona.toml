@@ -1,8 +1,21 @@
 # -----------------------------------------------------------------------------
 # Perona Alacritty Colors
 # Theme: Perona
-# Upstream: https://codeberg.org/sailorfe/perona.nvim/src/branch/main/extras/alacritty/perona.toml
+# Upstream: https://codeberg.org/spica/perona.nvim/src/branch/main/extras/alacritty/perona.toml
 # -----------------------------------------------------------------------------
+
+[env]
+term = "xterm-256color"
+
+[font]
+normal = { family = "IBM 3270" }
+size = 13.0
+
+[window]
+dimensions = { columns = 120, lines = 28 }
+
+[colors]
+draw_bold_text_with_bright_colors = true
 
 # Default colors
 [colors.primary]
@@ -15,30 +28,30 @@ foreground = '#f4b9dc'
 
 # Normal colors
 [colors.normal]
-black = '#3e1d31'
+black = '#532742'
 red = '#c4314e'
 green = '#bb68ca'
 yellow = '#d65c5c'
 blue = '#5c8dd6'
 magenta = '#b54067'
 cyan = '#f269ad'
-white = '#b1819e'
+white = '#f4b8dc'
 
 # Bright colors
 [colors.bright]
 black = '#683152'
 red = '#e2506d'
-green = '#e28dde'
+green = '#e288de'
 yellow = '#eb8484'
 blue = '#8dafe2'
 magenta = '#d65c85'
 cyan = '#ff99cc'
-white = '#f4b9dc'
+white = '#f8d3e9'
 
 # Indexed Colors
 [[colors.indexed_colors]]
 index = 16
-color = '#74be9e'
+color = '#51c291'
 
 [[colors.indexed_colors]]
 index = 17
