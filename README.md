@@ -1,6 +1,8 @@
 # perona.nvim
 
-a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, lualine, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
+> ホロホロホロ!
+
+a colorscheme for neovim inspired by ghost princess perona from *one piece* with support for many mini.nvim modules, gitsigns, lsp, render-markdown, and trouble (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <div align="center">
 <img src="grim.png" alt="perona">
