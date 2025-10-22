@@ -1,0 +1,45 @@
+[colors]
+foreground = "#f4b9dc"
+background = "#281520"
+cursor_bg = "#f4b9dc"
+cursor_border = "#f4b9dc"
+cursor_fg = "#281520"
+selection_bg = "#ff99cc"
+selection_fg = "#f4b9dc"
+split = "#b54067"
+compose_cursor = "#95dabc"
+scrollbar_thumb = "#3e1d31"
+
+ansi = ["#532742", "#a90f30", "#a75fb4", "#d65c6a", "#8dafe2", "#b54067", "#f269ad", "#f4b9dc"]
+brights = ["#683152", "#de3557", "#de91da", "#eb8490", "#b4cff8", "#d65c85", "#ff99cc", "#f8d3e9"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#24141e"
+background = "#281520"
+
+[colors.tab_bar.active_tab]
+fg_color = "#24141e"
+bg_color = "#f269ad"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#683152"
+bg_color = "#3e1d31"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#f269ad"
+bg_color = "#3e1d31"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#f269ad"
+bg_color = "#281520"
+intensity = "Bold"
+
+[colors.tab_bar.new_tab]
+fg_color = "#f269ad"
+bg_color = "#281520"
+
+[metadata]
+aliases = ['perona']
+author = "sailorfe"
+name = "Perona"
