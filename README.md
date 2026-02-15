@@ -23,7 +23,7 @@ with lazy:
 
 ```lua
 return {
-    "sailorfe/perona.nvim",
+    "https://codeberg.org/sailorfe/perona.nvim",
     dependencies = { "rktjmp/lush.nvim" },
     init = function()
         vim.cmd.colorscheme("perona")

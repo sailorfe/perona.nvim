@@ -56,7 +56,7 @@ return lush(function(injected_functions)
     QuickFixLine   { Question },
     Search         { IncSearch },
     SpecialKey     { fg = colors.moria },
-    SpellBad       { fg = colors.sangria, gui = "undercurl" },
+    SpellBad       { fg = colors.blood, gui = "undercurl" },
     SpellCap       { fg = colors.fruit, gui = "undercurl" },
     SpellLocal     { fg = colors.marimo, gui = "undercurl" },
     SpellRare      { fg = colors.sea, gui= "undercurl" },
