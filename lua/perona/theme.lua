@@ -1,239 +1,358 @@
-local lush = require('lush')
-local colors = require('perona.colors')
+local lush = require("lush")
+local hsl = lush.hsl
 
-return lush(function(injected_functions)
+-- base colors
+local base = hsl(324, 24, 14)
+local surface = hsl(324, 24, 18)
+local overlay = hsl(324, 24, 22)
+-- text colors
+local muted = hsl(324, 12, 48)
+local faint = hsl(324, 20, 60)
+local text = hsl(324, 48, 90)
+local light = hsl(324, 96, 96)
+-- accent colors
+local dracule = hsl(348, 60, 60)
+local marimo = hsl(148, 60, 72)
+local takanome = hsl(36, 72, 72)
+local kumashi = hsl(212, 72, 72)
+local garden = hsl(288, 72, 72)
+local hollow = hsl(324, 72, 72)
+-- highlights
+local low = hsl(324, 18, 16)
+local med = hsl(324, 16, 24)
+local high = hsl(324, 14, 36)
+
+---@diagnostic disable: undefined-global
+local theme = lush(function(injected_functions)
 	local sym = injected_functions.sym
 	return {
-    ColorColumn    { bg = colors.mihawk },
-    Conceal        { fg = colors.gecko },
-    Cursor         { bg = colors.negative, fg = colors.cocoa },
-    CurSearch      { bg = colors.sea, fg = colors.mihawk },
-    lCursor        { Cursor },
-    CursorIM       { Cursor },
-    CursorColumn   { bg = colors.dracule },
-    CursorLine     { CursorColumn },
-    Directory      { fg = colors.jam },
-    DiffAdd        { bg = colors.santoryu, fg = colors.cocoa, gui = "bold" },
-    DiffChange     { bg = colors.garden, fg = colors.cocoa, gui = "bold" },
-    DiffDelete     { bg = colors.cocoa, fg = colors.ruby, gui = "bold"},
-    DiffText       { bg = colors.kuma, fg = colors.cocoa },
-    EndOfBuffer    { fg = colors.gecko },
-    TermCursor     { bg = colors.moria, fg = colors.cocoa },
-    TermCursorNC   { fg = colors.moria },
-    ErrorMsg       { bg = colors.dracule, fg = colors.ruby },
-    VertSplit      { fg = colors.dracule },
-    Folded         { bg = colors.bark, fg = colors.negative },
-    FoldColumn     { fg = colors.wine },
-    SignColumn     { bg = colors.jewel },
-    IncSearch      { CurSearch },
-    Substitute     { fg = colors.kuma, bg = colors.wine },
-    LineNr         { bg = colors.berry, fg = colors.thriller },
-    LineNrAbove    { LineNr },
-    LineNrBelow    { LineNr },
-    CursorLineNr   { bg = colors.dracule, fg = colors.kuma, gui = "bold" },
-    CursorLineFold { FoldColumn },
-    CursorLineSign { FoldColumn },
-    MatchParen     { bg = colors.wine, fg = colors.kuma, gui = "bold"},
-    ModeMsg        { fg = colors.negative, gui = "bold" },
-    MsgArea        { fg = colors.negative },
-    MsgSeparator   { bg = colors.moria, fg = colors.cocoa },
-    MoreMsg        { fg = colors.wine },
-    NonText        { fg = colors.gecko },
-    Normal         { bg = colors.cocoa, fg = colors.negative },
-    NormalFloat    { bg = colors.bark, fg = colors.moria },
-    FloatBorder    { NormalFloat },
-    FloatTitle     { fg = colors.negative, gui = "bold" },
-    NormalNC       { fg = colors.gecko },
-    Pmenu          { bg = colors.bark, fg = colors.negative },
-    PmenuSel       { bg = colors.negative, fg = colors.bark },
-    PmenuKind      { Pmenu },
-    PmenuKindSel   { PmenuSel },
-    PmenuExtra     { Pmenu },
-    PmenuExtraSel  { PmenuSel},
-    PmenuSbar      { Pmenu },
-    PmenuThumb     { bg = colors.gecko, fg = colors.hollow },
-    Question       { fg = colors.zombie },
-    QuickFixLine   { Question },
-    Search         { IncSearch },
-    SpecialKey     { fg = colors.moria },
-    SpellBad       { fg = colors.blood, gui = "undercurl" },
-    SpellCap       { fg = colors.fruit, gui = "undercurl" },
-    SpellLocal     { fg = colors.marimo, gui = "undercurl" },
-    SpellRare      { fg = colors.sea, gui= "undercurl" },
-    StatusLine     { bg = colors.mihawk },
-    StatusLineNC   { bg = colors.dracule },
-    TabLine        { bg = colors.bark, fg = colors.gecko },
-    TabLineFill    { bg = colors.thriller },
-    TabLineSel     { bg = colors.surprise, fg = colors.cocoa, gui = "italic" },
-    Title          { gui = "bold" },
-    Visual         { bg = colors.surprise, fg = colors.cocoa },
-    VisualNOS      { bg = colors.berry, fg = colors.cocoa },
-    WarningMsg     { fg = colors.fruit },
-    Whitespace     { fg = colors.wine },
-    Winseparator   { VertSplit },
-    WildMenu       { Cursor },
-    WinBar         { bg = colors.thriller, gui = "bold" },
-    WinBarNC       { bg = colors.thriller },
 
-    Comment        { fg = colors.gecko },
+		-- ui
+		Normal({ bg = base, fg = text }),
+		NormalFloat({ bg = surface, fg = text }),
+		NormalNC({ bg = base, fg = faint }),
 
-    Constant       { fg = colors.marimo },
-    String         { fg = colors.zombie },
-    Character      { fg = colors.garden },
-    Number         { Character },
-    Boolean        { Character },
-    Float          { Character },
+		FloatBorder({ bg = surface, fg = muted }),
+		FloatTitle({ bg = surface, fg = hollow, gui = "bold" }),
+		FloatFooter({ FloatBorder }),
 
-    Identifier     { fg = colors.jam },
-    Function       { fg = colors.kuma },
+		ColorColumn({ bg = surface }),
+		Conceal({ fg = muted }),
+		CursorLine({ bg = overlay }),
+		CursorColumn({ bg = overlay }),
+		CursorLineNr({ fg = hollow, gui = "bold" }),
+		LineNr({ fg = muted }),
+		LineNrAbove({ LineNr }),
+		LineNrBelow({ LineNr }),
 
-    Statement      { fg = colors.sea, gui = "bold" },
-    Conditional    { Statement },
-    Repeat         { Statement },
-    Label          { Statement },
-    Operator       { fg = colors.surprise },
-    Keyword        { Statement },
-    Exception      { Statement },
+		SignColumn({ bg = surface }),
+		FoldColumn({ fg = high, bg = surface }),
+		Folded({ bg = low, fg = faint }),
 
-    PreProc        { fg = colors.fruit },
-    Include        { PreProc },
-    Define         { PreProc },
-    Macro          { PreProc },
-    PreCondit      { PreProc },
+		StatusLine({ bg = overlay, fg = text }),
+		StatusLineNC({ bg = surface, fg = muted }),
+		WinBar({ bg = med, fg = faint }),
+		WinBarNC({ bg = med, fg = muted }),
+		WinSeparator({ fg = surface }), -- 0.9+
+		VertSplit({ fg = surface }), -- for compatibility
 
-    Type           { fg = colors.surprise },
-    StorageClass   { Type },
-    Structure      { Type },
-    Typedef        { Type },
+		TabLine({ bg = surface, fg = muted }),
+		TabLineFill({ bg = base }),
+		TabLineSel({ bg = overlay, fg = hollow, gui = "bold" }),
 
-    Special        { fg = colors.kuma },
-    SpecialChar    { fg = colors.garden },
-    Tag            { Special },
-    Delimiter      { fg = colors.surprise },
-    SpecialComment { Special },
-    Debug          { Special },
+		Pmenu({ bg = surface, fg = text }),
+		PmenuSel({ bg = overlay, fg = hollow, gui = "bold" }),
+		PmenuKind({ bg = surface, fg = garden }),
+		PmenuKindSel({ bg = overlay, fg = garden, gui = "bold" }),
+		PmenuExtra({ bg = surface, fg = muted }),
+		PmenuExtraSel({ bg = overlay, fg = faint }),
+		PmenuSbar({ bg = overlay }),
+		PmenuThumb({ bg = high }),
+		PmenuMatch({ fg = hollow, gui = "bold" }), -- 0.11 fuzzy match
+		PmenuMatchSel({ fg = hollow, gui = "bold,underline" }),
 
-    Underlined     { gui = "underline" },
-    Ignore         { fg = colors.moria },
-    Error          { bg = colors.blood, fg = colors.hollow },
-    Todo           { gui = "bold" },
+		-- 0.11: popup/window title when using noice / native cmdline
+		MsgArea({ fg = text }),
+		MsgSeparator({ fg = overlay }),
+		ModeMsg({ fg = hollow, gui = "bold" }),
+		MoreMsg({ fg = marimo }),
+		Question({ fg = kumashi }),
+		WarningMsg({ fg = takanome }),
+		ErrorMsg({ fg = dracule }),
 
-    LspReferenceText            { Visual },
-    LspReferenceRead            { Visual },
-    LspReferenceWrite           { Visual },
-    LspCodeLens                 { Comment },
-    LspCodeLensSeparator        { Comment },
-    LspSignatureActiveParameter { Visual },
+		Cursor({ bg = text, fg = base }),
+		lCursor({ Cursor }),
+		CursorIM({ Cursor }),
+		TermCursor({ bg = hollow, fg = base }),
+		TermCursorNC({ bg = faint, fg = base }),
 
-    DiagnosticError            { fg = colors.blood },
-    DiagnosticWarn             { fg = colors.sangria },
-    DiagnosticInfo             { fg = colors.surprise },
-    DiagnosticHint             { fg = colors.kuma },
-    DiagnosticOk               { fg = colors.marimo },
-    DiagnosticVirtualTextError { DiagnosticError },
-    DiagnosticVirtualTextWarn  { DiagnosticWarn},
-    DiagnosticVirtualTextInfo  { DiagnosticInfo },
-    DiagnosticVirtualTextHint  { DiagnosticHint },
-    DiagnosticVirtualTextOk    { DiagnosticOk },
-    DiagnosticUnderlineError   { DiagnosticError, gui = "underline" },
-    DiagnosticUnderlineWarn    { DiagnosticWarn, gui = "underline" },
-    DiagnosticUnderlineInfo    { DiagnosticInfo, gui = "underline" },
-    DiagnosticUnderlineHint    { DiagnosticHint, gui = "underline" },
-    DiagnosticUnderlineOk      { DiagnosticOk, gui = "underline" },
-    DiagnosticFloatingError    { DiagnosticError },
-    DiagnosticFloatingWarn     { DiagnosticWarn },
-    DiagnosticFloatingInfo     { DiagnosticInfo },
-    DiagnosticFloatingHint     { DiagnosticHint } ,
-    DiagnosticFloatingOk       { DiagnosticOk },
-    DiagnosticSignError        { DiagnosticError },
-    DiagnosticSignWarn         { DiagnosticWarn },
-    DiagnosticSignInfo         { DiagnosticInfo },
-    DiagnosticSignHint         { DiagnosticHint },
-    DiagnosticSignOk           { DiagnosticOk},
+		Visual({ bg = hollow, fg = base }),
+		VisualNOS({ Visual }),
+		CurSearch({ bg = takanome, fg = base }),
+		IncSearch({ CurSearch }),
+		Search({ bg = med, fg = takanome }),
+		Substitute({ bg = kumashi, fg = base }),
 
-    sym"@text.literal"      { Comment },
-    sym"@text.reference"    { Identifier },
-    sym"@text.title"        { Title },
-    sym"@text.uri"          { Underlined },
-    sym"@text.underline"    { Underlined },
-    sym"@text.todo"         { Todo },
-    sym"@comment"           { Comment },
-    sym"@punctuation"       { Delimiter },
-    sym"@constant"          { Constant },
-    sym"@constant.builtin"  { Special },
-    sym"@constant.macro"    { Define },
-    sym"@define"            { Define },
-    sym"@macro"             { Macro },
-    sym"@string"            { String },
-    sym"@string.escape"     { SpecialChar },
-    sym"@string.special"    { SpecialChar },
-    sym"@character"         { Character },
-    sym"@character.special" { SpecialChar },
-    sym"@number"            { Number },
-    sym"@boolean"           { Boolean },
-    sym"@float"             { Float },
-    sym"@function"          { Function },
-    sym"@function.builtin"  { Special },
-    sym"@function.macro"    { Macro },
-    sym"@parameter"         { Identifier },
-    sym"@method"            { Function },
-    sym"@field"             { Identifier },
-    sym"@property"          { Identifier },
-    sym"@constructor"       { Special },
-    sym"@conditional"       { Conditional },
-    sym"@repeat"            { Repeat },
-    sym"@label"             { Label },
-    sym"@operator"          { Operator },
-    sym"@keyword"           { Keyword },
-    sym"@exception"         { Exception },
-    sym"@variable"          { Identifier },
-    sym"@type"              { Type },
-    sym"@storageclass"      { StorageClass },
-    sym"@structure"         { Structure },
-    sym"@namespace"         { Identifier },
-    sym"@include"           { Include },
-    sym"@preproc"           { PreProc },
-    sym"@debug"             { Debug },
-    sym"@tag"               { Tag },
+		MatchParen({ bg = high, gui = "bold" }),
 
-		-- lewis6991/gitsigns.nvim
-		GitSignsAdd									{ fg = colors.marimo },
-		GitSignsChange							{ fg = colors.wonder },
-		GitSignsDelete							{ fg = colors.ruby },
+		NonText({ fg = muted }),
+		Whitespace({ fg = high }),
+		SpecialKey({ fg = muted }),
+		EndOfBuffer({ fg = faint }),
 
-		-- nvim-mini/mini.nvim
-		MiniDiffSignAdd							{ fg = colors.santoryu, gui = "italic" },
-		MiniDiffSignChange					{ fg = colors.garden, gui = "italic" },
-		MiniDiffSignDelete					{ fg = colors.ruby, gui = "italic" },
-		MiniStatuslineModeNormal		{ bg = colors.jam, fg = colors.cocoa },
-		MiniStatuslineModeInsert		{ bg = colors.zombie, fg = colors.cocoa },
-		MiniStatuslineModeVisual		{ bg = colors.garden, fg = colors.cocoa },
-		MiniStatuslineModeReplace		{ bg = colors.ruby, fg = colors.cocoa },
-		MiniStatuslineModeCommand		{ bg = colors.sea, fg = colors.cocoa },
-		MiniStatuslineModeOther			{ bg = colors.santoryu, fg = colors.cocoa },
-		MiniStatuslineDevinfo				{ bg = colors.jewel, fg = colors.negative },
-		MiniStatuslineFilename			{ bg = colors.cocoa, fg = colors.moria },
-		MiniStatuslineFileinfo			{ MiniStatuslineDevinfo },
-		MiniStatuslineInactive			{ bg = colors.thriller, fg = colors.gecko },
-		MiniTablineCurrent					{ TabLineSel },
-		MiniTablineVisible					{ fg = colors.surprise, bg = colors.wine },
-		MiniTablineHidden						{ TabLine },
-		MiniTablineModifiedCurrent	{ MiniTablineCurrent, gui = "bold_italic" },
-		MiniTablineModifiedVisible	{ MiniTablineVisible, gui = "bold" },
-		MiniTablineModifiedHidden		{ MiniTablineHidden, gui = "bold" },
-		MiniTablineFill							{ TabLineFill },
+		Directory({ fg = kumashi }),
+		Title({ fg = hollow, gui = "bold" }),
+		WildMenu({ bg = text, fg = base }),
 
-		-- MenaderingProgrammer/render-markdown.nvim
-		RenderMarkdownH1Bg			{ bg = colors.surprise, fg = colors.cocoa },
-		RenderMarkdownH2Bg			{ bg = colors.kuma, fg = colors.cocoa },
-		RenderMarkdownH3Bg			{ bg = colors.sangria, fg = colors.cocoa },
-		RenderMarkdownH4Bg			{ bg = colors.blood, fg = colors.cocoa },
-		RenderMarkdownH5Bg			{ bg = colors.marimo, fg = colors.cocoa },
-		RenderMarkdownH6Bg			{ bg = colors.wonder, fg = colors.cocoa },
+		QuickFixLine({ bg = overlay, gui = "bold" }),
 
-		-- folke/trouble.nvim
-		TroubleIndent						{ bg = colors.bark, fg = colors.jam },
-		TroublePos							{ bg = colors.bark, fg = colors.jam }
+		-- Diffs
+		DiffAdd({ bg = marimo, fg = base }),
+		DiffChange({ bg = muted, fg = base }),
+		DiffDelete({ fg = dracule, gui = "bold" }),
+		DiffText({ bg = kumashi, fg = base }),
 
+		-- Spell
+		SpellBad({ fg = dracule, gui = "undercurl" }),
+		SpellCap({ fg = takanome, gui = "undercurl" }),
+		SpellLocal({ fg = marimo, gui = "undercurl" }),
+		SpellRare({ fg = kumashi, gui = "undercurl" }),
+
+		-- Misc
+		Underlined({ gui = "underline" }),
+		Ignore({ fg = muted }),
+		Error({ bg = dracule, fg = light }),
+		Todo({ fg = takanome, gui = "bold" }),
+
+		-- traditional syntax
+		Comment({ fg = faint, gui = "italic" }),
+
+		Constant({ fg = marimo }),
+		String({ fg = garden }),
+		Character({ Constant }),
+		Number({ Constant }),
+		Boolean({ Constant }),
+		Float({ Constant }),
+
+		Identifier({ fg = garden }),
+		Function({ fg = hollow }),
+
+		Statement({ fg = kumashi }),
+		Conditional({ Statement }),
+		Repeat({ Statement }),
+		Label({ Statement }),
+		Operator({ fg = text }),
+		Keyword({ fg = kumashi, gui = "italic" }),
+		Exception({ Statement }),
+
+		PreProc({ fg = takanome }),
+		Include({ PreProc }),
+		Define({ PreProc }),
+		Macro({ PreProc }),
+		PreCondit({ PreProc }),
+
+		Type({ fg = marimo }),
+		StorageClass({ Type }),
+		Structure({ Type }),
+		Typedef({ Type }),
+
+		Special({ fg = hollow }),
+		SpecialChar({ Special }),
+		Tag({ Special }),
+		Delimiter({ fg = text }),
+		SpecialComment({ fg = faint, gui = "bold" }),
+		Debug({ Special }),
+
+		-- diagonistics
+		DiagnosticError({ fg = dracule }),
+		DiagnosticWarn({ fg = takanome }),
+		DiagnosticInfo({ fg = kumashi }),
+		DiagnosticHint({ fg = hollow }),
+		DiagnosticOk({ fg = marimo }),
+
+		DiagnosticVirtualTextError({ DiagnosticError, gui = "italic" }),
+		DiagnosticVirtualTextWarn({ DiagnosticWarn, gui = "italic" }),
+		DiagnosticVirtualTextInfo({ DiagnosticInfo, gui = "italic" }),
+		DiagnosticVirtualTextHint({ DiagnosticHint, gui = "italic" }),
+		DiagnosticVirtualTextOk({ DiagnosticOk, gui = "italic" }),
+
+		DiagnosticUnderlineError({ DiagnosticError, gui = "undercurl" }),
+		DiagnosticUnderlineWarn({ DiagnosticWarn, gui = "undercurl" }),
+		DiagnosticUnderlineInfo({ DiagnosticInfo, gui = "undercurl" }),
+		DiagnosticUnderlineHint({ DiagnosticHint, gui = "undercurl" }),
+		DiagnosticUnderlineOk({ DiagnosticOk, gui = "undercurl" }),
+
+		DiagnosticFloatingError({ DiagnosticError }),
+		DiagnosticFloatingWarn({ DiagnosticWarn }),
+		DiagnosticFloatingInfo({ DiagnosticInfo }),
+		DiagnosticFloatingHint({ DiagnosticHint }),
+		DiagnosticFloatingOk({ DiagnosticOk }),
+
+		DiagnosticSignError({ DiagnosticError }),
+		DiagnosticSignWarn({ DiagnosticWarn }),
+		DiagnosticSignInfo({ DiagnosticInfo }),
+		DiagnosticSignHint({ DiagnosticHint }),
+		DiagnosticSignOk({ DiagnosticOk }),
+
+		-- 0.10+ inline diagnostic (virtual_lines)
+		DiagnosticDeprecated({ gui = "strikethrough", fg = muted }),
+
+		-- treesitter (0.9+)
+
+		-- identifiers
+		sym("@variable")({ fg = hollow }), -- would love to change this
+		sym("@variable.builtin")({ fg = hollow, gui = "italic" }),
+		sym("@variable.parameter")({ fg = faint }),
+		sym("@variable.member")({ fg = text }), -- struct fields, object keys
+
+		sym("@constant")({ Constant }),
+		sym("@constant.builtin")({ fg = marimo, gui = "italic" }),
+		sym("@constant.macro")({ Define }),
+
+		sym("@module")({ fg = takanome }),
+		sym("@module.builtin")({ fg = takanome, gui = "italic" }),
+		sym("@label")({ fg = kumashi }),
+
+		-- literals
+		sym("@string")({ String }),
+		sym("@string.escape")({ fg = hollow }),
+		sym("@string.special")({ fg = hollow }),
+		sym("@string.regexp")({ fg = takanome }),
+		sym("@string.special.url")({ fg = kumashi, gui = "underline" }),
+
+		sym("@character")({ Character }),
+		sym("@character.special")({ SpecialChar }),
+		sym("@boolean")({ Boolean }),
+		sym("@number")({ Number }),
+		sym("@number.float")({ Float }),
+
+		-- types
+		sym("@type")({ Type }),
+		sym("@type.builtin")({ fg = marimo, gui = "italic" }),
+		sym("@type.definition")({ Typedef }),
+
+		-- functions
+		sym("@function")({ Function }),
+		sym("@function.builtin")({ fg = garden, gui = "italic" }),
+		sym("@function.macro")({ Macro }),
+		sym("@function.method")({ Function }),
+		sym("@constructor")({ fg = hollow }),
+
+		-- keywords
+		sym("@keyword")({ Keyword }),
+		sym("@keyword.function")({ fg = kumashi, gui = "italic" }),
+		sym("@keyword.operator")({ fg = kumashi }),
+		sym("@keyword.import")({ Include }),
+		sym("@keyword.repeat")({ Repeat }),
+		sym("@keyword.return")({ fg = dracule, gui = "italic" }),
+		sym("@keyword.exception")({ Exception }),
+		sym("@keyword.conditional")({ Conditional }),
+		sym("@keyword.directive")({ PreProc }),
+
+		-- punctuation
+		sym("@punctuation.delimiter")({ fg = muted }),
+		sym("@punctuation.bracket")({ fg = text }),
+		sym("@punctuation.special")({ fg = hollow }),
+
+		-- comments
+		sym("@comment")({ Comment }),
+		sym("@comment.documentation")({ fg = faint, gui = "italic" }),
+		sym("@comment.error")({ fg = dracule, gui = "bold" }),
+		sym("@comment.warning")({ fg = takanome, gui = "bold" }),
+		sym("@comment.todo")({ fg = takanome, gui = "bold" }),
+		sym("@comment.note")({ fg = kumashi, gui = "bold" }),
+
+		-- markup (markdown, rst, etc.)
+		sym("@markup.raw")({ fg = marimo }),
+		sym("@markup.raw.block")({ fg = marimo }),
+		sym("@markup.link")({ fg = kumashi, gui = "underline" }),
+		sym("@markup.link.url")({ fg = kumashi, gui = "underline,italic" }),
+		sym("@markup.link.label")({ fg = hollow }),
+		sym("@markup.list")({ fg = takanome }),
+		sym("@markup.heading")({ fg = hollow, gui = "bold" }),
+		sym("@markup.heading.1")({ fg = hollow, gui = "bold" }),
+		sym("@markup.heading.2")({ fg = garden, gui = "bold" }),
+		sym("@markup.heading.3")({ fg = dracule, gui = "bold" }),
+		sym("@markup.heading.4")({ fg = kumashi, gui = "bold" }),
+		sym("@markup.strong")({ gui = "bold" }),
+		sym("@markup.italic")({ gui = "italic" }),
+		sym("@markup.strikethrough")({ gui = "strikethrough", fg = muted }),
+		sym("@markup.quote")({ fg = faint, gui = "italic" }),
+
+		-- misc TS
+		sym("@operator")({ Operator }),
+		sym("@attribute")({ fg = takanome }),
+		sym("@attribute.builtin")({ fg = takanome, gui = "italic" }),
+		sym("@property")({ fg = hollow }), -- would love to change this
+		sym("@tag")({ fg = kumashi }),
+		sym("@tag.builtin")({ fg = kumashi, gui = "italic" }),
+		sym("@tag.attribute")({ fg = takanome }),
+		sym("@tag.delimiter")({ fg = muted }),
+
+		sym("@diff.plus")({ fg = marimo }),
+		sym("@diff.minus")({ fg = dracule }),
+		sym("@diff.delta")({ fg = takanome }),
+
+		-- LSP semantic tokens (0.9+)
+		sym("@lsp.type.class")({ fg = marimo }),
+		sym("@lsp.type.decorator")({ fg = takanome }),
+		sym("@lsp.type.enum")({ fg = marimo }),
+		sym("@lsp.type.enumMember")({ Constant }),
+		sym("@lsp.type.function")({ Function }),
+		sym("@lsp.type.interface")({ fg = marimo, gui = "italic" }),
+		sym("@lsp.type.macro")({ Macro }),
+		sym("@lsp.type.method")({ Function }),
+		sym("@lsp.type.namespace")({ fg = takanome }),
+		sym("@lsp.type.parameter")({ fg = faint }),
+		sym("@lsp.type.property")({ fg = text }),
+		sym("@lsp.type.struct")({ Structure }),
+		sym("@lsp.type.type")({ Type }),
+		sym("@lsp.type.typeParameter")({ fg = marimo, gui = "italic" }),
+		sym("@lsp.type.variable")({ fg = text }),
+		sym("@lsp.type.keyword")({ Keyword }),
+		sym("@lsp.type.comment")({ Comment }),
+		sym("@lsp.type.string")({ String }),
+		sym("@lsp.type.number")({ Number }),
+		sym("@lsp.type.operator")({ Operator }),
+
+		sym("@lsp.mod.deprecated")({ gui = "strikethrough", fg = muted }),
+		sym("@lsp.mod.readonly")({ gui = "italic" }),
+		sym("@lsp.mod.defaultLibrary")({ gui = "italic" }),
+
+		-- plugins
+		GitSignsAdd({ fg = marimo }),
+		GitSignsChange({ fg = garden }),
+		GitSignsDelete({ fg = dracule }),
+
+		RenderMarkdownH1Bg({ bg = surface, fg = hollow, gui = "bold" }),
+		RenderMarkdownH2Bg({ bg = surface, fg = garden, gui = "bold" }),
+		RenderMarkdownH3Bg({ bg = surface, fg = dracule, gui = "bold" }),
+		RenderMarkdownH4Bg({ bg = surface, fg = kumashi, gui = "bold" }),
+		RenderMarkdownH5Bg({ bg = surface, fg = takanome, gui = "bold" }),
+		RenderMarkdownH6Bg({ bg = surface, fg = marimo, gui = "bold" }),
+
+		MiniDiffSignAdd({ fg = marimo, gui = "italic" }),
+		MiniDiffSignChange({ fg = kumashi, gui = "italic" }),
+		MiniDiffSignDelete({ fg = dracule, gui = "italic" }),
+		MiniStatuslineModeNormal({ bg = overlay, fg = text }),
+		MiniStatuslineModeInsert({ bg = text, fg = base }),
+		MiniStatuslineModeVisual({ bg = hollow, fg = base }),
+		MiniStatuslineModeReplace({ bg = dracule, fg = base }),
+		MiniStatuslineModeCommand({ bg = kumashi, fg = base }),
+		MiniStatuslineModeOther({ bg = marimo, fg = base }),
+		MiniStatuslineDevinfo({ bg = surface, fg = text }),
+		MiniStatuslineFilename({ bg = base, fg = faint }),
+		MiniStatuslineFileinfo({ MiniStatuslineDevinfo }),
+		MiniStatuslineInactive({ bg = base, fg = muted }),
+		MiniTablineCurrent({ TabLineSel }),
+		MiniTablineVisible({ fg = takanome, bg = surface }),
+		MiniTablineHidden({ TabLine }),
+
+		TroubleIndent({ bg = surface, fg = faint }),
+		TroublePos({ bg = surface, fg = faint }),
 	}
 end)
+
+return theme
+
+-- vi:nowrap
