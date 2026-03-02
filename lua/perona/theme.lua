@@ -2,25 +2,25 @@ local lush = require("lush")
 local hsl = lush.hsl
 
 -- base colors
-local base = hsl(324, 24, 14)
-local surface = hsl(324, 24, 18)
-local overlay = hsl(324, 24, 22)
+local base = hsl(324, 24, 12)
+local surface = hsl(324, 24, 16)
+local overlay = hsl(324, 24, 20)
 -- text colors
 local muted = hsl(324, 12, 48)
 local faint = hsl(324, 20, 60)
 local text = hsl(324, 48, 88)
 local light = hsl(324, 96, 96)
 -- accent colors
-local mihawk = hsl(348, 60, 48)
+local mihawk = hsl(348, 60, 54)
 local garden = hsl(288, 60, 72)
 local sangria = hsl(360, 60, 72)
 local kumashi = hsl(216, 60, 72)
 local zombie = hsl(336, 60, 60)
-local hollow = hsl(324, 72, 72)
+local hollow = hsl(324, 60, 72)
 -- highlights
 local low = hsl(324, 18, 16)
 local med = hsl(324, 16, 24)
-local high = hsl(324, 14, 36)
+local high = hsl(324, 14, 32)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -40,12 +40,12 @@ local theme = lush(function(injected_functions)
 		Conceal({ fg = muted }),
 		CursorLine({ bg = overlay }),
 		CursorColumn({ bg = overlay }),
-		CursorLineNr({ fg = hollow, gui = "bold" }),
+		CursorLineNr({ fg = text, gui = "bold" }),
 		LineNr({ fg = muted }),
 		LineNrAbove({ LineNr }),
 		LineNrBelow({ LineNr }),
 
-		SignColumn({ bg = surface }),
+		SignColumn({ bg = base }),
 		FoldColumn({ fg = high, bg = surface }),
 		Folded({ bg = low, fg = faint }),
 
@@ -74,11 +74,11 @@ local theme = lush(function(injected_functions)
 		-- 0.11: popup/window title when using noice / native cmdline
 		MsgArea({ fg = text }),
 		MsgSeparator({ fg = overlay }),
-		ModeMsg({ fg = hollow, gui = "bold" }),
+		ModeMsg({ fg = text, gui = "bold" }),
 		MoreMsg({ fg = garden }),
 		Question({ fg = kumashi }),
 		WarningMsg({ fg = sangria }),
-		ErrorMsg({ fg = mihawk }),
+		ErrorMsg({ fg = mihawk, gui = "bold" }),
 
 		Cursor({ bg = text, fg = base }),
 		lCursor({ Cursor }),
@@ -96,7 +96,7 @@ local theme = lush(function(injected_functions)
 		MatchParen({ bg = high, gui = "bold" }),
 
 		NonText({ fg = muted }),
-		Whitespace({ fg = high }),
+		Whitespace({ fg = overlay }),
 		SpecialKey({ fg = muted }),
 		EndOfBuffer({ fg = faint }),
 
@@ -106,19 +106,19 @@ local theme = lush(function(injected_functions)
 
 		QuickFixLine({ bg = overlay, gui = "bold" }),
 
-		-- Diffs
+		-- diffs
 		DiffAdd({ bg = garden, fg = base }),
 		DiffChange({ bg = muted, fg = base }),
 		DiffDelete({ fg = mihawk, gui = "bold" }),
 		DiffText({ bg = kumashi, fg = base }),
 
-		-- Spell
+		-- spell
 		SpellBad({ fg = mihawk, gui = "undercurl" }),
 		SpellCap({ fg = sangria, gui = "undercurl" }),
 		SpellLocal({ fg = garden, gui = "undercurl" }),
 		SpellRare({ fg = kumashi, gui = "undercurl" }),
 
-		-- Misc
+		-- misc
 		Underlined({ gui = "underline" }),
 		Ignore({ fg = muted }),
 		Error({ bg = mihawk, fg = light }),
@@ -127,8 +127,8 @@ local theme = lush(function(injected_functions)
 		-- traditional syntax
 		Comment({ fg = faint, gui = "italic" }),
 
-		Constant({ fg = garden }),
-		String({ fg = zombie }),
+		Constant({ fg = sangria }),
+		String({ Constant }), -- maybe change
 		Character({ Constant }),
 		Number({ Constant }),
 		Boolean({ Constant }),
@@ -137,15 +137,15 @@ local theme = lush(function(injected_functions)
 		Identifier({ fg = zombie }),
 		Function({ fg = hollow }),
 
-		Statement({ fg = kumashi }),
+		Statement({ fg = kumashi, gui = "bold" }),
 		Conditional({ Statement }),
 		Repeat({ Statement }),
 		Label({ Statement }),
 		Operator({ fg = text }),
-		Keyword({ fg = kumashi, gui = "italic" }),
+		Keyword({ fg = garden, gui = "bold" }), -- maybe change
 		Exception({ Statement }),
 
-		PreProc({ fg = sangria }),
+		PreProc({ fg = kumashi }),
 		Include({ PreProc }),
 		Define({ PreProc }),
 		Macro({ PreProc }),
@@ -156,7 +156,7 @@ local theme = lush(function(injected_functions)
 		Structure({ Type }),
 		Typedef({ Type }),
 
-		Special({ fg = hollow }),
+		Special({ fg = zombie }),
 		SpecialChar({ Special }),
 		Tag({ Special }),
 		Delimiter({ fg = text }),
@@ -200,7 +200,7 @@ local theme = lush(function(injected_functions)
 		-- treesitter (0.9+)
 
 		-- identifiers
-		sym("@variable")({ fg = hollow }), -- would love to change this
+		sym("@variable")({ fg = text, gui = "italic" }),
 		sym("@variable.builtin")({ fg = hollow, gui = "italic" }),
 		sym("@variable.parameter")({ fg = faint }),
 		sym("@variable.member")({ fg = text }), -- struct fields, object keys
@@ -283,15 +283,15 @@ local theme = lush(function(injected_functions)
 		sym("@operator")({ Operator }),
 		sym("@attribute")({ fg = sangria }),
 		sym("@attribute.builtin")({ fg = sangria, gui = "italic" }),
-		sym("@property")({ fg = hollow }), -- would love to change this
+		sym("@property")({ fg = hollow, gui = "italic" }), -- would love to change this
 		sym("@tag")({ fg = kumashi }),
 		sym("@tag.builtin")({ fg = kumashi, gui = "italic" }),
 		sym("@tag.attribute")({ fg = sangria }),
 		sym("@tag.delimiter")({ fg = muted }),
 
-		sym("@diff.plus")({ fg = garden }),
+		sym("@diff.plus")({ fg = kumashi }),
 		sym("@diff.minus")({ fg = mihawk }),
-		sym("@diff.delta")({ fg = sangria }),
+		sym("@diff.delta")({ fg = hollow }),
 
 		-- LSP semantic tokens (0.9+)
 		sym("@lsp.type.class")({ fg = garden }),
@@ -302,8 +302,8 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.type.interface")({ fg = garden, gui = "italic" }),
 		sym("@lsp.type.macro")({ Macro }),
 		sym("@lsp.type.method")({ Function }),
-		sym("@lsp.type.namespace")({ fg = sangria }),
-		sym("@lsp.type.parameter")({ fg = faint }),
+		sym("@lsp.type.namespace")({ fg = text, gui = "italic" }),
+		sym("@lsp.type.parameter")({ fg = zombie, gui = "italic" }),
 		sym("@lsp.type.property")({ fg = text }),
 		sym("@lsp.type.struct")({ Structure }),
 		sym("@lsp.type.type")({ Type }),
@@ -320,8 +320,8 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.mod.defaultLibrary")({ gui = "italic" }),
 
 		-- plugins
-		GitSignsAdd({ fg = garden }),
-		GitSignsChange({ fg = kumashi }),
+		GitSignsAdd({ fg = kumashi }),
+		GitSignsChange({ fg = hollow }),
 		GitSignsDelete({ fg = mihawk }),
 
 		RenderMarkdownH1Bg({ bg = surface, fg = hollow, gui = "bold" }),
@@ -331,17 +331,17 @@ local theme = lush(function(injected_functions)
 		RenderMarkdownH5Bg({ bg = surface, fg = sangria, gui = "bold" }),
 		RenderMarkdownH6Bg({ bg = surface, fg = mihawk, gui = "bold" }),
 
-		MiniDiffSignAdd({ fg = garden, gui = "italic" }),
-		MiniDiffSignChange({ fg = kumashi, gui = "italic" }),
+		MiniDiffSignAdd({ fg = kumashi, gui = "italic" }),
+		MiniDiffSignChange({ fg = hollow, gui = "italic" }),
 		MiniDiffSignDelete({ fg = mihawk, gui = "italic" }),
-		MiniStatuslineModeNormal({ bg = overlay, fg = text }),
-		MiniStatuslineModeInsert({ bg = text, fg = base }),
-		MiniStatuslineModeVisual({ bg = hollow, fg = base }),
-		MiniStatuslineModeReplace({ bg = mihawk, fg = base }),
-		MiniStatuslineModeCommand({ bg = kumashi, fg = base }),
-		MiniStatuslineModeOther({ bg = garden, fg = base }),
-		MiniStatuslineDevinfo({ bg = surface, fg = text }),
-		MiniStatuslineFilename({ bg = base, fg = faint }),
+		MiniStatuslineModeNormal({ bg = high, fg = text, gui = "bold" }),
+		MiniStatuslineModeInsert({ bg = text, fg = base, gui = "bold" }),
+		MiniStatuslineModeVisual({ bg = hollow, fg = base, gui = "bold" }),
+		MiniStatuslineModeReplace({ bg = mihawk, fg = base, gui = "bold" }),
+		MiniStatuslineModeCommand({ bg = kumashi, fg = base, gui = "bold" }),
+		MiniStatuslineModeOther({ bg = garden, fg = base, gui = "bold" }),
+		MiniStatuslineDevinfo({ bg = overlay, fg = text }),
+		MiniStatuslineFilename({ bg = surface, fg = faint }),
 		MiniStatuslineFileinfo({ MiniStatuslineDevinfo }),
 		MiniStatuslineInactive({ bg = base, fg = muted }),
 		MiniTablineCurrent({ TabLineSel }),
