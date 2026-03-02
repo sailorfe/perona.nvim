@@ -142,7 +142,7 @@ local theme = lush(function(injected_functions)
 		Repeat({ Statement }),
 		Label({ Statement }),
 		Operator({ fg = text }),
-		Keyword({ fg = garden, gui = "bold" }), -- maybe change
+		Keyword({ Statement }), -- maybe change
 		Exception({ Statement }),
 
 		PreProc({ fg = kumashi }),
@@ -154,7 +154,7 @@ local theme = lush(function(injected_functions)
 		Type({ fg = garden }),
 		StorageClass({ Type }),
 		Structure({ Type }),
-		Typedef({ Type }),
+		Typedef({ fg = garden, gui = "italic" }),
 
 		Special({ fg = zombie }),
 		SpecialChar({ Special }),
@@ -202,11 +202,11 @@ local theme = lush(function(injected_functions)
 		-- identifiers
 		sym("@variable")({ fg = text, gui = "italic" }),
 		sym("@variable.builtin")({ fg = hollow, gui = "italic" }),
-		sym("@variable.parameter")({ fg = faint }),
+		sym("@variable.parameter")({ Type }), -- (injected_functions)
 		sym("@variable.member")({ fg = text }), -- struct fields, object keys
 
 		sym("@constant")({ Constant }),
-		sym("@constant.builtin")({ fg = garden, gui = "italic" }),
+		sym("@constant.builtin")({ Typedef }),
 		sym("@constant.macro")({ Define }),
 
 		sym("@module")({ fg = sangria }),
@@ -228,7 +228,7 @@ local theme = lush(function(injected_functions)
 
 		-- types
 		sym("@type")({ Type }),
-		sym("@type.builtin")({ fg = garden, gui = "italic" }),
+		sym("@type.builtin")({ Typedef }),
 		sym("@type.definition")({ Typedef }),
 
 		-- functions
@@ -270,10 +270,10 @@ local theme = lush(function(injected_functions)
 		sym("@markup.link.label")({ fg = hollow }),
 		sym("@markup.list")({ fg = sangria }),
 		sym("@markup.heading")({ fg = hollow, gui = "bold" }),
-		sym("@markup.heading.1")({ fg = hollow, gui = "bold" }),
-		sym("@markup.heading.2")({ fg = kumashi, gui = "bold" }),
-		sym("@markup.heading.3")({ fg = zombie, gui = "bold" }),
-		sym("@markup.heading.4")({ fg = garden, gui = "bold" }),
+		sym("@markup.heading.1")({ bg = hollow.darken(60).desaturate(60), fg = hollow, gui = "bold" }),
+		sym("@markup.heading.2")({ bg = sangria.darken(60).desaturate(60), fg = sangria, gui = "bold" }),
+		sym("@markup.heading.3")({ bg = garden.darken(60).desaturate(60), fg = garden, gui = "bold" }),
+		sym("@markup.heading.4")({ bg = zombie.darken(60).desaturate(60), fg = zombie, gui = "bold" }),
 		sym("@markup.strong")({ gui = "bold" }),
 		sym("@markup.italic")({ gui = "italic" }),
 		sym("@markup.strikethrough")({ gui = "strikethrough", fg = muted }),
@@ -294,12 +294,12 @@ local theme = lush(function(injected_functions)
 		sym("@diff.delta")({ fg = hollow }),
 
 		-- LSP semantic tokens (0.9+)
-		sym("@lsp.type.class")({ fg = garden }),
+		sym("@lsp.type.class")({ Type }),
 		sym("@lsp.type.decorator")({ fg = sangria }),
-		sym("@lsp.type.enum")({ fg = garden }),
+		sym("@lsp.type.enum")({ Type }),
 		sym("@lsp.type.enumMember")({ Constant }),
 		sym("@lsp.type.function")({ Function }),
-		sym("@lsp.type.interface")({ fg = garden, gui = "italic" }),
+		sym("@lsp.type.interface")({ Typedef }),
 		sym("@lsp.type.macro")({ Macro }),
 		sym("@lsp.type.method")({ Function }),
 		sym("@lsp.type.namespace")({ fg = text, gui = "italic" }),
@@ -307,7 +307,7 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.type.property")({ fg = text }),
 		sym("@lsp.type.struct")({ Structure }),
 		sym("@lsp.type.type")({ Type }),
-		sym("@lsp.type.typeParameter")({ fg = garden, gui = "italic" }),
+		sym("@lsp.type.typeParameter")({ Typedef }),
 		sym("@lsp.type.variable")({ fg = text }),
 		sym("@lsp.type.keyword")({ Keyword }),
 		sym("@lsp.type.comment")({ Comment }),
@@ -324,12 +324,12 @@ local theme = lush(function(injected_functions)
 		GitSignsChange({ fg = hollow }),
 		GitSignsDelete({ fg = mihawk }),
 
-		RenderMarkdownH1Bg({ bg = surface, fg = hollow, gui = "bold" }),
-		RenderMarkdownH2Bg({ bg = surface, fg = kumashi, gui = "bold" }),
-		RenderMarkdownH3Bg({ bg = surface, fg = zombie, gui = "bold" }),
-		RenderMarkdownH4Bg({ bg = surface, fg = garden, gui = "bold" }),
-		RenderMarkdownH5Bg({ bg = surface, fg = sangria, gui = "bold" }),
-		RenderMarkdownH6Bg({ bg = surface, fg = mihawk, gui = "bold" }),
+		RenderMarkdownH1Bg({ bg = hollow.darken(60).desaturate(60), fg = hollow, gui = "bold" }),
+		RenderMarkdownH2Bg({ bg = sangria.darken(60).desaturate(60), fg = sangria, gui = "bold" }),
+		RenderMarkdownH3Bg({ bg = garden.darken(60).desaturate(60), fg = garden, gui = "bold" }),
+		RenderMarkdownH4Bg({ bg = zombie.darken(60).desaturate(60), fg = zombie, gui = "bold" }),
+		RenderMarkdownH5Bg({ bg = kumashi.darken(60).desaturate(60), fg = kumashi, gui = "bold" }),
+		RenderMarkdownH6Bg({ bg = mihawk.darken(60).desaturate(60), fg = mihawk, gui = "bold" }),
 
 		MiniDiffSignAdd({ fg = kumashi, gui = "italic" }),
 		MiniDiffSignChange({ fg = hollow, gui = "italic" }),
