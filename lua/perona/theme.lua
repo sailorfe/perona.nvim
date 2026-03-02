@@ -319,6 +319,14 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.mod.readonly")({ gui = "italic" }),
 		sym("@lsp.mod.defaultLibrary")({ gui = "italic" }),
 
+		-- markdown
+		markdownH1({ bg = hollow.darken(60).desaturate(60), fg = hollow, gui = "bold" }),
+		markdownH2({ bg = sangria.darken(60).desaturate(60), fg = sangria, gui = "bold" }),
+		markdownH3({ bg = garden.darken(60).desaturate(60), fg = garden, gui = "bold" }),
+		markdownH4({ bg = zombie.darken(60).desaturate(60), fg = zombie, gui = "bold" }),
+		markdownH5({ bg = kumashi.darken(60).desaturate(60), fg = kumashi, gui = "bold" }),
+		markdownH6({ bg = mihawk.darken(60).desaturate(60), fg = mihawk, gui = "bold" }),
+
 		-- plugins
 		GitSignsAdd({ fg = kumashi }),
 		GitSignsChange({ fg = hollow }),
