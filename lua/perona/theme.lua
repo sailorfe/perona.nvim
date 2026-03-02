@@ -319,6 +319,14 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.mod.readonly")({ gui = "italic" }),
 		sym("@lsp.mod.defaultLibrary")({ gui = "italic" }),
 
+		-- markdown
+		markdownH1({ fg = hollow, gui = "bold" }),
+		markdownH2({ fg = sangria, gui = "bold" }),
+		markdownH3({ fg = garden, gui = "bold" }),
+		markdownH4({ fg = zombie, gui = "bold" }),
+		markdownH5({ fg = kumashi, gui = "bold" }),
+		markdownH6({ fg = mihawk, gui = "bold" }),
+
 		-- plugins
 		GitSignsAdd({ fg = kumashi }),
 		GitSignsChange({ fg = hollow }),

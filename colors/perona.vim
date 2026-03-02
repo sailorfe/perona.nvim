@@ -157,6 +157,12 @@ highlight WildMenu guifg=#261720 guibg=#EFD2E3 guisp=NONE  gui=NONE
 highlight WinBar guifg=#AD859D guibg=#48323F guisp=NONE  gui=NONE
 highlight WinBarNC guifg=#896C7D guibg=#48323F guisp=NONE  gui=NONE
 highlight WinSeparator guifg=#331F2B guibg=NONE guisp=NONE  gui=NONE
+highlight markdownH1 guifg=#E28DC0 guibg=NONE guisp=NONE  gui=bold
+highlight markdownH2 guifg=#E28D8D guibg=NONE guisp=NONE  gui=bold
+highlight markdownH3 guifg=#D18DE2 guibg=NONE guisp=NONE  gui=bold
+highlight markdownH4 guifg=#D65C8D guibg=NONE guisp=NONE  gui=bold
+highlight markdownH5 guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=bold
+highlight markdownH6 guifg=#D0435F guibg=NONE guisp=NONE  gui=bold
 if has('termguicolors')
   set termguicolors
 endif
