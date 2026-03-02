@@ -36,19 +36,23 @@ return {
 }
 ```
 
+alternately, you can skip `init = function()` and declare `vim.cmd.colorscheme('luna')` somewhere in your `init.lua` after plugin load.
+
 ### vimscript
 
-the easiest method is probably just to run curl from a directory called `colors/` somewhere in your vim runtime path:
+with vim-plug:
+
+```vim
+Plug 'https://codeberg.org/sailorfe/perona.nvim', { 'as': 'perona' }
+```
+
+or you can place `colors/perona.vim` anywhere in your runtimepath:
 
 ```sh
 curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/main/colors/perona.vim
 ```
 
-then set colorscheme with one of the following:
-
-- `init.lua`: `vim.cmd.colorscheme("perona")`
-- `.vimrc`: `set colorscheme "perona"`
-- the command `:colorscheme perona`
+then set colorscheme with `colorscheme perona` either in your `vimrc` or temporarily as a command.
 
 ## extras
 
