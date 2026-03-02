@@ -6,31 +6,31 @@
 
 # Default colors
 [colors.primary]
-background = '#2c1b25'
+background = '#261720'
 foreground = '#efd2e3'
 
 [colors.cursor]
 cursor = '#efd2e3'
-text = '#2c1b25'
+text = '#261720'
 
 # Normal colors
 [colors.normal]
-black = '#392330'
-red = '#c4314e'
+black = '#331f2b'
+red = '#d0435f'
 green = '#d18de2'
 yellow = '#e28d8d'
 blue = '#8dafe2'
 magenta = '#d65c8d'
-cyan = '#eb84c2'
+cyan = '#e28dc0'
 white = '#efd2e3'
 
 # Bright colors
 [colors.bright]
-black = '#462b3b'
-red = '#e2506d'
+black = '#3f2735'
+red = '#f47c94'
 green = '#ebb4f8'
 yellow = '#f8b4b4'
 blue = '#b4cff8'
 magenta = '#f47cac'
-cyan = '#f8b4dd'
+cyan = '#f4b9dc'
 white = '#ffebf7'
