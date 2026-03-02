@@ -18,9 +18,9 @@ local kumashi = hsl(216, 60, 72)
 local zombie = hsl(336, 60, 60)
 local hollow = hsl(324, 60, 72)
 -- highlights
-local low = hsl(324, 18, 16)
-local med = hsl(324, 16, 24)
-local high = hsl(324, 14, 32)
+local low = hsl(324, 20, 16)
+local med = hsl(324, 18, 24)
+local high = hsl(324, 16, 32)
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function(injected_functions)
@@ -201,16 +201,16 @@ local theme = lush(function(injected_functions)
 
 		-- identifiers
 		sym("@variable")({ fg = text, gui = "italic" }),
-		sym("@variable.builtin")({ fg = hollow, gui = "italic" }),
+		sym("@variable.builtin")({ fg = hollow, gui = "bold_italic" }),
 		sym("@variable.parameter")({ Type }), -- (injected_functions)
 		sym("@variable.member")({ fg = text }), -- struct fields, object keys
 
 		sym("@constant")({ Constant }),
-		sym("@constant.builtin")({ Typedef }),
+		sym("@constant.builtin")({ fg = garden, gui = "bold_italic" }),
 		sym("@constant.macro")({ Define }),
 
 		sym("@module")({ fg = sangria }),
-		sym("@module.builtin")({ fg = sangria, gui = "italic" }),
+		sym("@module.builtin")({ fg = sangria, gui = "bold_italic" }),
 		sym("@label")({ fg = kumashi }),
 
 		-- literals
@@ -228,12 +228,12 @@ local theme = lush(function(injected_functions)
 
 		-- types
 		sym("@type")({ Type }),
-		sym("@type.builtin")({ Typedef }),
+		sym("@type.builtin")({ fg = garden, gui = "bold_italic" }),
 		sym("@type.definition")({ Typedef }),
 
 		-- functions
 		sym("@function")({ Function }),
-		sym("@function.builtin")({ fg = zombie, gui = "italic" }),
+		sym("@function.builtin")({ fg = zombie, gui = "bold_italic" }),
 		sym("@function.macro")({ Macro }),
 		sym("@function.method")({ Function }),
 		sym("@constructor")({ fg = hollow }),
@@ -282,10 +282,10 @@ local theme = lush(function(injected_functions)
 		-- misc TS
 		sym("@operator")({ Operator }),
 		sym("@attribute")({ fg = sangria }),
-		sym("@attribute.builtin")({ fg = sangria, gui = "italic" }),
+		sym("@attribute.builtin")({ fg = sangria, gui = "bold_italic" }),
 		sym("@property")({ fg = hollow, gui = "italic" }), -- would love to change this
 		sym("@tag")({ fg = kumashi }),
-		sym("@tag.builtin")({ fg = kumashi, gui = "italic" }),
+		sym("@tag.builtin")({ fg = kumashi, gui = "bold_italic" }),
 		sym("@tag.attribute")({ fg = sangria }),
 		sym("@tag.delimiter")({ fg = muted }),
 
