@@ -48,7 +48,7 @@ highlight DiffChange guifg=#261720 guibg=#896C7D guisp=NONE  gui=NONE
 highlight DiffDelete guifg=#D0435F guibg=NONE guisp=NONE  gui=bold
 highlight DiffText guifg=#261720 guibg=#8DAFE2 guisp=NONE  gui=NONE
 highlight Directory guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
-highlight EndOfBuffer guifg=#AD859D guibg=NONE guisp=NONE  gui=NONE
+highlight EndOfBuffer guifg=#896C7D guibg=NONE guisp=NONE  gui=NONE
 highlight Error guifg=#FFEBF7 guibg=#D0435F guisp=NONE  gui=NONE
 highlight ErrorMsg guifg=#D0435F guibg=NONE guisp=NONE  gui=bold
 highlight FloatBorder guifg=#896C7D guibg=#331F2B guisp=NONE  gui=NONE
@@ -158,11 +158,17 @@ highlight WinBar guifg=#AD859D guibg=#48323F guisp=NONE  gui=NONE
 highlight WinBarNC guifg=#896C7D guibg=#48323F guisp=NONE  gui=NONE
 highlight WinSeparator guifg=#331F2B guibg=NONE guisp=NONE  gui=NONE
 highlight markdownH1 guifg=#E28DC0 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH1Delimiter markdownH1
 highlight markdownH2 guifg=#E28D8D guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH2Delimiter markdownH2
 highlight markdownH3 guifg=#D18DE2 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH3Delimiter markdownH3
 highlight markdownH4 guifg=#D65C8D guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH4Delimiter markdownH4
 highlight markdownH5 guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH5Delimiter markdownH5
 highlight markdownH6 guifg=#D0435F guibg=NONE guisp=NONE  gui=bold
+highlight! link markdownH6Delimiter markdownH6
 if has('termguicolors')
   set termguicolors
 endif
