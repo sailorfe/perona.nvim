@@ -6,15 +6,15 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]P3e28d8d" #brown
 	echo -en "\e]P48dafe2" #darkblue
 	echo -en "\e]P5d65c8d" #darkmagenta
-	echo -en "\e]P6e28dc0" #darkcyan
+	echo -en "\e]P6ea86c2" #darkcyan
 	echo -en "\e]P7efd2e3" #lightgrey
 	echo -en "\e]P83f2735" #darkgrey
-	echo -en "\e]P9f47c94" #red
-	echo -en "\e]PAebb4f8" #green
-	echo -en "\e]PBf8b4b4" #yellow
-	echo -en "\e]PCb4cff8" #blue
-	echo -en "\e]PDf47cac" #magenta
-	echo -en "\e]PEf4b9dc" #cyan
+	echo -en "\e]P9f76e89" #red
+	echo -en "\e]PAe4a3f5" #green
+	echo -en "\e]PBf5a3a3" #yellow
+	echo -en "\e]PCa3c4f5" #blue
+	echo -en "\e]PDf76ea5" #magenta
+	echo -en "\e]PEfbb1de" #cyan
 	echo -en "\e]PFefd2e3" #white
 	clear #for background artifacting
 fi
