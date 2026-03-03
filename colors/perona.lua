@@ -1,1 +1,1 @@
-require('perona').load()
+require("perona").negativehollow()

@@ -1,7 +1,7 @@
 -- init.lua
 local GPP = {}
 GPP.name = "perona"
-function GPP.inthenameofthemoon()
+function GPP.negativehollow()
 	vim.cmd("hi clear")
 	vim.o.termguicolors = true
 	vim.g.colors_name = GPP.name
@@ -14,19 +14,19 @@ function GPP.inthenameofthemoon()
 	end
 
 	local palette = require("perona.horo").get()
-	vim.g.terminal_color_0 = palette.base
-	vim.g.terminal_color_8 = palette.overlay
-	vim.g.terminal_color_1 = palette.mihawk
-	vim.g.terminal_color_9 = palette.dracule
-	vim.g.terminal_color_2 = palette.garden
-	vim.g.terminal_color_10 = palette.wonder
-	vim.g.terminal_color_3 = palette.sangria
-	vim.g.terminal_color_11 = palette.fruit
-	vim.g.terminal_color_4 = palette.kumashi
-	vim.g.terminal_color_12 = palette.beary
-	vim.g.terminal_color_5 = palette.zombie
-	vim.g.terminal_color_13 = palette.surprise
-	vim.g.terminal_color_6 = palette.hollow
-	vim.g.terminal_color_14 = palette.negative
+	vim.g.terminal_color_0 = tostring(palette.base.hex)
+	vim.g.terminal_color_8 = tostring(palette.overlay.hex)
+	vim.g.terminal_color_1 = tostring(palette.mihawk.hex)
+	vim.g.terminal_color_9 = tostring(palette.dracule.hex)
+	vim.g.terminal_color_2 = tostring(palette.garden.hex)
+	vim.g.terminal_color_10 = tostring(palette.wonder.hex)
+	vim.g.terminal_color_3 = tostring(palette.sangria.hex)
+	vim.g.terminal_color_11 = tostring(palette.fruit.hex)
+	vim.g.terminal_color_4 = tostring(palette.kumashi.hex)
+	vim.g.terminal_color_12 = tostring(palette.beary.hex)
+	vim.g.terminal_color_5 = tostring(palette.zombie.hex)
+	vim.g.terminal_color_13 = tostring(palette.surprise.hex)
+	vim.g.terminal_color_6 = tostring(palette.hollow.hex)
+	vim.g.terminal_color_14 = tostring(palette.negative.hex)
 end
 return GPP
