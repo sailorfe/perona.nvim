@@ -56,18 +56,24 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
   nvim --headless +Shipwright +qa
   rm ./shipwright_build.lua
 
+  # Capture the built file before switching branches
+  VIM_FILE=$(mktemp)
+  cp "colors/$THEME.vim" "$VIM_FILE"
+
   echo "switching to vim branch..."
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
     git checkout --orphan vim
     git rm -rf . --quiet
   else
-    git stash -u
     git checkout vim
     git ls-files | xargs rm -rf
     git clean -fd
-    git stash pop
   fi
+
   mkdir -p colors
+  cp "$VIM_FILE" "colors/$THEME.vim"
+  rm "$VIM_FILE"
+
   git add "colors/$THEME.vim"
   if ! git diff --cached --quiet; then
     git commit -m "build(vim): update distribution $(date +%Y-%m-%d)"
@@ -92,9 +98,9 @@ lua)
   nvim --headless +Shipwright +qa
 
   cat <<-x0 >"./lua/$THEME/theme.lua"
-	L = {}
+	P = {}
 	---@return table
-	L.build = function()
+	P.build = function()
 	  local theme = {
 	x0
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
@@ -102,7 +108,7 @@ lua)
 	  }
 	  return theme
 	end
-	return L
+	return P
 	x0
 
   rm "./lua/$THEME/theme.lua.tmp" ./shipwright_build.lua
