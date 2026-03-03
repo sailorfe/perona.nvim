@@ -29,10 +29,9 @@ with lazy:
 ```lua
 return {
     "https://codeberg.org/sailorfe/perona.nvim",
-    dependencies = { "rktjmp/lush.nvim" },
-    init = function()
-        vim.cmd.colorscheme("perona")
-    end,
+--    init = function()
+--        vim.cmd.colorscheme("perona")
+--    end,
 }
 ```
 
@@ -43,13 +42,13 @@ alternately, you can skip `init = function()` and declare `vim.cmd.colorscheme('
 with vim-plug:
 
 ```vim
-Plug 'https://codeberg.org/sailorfe/perona.nvim', { 'as': 'perona' }
+Plug 'https://codeberg.org/sailorfe/perona.nvim', { 'as': 'perona', 'branch': 'main' }
 ```
 
 or you can place `colors/perona.vim` anywhere in your runtimepath:
 
 ```sh
-curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/main/colors/perona.vim
+curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
 ```
 
 then set colorscheme with `colorscheme perona` either in your `vimrc` or temporarily as a command.
