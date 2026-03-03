@@ -108,7 +108,7 @@ local theme = lush(function(injected_functions)
 
 		-- diffs
 		DiffAdd({ bg = garden, fg = base }),
-		DiffChange({ bg = muted, fg = base }),
+		DiffChange({ bg = hollow, fg = base }),
 		DiffDelete({ fg = mihawk, gui = "bold" }),
 		DiffText({ bg = kumashi, fg = base }),
 
@@ -291,7 +291,7 @@ local theme = lush(function(injected_functions)
 		sym("@tag.attribute")({ fg = sangria }),
 		sym("@tag.delimiter")({ fg = muted }),
 
-		sym("@diff.plus")({ fg = kumashi }),
+		sym("@diff.plus")({ fg = garden }),
 		sym("@diff.minus")({ fg = mihawk }),
 		sym("@diff.delta")({ fg = hollow }),
 
@@ -336,20 +336,20 @@ local theme = lush(function(injected_functions)
 		markdownH6Delimiter({ markdownH6 }),
 
 		-- plugins
-		GitSignsAdd({ fg = kumashi }),
-		GitSignsChange({ fg = hollow }),
-		GitSignsDelete({ fg = mihawk }),
+		GitSignsAdd({ sym("@diff.plus") }),
+		GitSignsChange({ sym("@diff.delta") }),
+		GitSignsDelete({ sym("@diff.minus") }),
 
-		RenderMarkdownH1Bg({ bg = hollow.darken(60).desaturate(60), fg = hollow, gui = "bold" }),
-		RenderMarkdownH2Bg({ bg = sangria.darken(60).desaturate(60), fg = sangria, gui = "bold" }),
-		RenderMarkdownH3Bg({ bg = garden.darken(60).desaturate(60), fg = garden, gui = "bold" }),
-		RenderMarkdownH4Bg({ bg = zombie.darken(60).desaturate(60), fg = zombie, gui = "bold" }),
-		RenderMarkdownH5Bg({ bg = kumashi.darken(60).desaturate(60), fg = kumashi, gui = "bold" }),
-		RenderMarkdownH6Bg({ bg = mihawk.darken(60).desaturate(60), fg = mihawk, gui = "bold" }),
+		RenderMarkdownH1Bg({ sym("@markup.heading.1") }),
+		RenderMarkdownH2Bg({ sym("@markup.heading.2") }),
+		RenderMarkdownH3Bg({ sym("@markup.heading.3") }),
+		RenderMarkdownH4Bg({ sym("@markup.heading.4") }),
+		RenderMarkdownH5Bg({ sym("@markup.heading.5") }),
+		RenderMarkdownH6Bg({ sym("@markup.heading.6") }),
 
-		MiniDiffSignAdd({ fg = kumashi, gui = "italic" }),
-		MiniDiffSignChange({ fg = hollow, gui = "italic" }),
-		MiniDiffSignDelete({ fg = mihawk, gui = "italic" }),
+		MiniDiffSignAdd({ sym("@diff.plus"), gui = "italic" }),
+		MiniDiffSignChange({ sym("@diff.delta"), gui = "italic" }),
+		MiniDiffSignDelete({ sym("@diff.minus"), gui = "italic" }),
 		MiniStatuslineModeNormal({ bg = high, fg = text, gui = "bold" }),
 		MiniStatuslineModeInsert({ bg = text, fg = base, gui = "bold" }),
 		MiniStatuslineModeVisual({ bg = hollow, fg = base, gui = "bold" }),

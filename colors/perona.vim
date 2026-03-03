@@ -44,7 +44,7 @@ highlight DiagnosticWarn guifg=#E28D8D guibg=NONE guisp=NONE  gui=NONE
 highlight! link DiagnosticFloatingWarn DiagnosticWarn
 highlight! link DiagnosticSignWarn DiagnosticWarn
 highlight DiffAdd guifg=#261720 guibg=#D18DE2 guisp=NONE  gui=NONE
-highlight DiffChange guifg=#261720 guibg=#896C7D guisp=NONE  gui=NONE
+highlight DiffChange guifg=#261720 guibg=#E28DC0 guisp=NONE  gui=NONE
 highlight DiffDelete guifg=#D0435F guibg=NONE guisp=NONE  gui=bold
 highlight DiffText guifg=#261720 guibg=#8DAFE2 guisp=NONE  gui=NONE
 highlight Directory guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
@@ -57,16 +57,13 @@ highlight FloatTitle guifg=#E28DC0 guibg=#331F2B guisp=NONE  gui=bold
 highlight FoldColumn guifg=#5F4554 guibg=#331F2B guisp=NONE  gui=NONE
 highlight Folded guifg=#AD859D guibg=#31212A guisp=NONE  gui=NONE
 highlight Function guifg=#E28DC0 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsAdd guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsChange guifg=#E28DC0 guibg=NONE guisp=NONE  gui=NONE
-highlight GitSignsDelete guifg=#D0435F guibg=NONE guisp=NONE  gui=NONE
 highlight Identifier guifg=#D65C8D guibg=NONE guisp=NONE  gui=NONE
 highlight Ignore guifg=#896C7D guibg=NONE guisp=NONE  gui=NONE
 highlight LineNr guifg=#896C7D guibg=NONE guisp=NONE  gui=NONE
 highlight! link LineNrAbove LineNr
 highlight! link LineNrBelow LineNr
 highlight MatchParen guifg=NONE guibg=#5F4554 guisp=NONE  gui=bold
-highlight MiniDiffSignAdd guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=italic
+highlight MiniDiffSignAdd guifg=#D18DE2 guibg=NONE guisp=NONE  gui=italic
 highlight MiniDiffSignChange guifg=#E28DC0 guibg=NONE guisp=NONE  gui=italic
 highlight MiniDiffSignDelete guifg=#D0435F guibg=NONE guisp=NONE  gui=italic
 highlight MiniStatuslineDevinfo guifg=#EFD2E3 guibg=#3F2735 guisp=NONE  gui=NONE
@@ -105,12 +102,6 @@ highlight! link Macro PreProc
 highlight! link PreCondit PreProc
 highlight Question guifg=#8DAFE2 guibg=NONE guisp=NONE  gui=NONE
 highlight QuickFixLine guifg=NONE guibg=#3F2735 guisp=NONE  gui=bold
-highlight RenderMarkdownH1Bg guifg=#E28DC0 guibg=#5C384D guisp=NONE  gui=bold
-highlight RenderMarkdownH2Bg guifg=#E28D8D guibg=#5C3838 guisp=NONE  gui=bold
-highlight RenderMarkdownH3Bg guifg=#D18DE2 guibg=#55385C guisp=NONE  gui=bold
-highlight RenderMarkdownH4Bg guifg=#D65C8D guibg=#4C2F3A guisp=NONE  gui=bold
-highlight RenderMarkdownH5Bg guifg=#8DAFE2 guibg=#38465C guisp=NONE  gui=bold
-highlight RenderMarkdownH6Bg guifg=#D0435F guibg=#462B30 guisp=NONE  gui=bold
 highlight Search guifg=#E28D8D guibg=#48323F guisp=NONE  gui=NONE
 highlight SignColumn guifg=NONE guibg=#261720 guisp=NONE  gui=NONE
 highlight Special guifg=#D65C8D guibg=NONE guisp=NONE  gui=NONE
