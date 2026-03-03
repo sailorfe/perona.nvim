@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 shopt -s extglob
-
 THEME="perona"
 
 case "${1:-}" in
 # == vim build ==
 vim)
-  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
   if [[ -n $(git status -s) ]]; then
     echo "working directory is dirty. commit/stash first."
     exit 1
   fi
+
   echo "building $THEME vimscript..."
   cat <<-'x0' >./shipwright_build.lua
 local shipwright = require("shipwright")
@@ -56,32 +55,30 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
   nvim --headless +Shipwright +qa
   rm ./shipwright_build.lua
 
-  # Capture the built file before switching branches
-  VIM_FILE=$(mktemp)
-  cp "colors/$THEME.vim" "$VIM_FILE"
+  echo "committing to vim branch via worktree..."
+  WORKTREE=$(mktemp -d)
 
-  echo "switching to vim branch..."
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
-    git checkout --orphan vim
-    git rm -rf . --quiet
+    git worktree add --orphan -b vim "$WORKTREE"
   else
-    git checkout vim
-    git ls-files | xargs rm -rf
-    git clean -fd
+    git worktree add "$WORKTREE" vim
   fi
 
-  mkdir -p colors
-  cp "$VIM_FILE" "colors/$THEME.vim"
-  rm "$VIM_FILE"
+  mkdir -p "$WORKTREE/colors"
+  cp "colors/$THEME.vim" "$WORKTREE/colors/$THEME.vim"
 
-  git add "colors/$THEME.vim"
-  if ! git diff --cached --quiet; then
-    git commit -m "build(vim): update distribution $(date +%Y-%m-%d)"
+  git -C "$WORKTREE" add "colors/$THEME.vim"
+  if ! git -C "$WORKTREE" diff --cached --quiet; then
+    git -C "$WORKTREE" commit -m "build(vim): update distribution $(date -Im)"
+    echo "done. committed to vim branch."
   else
     echo "no changes to commit."
   fi
-  git checkout "$CURRENT_BRANCH"
-  echo "done. back on $CURRENT_BRANCH"
+
+  git worktree remove "$WORKTREE"
+  trap - EXIT # disarm the trap since we already cleaned up
+  rm "colors/$THEME.vim"
+  echo "removed colors/$THEME.vim from main working tree"
   ;;
 
 # == lua build ==
@@ -94,13 +91,11 @@ lua)
 	local colorscheme = require("lush_theme.perona")
 	shipwright.run(colorscheme, lushwright.to_lua, {overwrite, "lua/perona/theme.lua.tmp"})
 	x0
-
   nvim --headless +Shipwright +qa
-
   cat <<-x0 >"./lua/$THEME/theme.lua"
-	P = {}
+	S = {}
 	---@return table
-	P.build = function()
+	S.build = function()
 	  local theme = {
 	x0
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
@@ -108,9 +103,8 @@ lua)
 	  }
 	  return theme
 	end
-	return P
+	return S
 	x0
-
   rm "./lua/$THEME/theme.lua.tmp" ./shipwright_build.lua
   echo "$THEME lua build complete"
   ;;
