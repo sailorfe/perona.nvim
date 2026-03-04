@@ -10,7 +10,6 @@ vim)
     echo "working directory is dirty. commit/stash first."
     exit 1
   fi
-
   echo "building $THEME vimscript..."
   cat <<-'x0' >./shipwright_build.lua
 local shipwright = require("shipwright")
@@ -54,19 +53,20 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
 	x0
   nvim --headless +Shipwright +qa
   rm ./shipwright_build.lua
-
   echo "committing to vim branch via worktree..."
   WORKTREE=$(mktemp -d)
-
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
+    # first time: create orphan branch with empty root commit so it has a
+    # proper base — future builds will fast-forward cleanly with no conflicts
     git worktree add --orphan -b vim "$WORKTREE"
+    git -C "$WORKTREE" commit --allow-empty -m "chore(vim): init distribution branch"
   else
     git worktree add "$WORKTREE" vim
   fi
-
+  # wipe everything in the worktree except .git so the branch stays clean
+  git -C "$WORKTREE" rm -rf . --quiet 2>/dev/null || true
   mkdir -p "$WORKTREE/colors"
   cp "colors/$THEME.vim" "$WORKTREE/colors/$THEME.vim"
-
   git -C "$WORKTREE" add "colors/$THEME.vim"
   if ! git -C "$WORKTREE" diff --cached --quiet; then
     git -C "$WORKTREE" commit -m "build(vim): update distribution $(date -Im)"
@@ -74,9 +74,8 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
   else
     echo "no changes to commit."
   fi
-
   git worktree remove "$WORKTREE"
-  trap - EXIT # disarm the trap since we already cleaned up
+  trap - EXIT
   rm "colors/$THEME.vim"
   echo "removed colors/$THEME.vim from main working tree"
   ;;
@@ -93,9 +92,9 @@ lua)
 	x0
   nvim --headless +Shipwright +qa
   cat <<-x0 >"./lua/$THEME/theme.lua"
-	S = {}
+	P = {}
 	---@return table
-	S.build = function()
+	P.build = function()
 	  local theme = {
 	x0
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
@@ -103,7 +102,7 @@ lua)
 	  }
 	  return theme
 	end
-	return S
+	return P
 	x0
   rm "./lua/$THEME/theme.lua.tmp" ./shipwright_build.lua
   echo "$THEME lua build complete"
