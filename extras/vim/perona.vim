@@ -1,3 +1,15 @@
+" perona v0.4.1 by sailorfe
+" built 2026-03-04
+" https://codeberg.org/sailorfe/perona.nvim
+
+hi clear
+if has('termguicolors')
+  set termguicolors
+endif
+
+let g:colors_name='perona'
+set background=dark
+
 highlight Normal guifg=#EAC3DA guibg=#261720 guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#331F2B guisp=NONE gui=NONE
 highlight Comment guifg=#AD859D guibg=NONE guisp=NONE gui=italic
@@ -160,16 +172,3 @@ highlight markdownH5 guifg=#8DAFE2 guibg=NONE guisp=NONE gui=bold
 highlight! link markdownH5Delimiter markdownH5
 highlight markdownH6 guifg=#D0435F guibg=NONE guisp=NONE gui=bold
 highlight! link markdownH6Delimiter markdownH6
-if has('termguicolors')
-  set termguicolors
-endif
-let g:colors_name="perona"
-set background=dark
-highlight! link htmlLink String
-highlight! link mkdLink String
-highlight! link mkdURL Identifier
-
-highlight SpellBad gui=undercurl guibg=NONE
-highlight Error guibg=NONE
-highlight! link Title Normal
-highlight mkdHeading guibg=NONE gui=bold

@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 shopt -s extglob
-THEME="perona"
+THEME=$(jq -r '.name' metadata.json)
+HEADER=$(jq -r '"\" \(.name) v\(.version) by \(.author)\n\" built \(.updated)\n\" \(.homepage)\n"' metadata.json)
 
 case "${1:-}" in
 # == vim build ==
@@ -32,27 +33,23 @@ local function make_vim_compatible(lines)
     end
     return cleaned
 end
-shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
-    append,
-    {
-        "if has('termguicolors')",
-        "  set termguicolors",
-        "endif",
-        'let g:colors_name="perona"',
-        "set background=dark",
-        "highlight! link htmlLink String",
-        "highlight! link mkdLink String",
-        "highlight! link mkdURL Identifier",
-        "",
-        "highlight SpellBad gui=undercurl guibg=NONE",
-        "highlight Error guibg=NONE",
-        "highlight! link Title Normal",
-        "highlight mkdHeading guibg=NONE gui=bold",
-    },
-}, { overwrite, "colors/perona.vim" })
+shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, { overwrite, "colors/perona.vim" })
 	x0
   nvim --headless +Shipwright +qa
   rm ./shipwright_build.lua
+  {
+    echo "$HEADER"
+    echo ""
+    echo "hi clear"
+    echo "if has('termguicolors')"
+    echo "  set termguicolors"
+    echo "endif"
+    echo ""
+    echo "let g:colors_name='$THEME'"
+    echo "set background=dark"
+    echo ""
+    cat "colors/$THEME.vim"
+  } >"colors/$THEME.vim.tmp" && mv "colors/$THEME.vim.tmp" "colors/$THEME.vim"
   echo "committing to vim branch via worktree..."
   WORKTREE=$(mktemp -d)
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
