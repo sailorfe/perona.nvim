@@ -1,6 +1,6 @@
-S = {}
+P = {}
 ---@return table
-S.build = function()
+P.build = function()
   local theme = {
 Normal = {fg = "#EAC3DA", bg = "#261720"},
 ["@boolean"] = {link = "Boolean"},
@@ -273,4 +273,4 @@ RenderMarkdownH6Bg = {link = "@markup.heading.6"},
   }
   return theme
 end
-return S
+return P

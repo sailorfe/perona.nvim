@@ -59,10 +59,9 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
   WORKTREE=$(mktemp -d)
 
   if ! git rev-parse --verify vim >/dev/null 2>&1; then
-    git worktree add --orphan -b vim "$WORKTREE"
-  else
-    git worktree add "$WORKTREE" vim
+    git branch vim HEAD
   fi
+  git worktree add "$WORKTREE" vim
 
   mkdir -p "$WORKTREE/colors"
   cp "colors/$THEME.vim" "$WORKTREE/colors/$THEME.vim"
@@ -93,9 +92,9 @@ lua)
 	x0
   nvim --headless +Shipwright +qa
   cat <<-x0 >"./lua/$THEME/theme.lua"
-	S = {}
+	P = {}
 	---@return table
-	S.build = function()
+	P.build = function()
 	  local theme = {
 	x0
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
@@ -103,7 +102,7 @@ lua)
 	  }
 	  return theme
 	end
-	return S
+	return P
 	x0
   rm "./lua/$THEME/theme.lua.tmp" ./shipwright_build.lua
   echo "$THEME lua build complete"
