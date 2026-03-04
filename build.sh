@@ -17,7 +17,7 @@ local shipwright = require("shipwright")
 local lushwright = require("shipwright.transform.lush")
 local overwrite = require("shipwright.transform.overwrite")
 local append = require("shipwright.transform.append")
-local colorscheme = require("lush_theme.perona")
+local colorscheme = require("perona.lush")
 local function make_vim_compatible(lines)
     local cleaned = {}
     for _, line in ipairs(lines) do
@@ -88,7 +88,7 @@ lua)
 	local shipwright = require("shipwright")
 	local lushwright = require("shipwright.transform.lush")
 	local overwrite = require("shipwright.transform.overwrite")
-	local colorscheme = require("lush_theme.perona")
+	local colorscheme = require("perona.lush")
 	shipwright.run(colorscheme, lushwright.to_lua, {overwrite, "lua/perona/theme.lua.tmp"})
 	x0
   nvim --headless +Shipwright +qa
