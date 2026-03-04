@@ -83,7 +83,7 @@ colorscheme perona
 
 ## extras
 
-there is an `extras/` dir with ports for
+there is an `extras/` directory with ports for
 
 - [alacritty](https://alacritty.org)
 - [foot](https://codeberg.org/dnkl/foot)
@@ -95,14 +95,14 @@ there is an `extras/` dir with ports for
 
 theme generation takes the following steps:
 
-1. create `templates/$APP.*`:
-    a. for hex codes prefixed with hashes (`#ED82C2`), use `[[key]]` (examples: `alacritty.toml`, `wezterm.toml`).
-    a. for hex codes *without* hashes (`ED82C2`), use `{{key}}` (examples: (`foot.ini`, `tty.conf`).
-2. add the output path `$APP/perona.*` to the `outputs` dictionary in `generator.py`.
-3. ensure `palette.json` is up to date: `nvim --headless -c "luafile hex.lua" -c "qa"`.
-4. run `python3 generator.py`.
+- create `templates/$APP.*`:
+    * for hex codes prefixed with hashes (`#ED82C2`), use `[[key]]` (examples: `alacritty.toml`, `wezterm.toml`).
+    * for hex codes *without* hashes (`ED82C2`), use `{{key}}` (examples: (`foot.ini`, `tty.conf`).
+- add the output path `$APP/perona.*` to the `outputs` dictionary in `generator.py`.
+- ensure `palette.json` is up to date: `nvim --headless -c "luafile hex.lua" -c "qa"`.
+- run `python3 generator.py`.
 
 ## acknowledgments
 
-- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb `build.sh` inspiration
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure
+- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb + `build.sh` inspiration
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for repository structure
