@@ -10,14 +10,6 @@ endif
 let g:colors_name='perona'
 set background=dark
 
-highlight! link htmlLink String
-highlight! link mkdLink String
-highlight! link mkdURL Identifier
-highlight SpellBad gui=underline guibg=NONE
-highlight Error guibg=NONE
-highlight! link Title Normal
-highlight mkdHeading guibg=NONE gui=bold
-
 highlight Normal guifg=#EAC3DA guibg=#261720 guisp=NONE gui=NONE
 highlight ColorColumn guifg=NONE guibg=#331F2B guisp=NONE gui=NONE
 highlight Comment guifg=#AD859D guibg=NONE guisp=NONE gui=italic
