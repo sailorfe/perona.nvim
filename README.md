@@ -5,7 +5,7 @@
 a colorscheme for neovim inspired by ghost princess perona from _one piece_ with support for many [mini](https://github.com/nvim-mini/mini.nvim) modules, [gitsigns](https://github.com/lewis6991/gitsigns.nvim), lsp, [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim), and [trouble](https://github.com/folke/trouble.nvim) (so far!). built with [lush](https://github.com/rktjmp/lush.nvim/).
 
 <div align="center">
-<img src="json.png" alt="perona">
+<img src="ansi.png" alt="perona">
 </div>
 
 <!-- toc -->
@@ -69,7 +69,7 @@ Plug 'https://codeberg.org/sailorfe/perona.nvim', { 'as': 'perona', 'branch': 'm
 or you can place `colors/perona.vim` anywhere in your runtimepath:
 
 ```sh
-curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
+curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/main/extras/vim/perona.vim
 ```
 
 then set colorscheme with `colorscheme perona` either in your `vimrc` or temporarily with a command:
@@ -89,6 +89,7 @@ there is an `extras/` directory with ports for
 - [foot](https://codeberg.org/dnkl/foot)
 - [termux](https://termux.dev)
 - `tty` for the console
+- [vim](https://www.vim.org)
 - [wezterm](https://wezterm.org)
 
 ## contributing
@@ -101,6 +102,8 @@ theme generation takes the following steps:
 - add the output path `$APP/perona.*` to the `outputs` dictionary in `generator.py`.
 - ensure `palette.json` is up to date: `nvim --headless -c "luafile hex.lua" -c "qa"`.
 - run `python3 generator.py`.
+
+make pull requests to [codeberg](https://codeberg.org/sailorfe/perona.nvim/pulls).
 
 ## acknowledgments
 
