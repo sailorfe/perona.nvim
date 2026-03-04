@@ -76,8 +76,9 @@ shipwright.run(colorscheme, lushwright.to_vimscript, make_vim_compatible, {
   fi
   git worktree remove "$WORKTREE"
   trap - EXIT
-  rm "colors/$THEME.vim"
-  echo "removed colors/$THEME.vim from main working tree"
+  mkdir -p "extras/vim"
+  mv "colors/$THEME.vim" "extras/vim/$THEME.vim"
+  echo "moved $THEME.vim from colors/ to extras/vim/ in main working tree"
   ;;
 
 # == lua build ==

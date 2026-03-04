@@ -10,8 +10,8 @@ hash = {str(k).strip(): str(v).strip() for k, v in raw_data.items()}
 bare = {k: v.lstrip('#') for k, v in hash.items()}
 
 outputs = {
-        "ansi.json": f"ansi/{theme}.json",
         "alacritty.toml": f"alacritty/{theme}.toml",
+        "ansi.json": f"ansi/{theme}.json",
         "foot.ini": f"foot/{theme}.ini",
         "markdown.md": f"markdown/{theme}.md",
         "termux.properties": f"termux/{theme}.properties",
