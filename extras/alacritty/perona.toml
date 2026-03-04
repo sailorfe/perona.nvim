@@ -1,36 +1,27 @@
-# -----------------------------------------------------------------------------
-# Perona Alacritty Colors
-# Theme: Perona
-# Upstream: https://codeberg.org/spica/perona.nvim/src/branch/main/extras/alacritty/perona.toml
-# -----------------------------------------------------------------------------
+# Perona for Alacritty
+# Author: sailorfe
+# Upstream: https://codeberg.org/sailorfe/perona.nvim/src/branch/main/extras/alacritty/perona.toml
 
-# Default colors
 [colors.primary]
-background = '#261720'
-foreground = '#efd2e3'
+background = "#261720"
+foreground = "#EFD2E3"
 
-[colors.cursor]
-cursor = '#efd2e3'
-text = '#261720'
-
-# Normal colors
 [colors.normal]
-black = '#331f2b'
-red = '#d0435f'
-green = '#d18de2'
-yellow = '#e28d8d'
-blue = '#8dafe2'
-magenta = '#d65c8d'
-cyan = '#ea86c2'
-white = '#efd2e3'
+black = "#331F2B"
+red   = "#D0435F"
+green = "#D18DE2"
+yellow = "#E28D8D"
+blue  = "#8DAFE2"
+magenta  = "#D65C8D"
+cyan  = "#EA86C2"
+white = "#EFD2E3"
 
-# Bright colors
 [colors.bright]
-black = '#3f2735'
-red = '#f76e89'
-green = '#e4a3f5'
-yellow = '#f5a3a3'
-blue = '#a3c4f5'
-magenta = '#f76ea5'
-cyan = '#fbb1de'
-white = '#ffebf7'
+black = "#3F2735"
+red   = "#F76E89"
+green = "#E4A3F5"
+yellow = "#F5A3A3"
+blue  = "#A3C4F5"
+magenta  = "#F76EA5"
+cyan  = "#FBB1DE"
+white = "#FFEBF7"
