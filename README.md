@@ -10,6 +10,7 @@ a colorscheme for neovim inspired by ghost princess perona from _one piece_ with
 
 <!-- toc -->
 
+- [palette](#palette)
 - [installation](#installation)
     * [lua](#lua)
     * [vimscript](#vimscript)
@@ -20,6 +21,25 @@ a colorscheme for neovim inspired by ghost princess perona from _one piece_ with
 <!-- tocstop -->
 
 this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim) from [codeberg](https://codeberg.org/sailorfe/perona.nvim).
+
+## palette
+
+| key       | hex           |
+| --------- | ------------- |
+| base      | `#261720`     |
+| surface   | `#331F2B`     |
+| overlay   | `#3F2735` |
+| text      | `#EAC3DA`    |
+| light     | `#FFEBF7`   |
+| mihawk    | `#D0435F`  |
+| garden    | `#D18DE2`  |
+| sangria   | `#E28D8D` |
+| kumashi   | `#8DAFE2` |
+| zombie    | `#D65C8D`  |
+| hollow    | `#ED82C2`  |
+| low       | `#31212A`     |
+| med       | `#48323F`     |
+| high      | `#5F4554`    |
 
 ## installation
 
@@ -52,7 +72,14 @@ or you can place `colors/perona.vim` anywhere in your runtimepath:
 curl -LO https://codeberg.org/sailorfe/perona.nvim/raw/branch/vim/colors/perona.vim
 ```
 
-then set colorscheme with `colorscheme perona` either in your `vimrc` or temporarily as a command.
+then set colorscheme with `colorscheme perona` either in your `vimrc` or temporarily with a command:
+
+```vim
+" .vimrc
+set background=dark
+syntax on 
+colorscheme perona
+```
 
 ## extras
 
@@ -62,12 +89,20 @@ there is an `extras/` dir with ports for
 - [foot](https://codeberg.org/dnkl/foot)
 - [termux](https://termux.dev)
 - `tty` for the console
+- [wezterm](https://wezterm.org)
 
 ## contributing
 
-if you would like to port perona to another terminal emulator or application, see `generator.py`. you'll have to write a dictionary template, but `generator.py` handles injecting hex values from `palette.json`. [submit pull requests on codeberg](https://codeberg.org/sailorfe/perona.nvim/pulls).
+theme generation takes the following steps:
+
+1. create `templates/$APP.*`:
+    a. for hex codes prefixed with hashes (`#ED82C2`), use `[[key]]` (examples: `alacritty.toml`, `wezterm.toml`).
+    a. for hex codes *without* hashes (`ED82C2`), use `{{key}}` (examples: (`foot.ini`, `tty.conf`).
+2. add the output path `$APP/perona.*` to the `outputs` dictionary in `generator.py`.
+3. ensure `palette.json` is up to date: `nvim --headless -c "luafile hex.lua" -c "qa"`.
+4. run `python3 generator.py`.
 
 ## acknowledgments
 
-- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb inspiration
+- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb `build.sh` inspiration
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for dir structure
