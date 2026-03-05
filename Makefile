@@ -1,3 +1,5 @@
-themes:
-	nvim --headless -c "luafile hex.lua" -c "qa"
-	python3 generator.py
+palette:
+	nvim --headless -c "luafile scripts/hex.lua" -c "qa"
+
+generate:
+	python3 scripts/generator.py
