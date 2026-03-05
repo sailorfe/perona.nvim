@@ -1,0 +1,65 @@
+# perona v0.4.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/perona.nvim
+
+[colors]
+# regular colors
+background       = '#261720'
+black            = '#331F2B'
+blue             = '#8DAFE2'
+cyan             = '#ED82C2'
+foreground       = '#EAC3DA'
+green            = '#D18DE2'
+magenta          = '#D65C8D'
+red              = '#D0435F'
+white            = '#EAC3DA'
+yellow           = '#E28D8D'
+
+# cursor
+cursor           = '#EAC3DA'
+vi-cursor        = '#D18DE2'
+
+# navigation
+tabs             = '#261720'
+tabs-foreground  = '#EAC3DA'
+tabs-active      = '#ED82C2'
+tabs-active-highlight  = '#ED82C2'
+tabs-active-foreground = '#261720'
+bar              = '#261720'
+split            = '#3F2735'
+
+# search
+search-match-background = '#8DAFE2'
+search-match-foreground = '#261720'
+search-focused-match-background = '#E28D8D'
+search-focused-match-foreground = '#261720'
+
+# hints
+hint-foreground  = '#261720'
+hint-background  = '#F5A3A3'
+
+# selection
+selection-foreground   = '#261720'
+selection-background   = '#ED82C2'
+
+# dim colors
+dim-black        = '#331F2B'
+dim-blue         = '#A3C4F5'
+dim-cyan         = '#FA9ED5'
+dim-foreground   = '#EAC3DA'
+dim-green        = '#E4A3F5'
+dim-magenta      = '#F075A6'
+dim-red          = '#F76E89'
+dim-white        = '#AD859D'
+dim-yellow       = '#F5A3A3'
+
+# light colors
+light-black        = '#3F2735'
+light-blue         = '#A3C4F5'
+light-cyan         = '#FA9ED5'
+light-foreground   = '#EAC3DA'
+light-green        = '#E4A3F5'
+light-magenta      = '#F075A6'
+light-red          = '#F76E89'
+light-white        = '#FFEBF7'
+light-yellow       = '#F5A3A3'

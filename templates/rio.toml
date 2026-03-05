@@ -1,0 +1,61 @@
+[colors]
+# regular colors
+background       = '[[base]]'
+black            = '[[surface]]'
+blue             = '[[kumashi]]'
+cyan             = '[[hollow]]'
+foreground       = '[[text]]'
+green            = '[[garden]]'
+magenta          = '[[zombie]]'
+red              = '[[mihawk]]'
+white            = '[[text]]'
+yellow           = '[[sangria]]'
+
+# cursor
+cursor           = '[[text]]'
+vi-cursor        = '[[garden]]'
+
+# navigation
+tabs             = '[[base]]'
+tabs-foreground  = '[[text]]'
+tabs-active      = '[[hollow]]'
+tabs-active-highlight  = '[[hollow]]'
+tabs-active-foreground = '[[base]]'
+bar              = '[[base]]'
+split            = '[[overlay]]'
+
+# search
+search-match-background = '[[kumashi]]'
+search-match-foreground = '[[base]]'
+search-focused-match-background = '[[sangria]]'
+search-focused-match-foreground = '[[base]]'
+
+# hints
+hint-foreground  = '[[base]]'
+hint-background  = '[[fruit]]'
+
+# selection
+selection-foreground   = '[[base]]'
+selection-background   = '[[hollow]]'
+
+# dim colors
+dim-black        = '[[surface]]'
+dim-blue         = '[[beary]]'
+dim-cyan         = '[[negative]]'
+dim-foreground   = '[[text]]'
+dim-green        = '[[wonder]]'
+dim-magenta      = '[[surprise]]'
+dim-red          = '[[dracule]]'
+dim-white        = '[[faint]]'
+dim-yellow       = '[[fruit]]'
+
+# light colors
+light-black        = '[[overlay]]'
+light-blue         = '[[beary]]'
+light-cyan         = '[[negative]]'
+light-foreground   = '[[text]]'
+light-green        = '[[wonder]]'
+light-magenta      = '[[surprise]]'
+light-red          = '[[dracule]]'
+light-white        = '[[light]]'
+light-yellow       = '[[fruit]]'

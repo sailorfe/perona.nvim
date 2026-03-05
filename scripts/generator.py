@@ -30,6 +30,7 @@ outputs = {
     "ansi.json": f"ansi/{theme}.json",
     "foot.ini": f"foot/{theme}.ini",
     "markdown.md": f"markdown/{theme}.md",
+    "rio.toml": f"rio/{theme}.toml",
     "termux.properties": f"termux/{theme}.properties",
     "tty.conf": f"tty/{theme}.conf",
     "wezterm.toml": f"wezterm/{theme}.toml",

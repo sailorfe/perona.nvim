@@ -13,11 +13,11 @@ a colorscheme for neovim inspired by ghost princess perona from _one piece_. bui
 - [palette](#palette)
 - [features](#features)
 - [installation](#installation)
-    * [lua](#lua)
-    * [vimscript](#vimscript)
+  - [lua](#lua)
+  - [vimscript](#vimscript)
 - [contributing](#contributing)
-    * [adding plugins](#adding-plugins)
-    * [adding ports](#adding-ports)
+  - [adding plugins](#adding-plugins)
+  - [adding ports](#adding-ports)
 - [acknowledgments](#acknowledgments)
 
 <!-- tocstop -->
@@ -54,6 +54,7 @@ this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim)
 - **current ports** under `extras/`:
   - [alacritty](https://alacritty.org)
   - [foot](https://codeberg.org/dnkl/foot)
+  - [rio](https://rioterm.com)
   - [termux](https://termux.dev)
   - `tty` for the console
   - [vim](https://www.vim.org)
