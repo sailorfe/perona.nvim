@@ -32,7 +32,7 @@ local theme = lush(function(injected_functions)
     WinBar({ bg = gpp.med, fg = gpp.faint }),
     WinBarNC({ bg = gpp.med, fg = gpp.muted }),
     WinSeparator({ fg = gpp.surface }), -- 0.9+
-    VertSplit({ fg = gpp.surface }),  -- for compatibility
+    VertSplit({ fg = gpp.surface }),    -- for compatibility
 
     TabLine({ bg = gpp.surface, fg = gpp.muted }),
     TabLineFill({ bg = gpp.base }),
@@ -180,7 +180,7 @@ local theme = lush(function(injected_functions)
     -- identifiers
     sym("@variable")({ fg = gpp.text, gui = "italic" }),
     sym("@variable.builtin")({ fg = gpp.hollow, gui = "bold_italic" }),
-    sym("@variable.parameter")({ Type }),     -- (injected_functions)
+    sym("@variable.parameter")({ Type }),       -- (injected_functions)
     sym("@variable.member")({ fg = gpp.text }), -- struct fields, object keys
 
     sym("@constant")({ Constant }),
@@ -344,6 +344,10 @@ local theme = lush(function(injected_functions)
 
     TroubleIndent({ bg = gpp.surface, fg = gpp.faint }),
     TroublePos({ bg = gpp.surface, fg = gpp.faint }),
+
+    IblIndent({ fg = gpp.med }),
+    IblScope({ Function }),
+    IblWhitespace({ Whitespace }),
   }
 end)
 ---@disagnostic disable

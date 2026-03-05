@@ -47,6 +47,7 @@ this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim)
 
 - **supported neovim plugins**:
   - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+  - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
   - [mini.nvim](https://github.com/nvim-mini/mini.nvim) diff, statusline, and tabline
   - [render-markdown.nvim](https://github.com/MeanderingProgrammer)
   - [trouble.nvim](https://github.com/folke/trouble.nvim)
