@@ -35,6 +35,7 @@ outputs = {
     "termux.properties": f"termux/{theme}.properties",
     "tty.conf": f"tty/{theme}.conf",
     "wezterm.toml": f"wezterm/{theme}.toml",
+    "zathura": f"zathura/{theme}",
 }
 
 

@@ -1,0 +1,37 @@
+# perona v0.4.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/perona.nvim
+
+set default-bg                  "#261720"
+set default-fg                  "#EAC3DA"
+
+set statusbar-fg                "#EAC3DA"
+set statusbar-bg                "#331F2B"
+
+set inputbar-bg                 "#3F2735"
+set inputbar-fg                 "[[hotaru]]"
+
+set notification-bg             "#EAC3DA"
+set notification-fg             "#331F2B"
+
+set notification-error-bg       "#ED82C2"
+set notification-error-fg       "#331F2B"
+
+set notification-warning-bg     "#FA9ED5"
+set notification-warning-fg     "#331F2B"
+
+set highlight-color             "rgba(245, 163, 163, 0.5)"
+set highlight-active-color      "rgba(226, 141, 141, 0.5)"
+set highlight-fg                "#261720"
+
+set completion-bg               "#3F2735"
+set completion-fg               "#FA9ED5"
+
+set completion-highlight-fg     "#331F2B"
+set completion-highlight-bg     "#FA9ED5"
+
+set recolor-lightcolor          "#261720"
+set recolor-darkcolor           "#EAC3DA"
+
+set recolor                     "false"
+set recolor-keephue             "false"
