@@ -1,0 +1,16 @@
+# perona v0.4.1 by sailorfe
+# built 2026-03-04
+# https://codeberg.org/sailorfe/perona.nvim
+
+background-color=#261720
+text-color=#EAC3DA
+progress-color=over #48323F
+
+[urgency=normal]
+border-color=#E28D8D
+
+[urgency=low]
+border-color=#8DAFE2
+
+[urgency=critical]
+border-color=#D0435F

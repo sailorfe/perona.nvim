@@ -54,6 +54,7 @@ this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim)
 - **current ports** under `extras/`:
   - [alacritty](https://alacritty.org)
   - [foot](https://codeberg.org/dnkl/foot)
+  - [mako](https://github.com/emersion/mako)
   - [rio](https://rioterm.com)
   - [termux](https://termux.dev)
   - `tty` for the console
