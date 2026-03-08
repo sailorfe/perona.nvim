@@ -1,0 +1,5 @@
+local lush = vim.env.LUSH_PATH or vim.fn.expand('~/.local/share/nvim/site/pack/plugins/opt/lush.nvim')
+local shipwright = vim.env.SHIPWRIGHT_PATH or vim.fn.expand('~/.local/share/nvim/site/pack/plugins/opt/shipwright.nvim')
+vim.opt.runtimepath:prepend(lush)
+vim.opt.runtimepath:prepend(shipwright)
+vim.cmd('runtime plugin/shipwright.lua')

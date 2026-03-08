@@ -12,14 +12,14 @@ a colorscheme for neovim inspired by ghost princess perona from _one piece_. bui
 
 - [palette](#palette)
 - [features](#features)
-    * [supported plugins](#supported-plugins)
-    * [ports](#ports)
+  - [supported plugins](#supported-plugins)
+  - [ports](#ports)
 - [installation](#installation)
-    * [lua](#lua)
-    * [vimscript](#vimscript)
+  - [lua](#lua)
+  - [vimscript](#vimscript)
 - [contributing](#contributing)
-    * [adding plugins](#adding-plugins)
-    * [adding ports](#adding-ports)
+  - [adding plugins](#adding-plugins)
+  - [adding ports](#adding-ports)
 - [acknowledgments](#acknowledgments)
 
 <!-- tocstop -->
@@ -119,7 +119,7 @@ make pull requests to [codeberg](https://codeberg.org/sailorfe/perona.nvim/pulls
 
 ### adding plugins
 
-1. install [lush](https://github.com/rktjmp/lush.nvim) and [shipwright](https://github.com/rktjmp/shipwright.nvim).
+1. install [lush](https://github.com/rktjmp/lush.nvim) and [shipwright](https://github.com/rktjmp/shipwright.nvim). you should edit `scripts/init.lua` to point to your installations, or rely on a package manager.
 2. `nvim lua/perona/lush.lua`
 3. `:Lushify`
 4. append new highlight groups to the bottom of the table
