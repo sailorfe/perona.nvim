@@ -62,7 +62,8 @@ this repository is mirrored to [github](https://github.com/sailorfe/perona.nvim)
 - [mako](https://github.com/emersion/mako)
 - [rio](https://rioterm.com)
 - [termux](https://termux.dev)
-- `tty` for the console
+- tty
+- shell environmental variables
 - [vim](https://www.vim.org)
 - [wezterm](https://wezterm.org)
 - [zathura](https://github.com/pwmt/zathura)

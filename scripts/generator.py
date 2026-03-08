@@ -17,7 +17,7 @@ def get_header(file_path, meta):
     date_str = meta["updated"].split("T")[0]
     url_str = meta["homepage"]
 
-    if ext in [".json", ".md"]:
+    if ext in [".json", ".md", ".sh"]:
         return ""
     if ext in [".css", ".js"]:
         return f"/* {version_str} */\n/* built {date_str} */\n/* {url_str} */\n\n"
@@ -32,6 +32,7 @@ outputs = {
     "mako": f"mako/{theme}",
     "markdown.md": f"markdown/{theme}.md",
     "rio.toml": f"rio/{theme}.toml",
+    "shell.sh": f"shell/{theme}.sh",
     "termux.properties": f"termux/{theme}.properties",
     "tty.conf": f"tty/{theme}.conf",
     "wezterm.toml": f"wezterm/{theme}.toml",
