@@ -1,7 +1,7 @@
 {
     "background": "[[base]]",
     "foreground": "[[text]]",
-    "black": "[[surface]]",
+    "black": "[[overlay]]",
     "red": "[[mihawk]]",
     "green": "[[garden]]",
     "yellow": "[[sangria]]",
@@ -9,7 +9,7 @@
     "magenta": "[[zombie]]",
     "cyan": "[[hollow]]",
     "white": "[[text]]",
-    "brightBlack": "[[overlay]]",
+    "brightBlack": "[[high]]",
     "brightRed": "[[dracule]]",
     "brightGreen": "[[wonder]]",
     "brightYellow": "[[fruit]]",

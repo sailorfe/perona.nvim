@@ -10,8 +10,8 @@ split = "[[high]]"
 compose_cursor = "[[sangria]]"
 scrollbar_thumb = "[[surface]]"
 
-ansi = ["[[surface]]", "[[mihawk]]", "[[garden]]", "[[sangria]]", "[[kumashi]]", "[[zombie]]", "[[hollow]]", "[[text]]"]
-brights = ["[[overlay]]", "[[dracule]]", "[[wonder]]", "[[fruit]]", "[[beary]]", "[[surprise]]", "[[negative]]", "[[light]]"]
+ansi = ["[[overlay]]", "[[mihawk]]", "[[garden]]", "[[sangria]]", "[[kumashi]]", "[[zombie]]", "[[hollow]]", "[[text]]"]
+brights = ["[[high]]", "[[dracule]]", "[[wonder]]", "[[fruit]]", "[[beary]]", "[[surprise]]", "[[negative]]", "[[light]]"]
 
 [colors.tab_bar]
 inactive_tab_edge = "[[surface]]"

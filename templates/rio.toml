@@ -1,7 +1,7 @@
 [colors]
 # regular colors
 background       = '[[base]]'
-black            = '[[surface]]'
+black            = '[[overlay]]'
 blue             = '[[kumashi]]'
 cyan             = '[[hollow]]'
 foreground       = '[[text]]'
@@ -39,7 +39,7 @@ selection-foreground   = '[[base]]'
 selection-background   = '[[hollow]]'
 
 # dim colors
-dim-black        = '[[surface]]'
+dim-black        = '[[med]]'
 dim-blue         = '[[beary]]'
 dim-cyan         = '[[negative]]'
 dim-foreground   = '[[text]]'
@@ -50,7 +50,7 @@ dim-white        = '[[faint]]'
 dim-yellow       = '[[fruit]]'
 
 # light colors
-light-black        = '[[overlay]]'
+light-black        = '[[high]]'
 light-blue         = '[[beary]]'
 light-cyan         = '[[negative]]'
 light-foreground   = '[[text]]'

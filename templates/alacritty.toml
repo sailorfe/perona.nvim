@@ -3,7 +3,7 @@ background = "[[base]]"
 foreground = "[[text]]"
 
 [colors.normal]
-black = "[[surface]]"
+black = "[[overlay]]"
 red = "[[mihawk]]"
 green = "[[garden]]"
 yellow = "[[sangria]]"
@@ -13,7 +13,7 @@ cyan = "[[hollow]]"
 white = "[[text]]"
 
 [colors.bright]
-black = "[[overlay]]"
+black = "[[high]]"
 red = "[[dracule]]"
 green = "[[wonder]]"
 yellow = "[[fruit]]"
