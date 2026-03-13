@@ -80,6 +80,13 @@ return {
 --    init = function()
 --        vim.cmd.colorscheme("perona")
 --    end,
+    opts = {
+        transparent = false, -- default
+        overrides = {
+            keyword = { fg = #D18DE2 },
+            ["@boolean"] = { link = 'Special' ,}
+        }
+    }
 }
 ```
 
