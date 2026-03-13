@@ -274,6 +274,15 @@ RenderMarkdownH6Bg = {link = "@markup.heading.6"},
 ["@variable.builtin"] = {fg = "#ED82C2", bold = true, italic = true},
 ["@variable.member"] = {fg = "#EAC3DA"},
   }
-  return theme
+    local opts = require("perona").opts
+    if opts.transparent then
+      theme["Normal"].bg = "none"
+      theme["SignColumn"].bg = "none"
+      theme["StatusLine"].bg = "none"
+    end
+    if opts.overrides ~= false then
+      theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+    end
+    return theme
 end
 return P

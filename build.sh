@@ -102,7 +102,16 @@ lua)
   cat "./lua/$THEME/theme.lua.tmp" >>"./lua/$THEME/theme.lua"
   cat <<-x0 >>"./lua/$THEME/theme.lua"
 	  }
-	  return theme
+    local opts = require("perona").opts
+    if opts.transparent then
+      theme["Normal"].bg = "none"
+      theme["SignColumn"].bg = "none"
+      theme["StatusLine"].bg = "none"
+    end
+    if opts.overrides ~= false then
+      theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+    end
+    return theme
 	end
 	return P
 	x0
