@@ -105,8 +105,13 @@ lua)
     local opts = require("perona").opts
     if opts.transparent then
       theme["Normal"].bg = "NONE"
+      theme["NormalNC"].bg = "NONE"
       theme["SignColumn"].bg = "NONE"
       theme["StatusLine"].bg = "NONE"
+      theme["StatusLineNC"].bg = "NONE"
+      theme["MiniStatuslineFilename"].bg = "NONE"
+      theme["MiniStatuslineInactive"].bg = "NONE"
+      theme["WinBarNC"].bg = "NONE"
     end
     if opts.overrides then
       theme = vim.tbl_deep_extend("force", theme, opts.overrides)
