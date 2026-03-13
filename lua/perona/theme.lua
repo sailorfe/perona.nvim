@@ -280,6 +280,9 @@ RenderMarkdownH6Bg = {link = "@markup.heading.6"},
       theme["SignColumn"].bg = "NONE"
       theme["StatusLine"].bg = "NONE"
     end
+    if opts.overrides then
+      theme = vim.tbl_deep_extend("force", theme, opts.overrides)
+    end
     return theme
 end
 return P
