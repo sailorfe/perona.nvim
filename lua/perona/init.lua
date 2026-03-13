@@ -8,19 +8,22 @@ local defaults = {
 GPP.opts = defaults
 --- @param opts PeronaConfig colorscheme opts
 function GPP.setup(opts)
-  GPP.opts = vim.tbl_deep_extend("force", {}, GPP.opts or defaults, opts or {})
+  GPP.opts = vim.tbl_deep_extend("force", {}, GPP.opts, opts or {})
 end
 
 --- @param opts PeronaConfig colorscheme opts
 function GPP.negativehollow(opts)
-  if opts then GPP.setup(opts) end
-  vim.cmd("hi clear")
+  if opts and next(opts) then
+    GPP.setup(opts)
+  end
+  if vim.g.syntax_on then vim.cmd("syntax reset") end
+  if vim.g.colors_name then vim.cmd("hi clear") end
   vim.o.termguicolors = true
   vim.g.colors_name = GPP.name
   vim.o.background = "dark"
 
-  local theme = require("perona.theme")
-  local highlights = theme.build()
+  local theme_load = require("perona.theme")
+  local highlights = theme_load.build()
   for group, attrs in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, attrs)
   end
