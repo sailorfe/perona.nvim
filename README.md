@@ -85,6 +85,14 @@ return {
 
 alternately, you can skip `init = function()` and declare `vim.cmd.colorscheme('perona')` somewhere in your `init.lua` after plugin load.
 
+it has just two options:
+
+| name              | type              | default   | description                                                               |
+| ----------------- | ----------------- | --------- | ------------------------------------------------------------------------- |
+| `transparent`     | boolean           | false     | sets `Normal` and linked hl groups to `none` to show terminal background. |
+| `overrides`       | table / boolean   | false     | override any hl groups you don't like or to add new ones.                 |
+
+
 ### vimscript
 
 with vim-plug:
@@ -144,5 +152,5 @@ make pull requests to [codeberg](https://codeberg.org/sailorfe/perona.nvim/pulls
 
 ## acknowledgments
 
-- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb + `build.sh` inspiration
+- [evangelion.nvim](https://github.com/xero/evangelion.nvim) for weeb + `build.sh` inspiration + the whole lua project structure and opts logic
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for repository structure
